@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>git on 烤肉肉</title>
-        <link>http://example.org/tags/git/</link>
+        <link>https://singlebee.github.io/tags/git/</link>
         <description>Recent content in git on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>git学习</title>
-        <link>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/git%E5%AD%A6%E4%B9%A0/</link>
+        <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/git%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/git%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/git%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;p&gt;用vscode魔改主题的时候发现，vscode自带git版本控制，潜意识告诉我这个东西很好用。&lt;/p&gt;
 &lt;h1 id=&#34;获取git仓库&#34;&gt;获取Git仓库&lt;/h1&gt;
 &lt;p&gt;如果有个尚未版本控制的项目目录，cd到该目录下，执行 &lt;code&gt;git init&lt;/code&gt;命令。该命令会创建一个名为&lt;code&gt;.git&lt;/code&gt;的子目录，根据我的反复折腾，这应该是这个Git仓库的核心。

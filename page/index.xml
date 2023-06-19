@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 烤肉肉</title>
-        <link>http://example.org/page/</link>
+        <link>https://singlebee.github.io/page/</link>
         <description>Recent content in Pages on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于</title>
-        <link>http://example.org/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</link>
+        <link>https://singlebee.github.io/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</guid>
+        <guid>https://singlebee.github.io/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</guid>
         <description>&lt;p&gt;我其实不太会写自我介绍。就随便写点。&lt;/p&gt;
 &lt;h2 id=&#34;关于小熊也关于我&#34;&gt;关于小熊也关于我&lt;/h2&gt;
 &lt;ul&gt;
@@ -38,7 +38,7 @@
 &lt;h3 id=&#34;2023-6-17&#34;&gt;2023-6-17&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;给网站添加了背景。&lt;/li&gt;
-&lt;li&gt;在footer上添加了夸大其词的建站时间。详细见&lt;a class=&#34;link&#34; href=&#34;http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/&#34; &gt;关于我用ChatGPT修改博客主题那些事&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;在footer上添加了夸大其词的建站时间。详细见&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/&#34; &gt;关于我用ChatGPT修改博客主题那些事&lt;/a&gt;。&lt;/li&gt;
 &lt;li&gt;全局圆角，还是圆角好看。&lt;/li&gt;
 &lt;li&gt;修改了左侧menu的字体大小，之前&lt;code&gt;1.4rem&lt;/code&gt;看起来太小了。&lt;/li&gt;
 &lt;li&gt;新增了【影像馆】，以后可以用来放点相册什么的。其实本来是想叫它【时光机】的。&lt;/li&gt;
@@ -46,7 +46,7 @@
 &lt;h3 id=&#34;2023-6-6&#34;&gt;2023-6-6&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;主题默认启用了&lt;code&gt;PhotoSwipe&lt;/code&gt;，但是我目前不需要这玩意，所以删除了主题&lt;code&gt;.layout._default.single.html&lt;/code&gt;下的&lt;code&gt;photoswipe&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;新增了大量&lt;a class=&#34;link&#34; href=&#34;http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;新增了大量&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-4&#34;&gt;2023-6-4&lt;/h3&gt;
 &lt;ul&gt;
@@ -62,28 +62,28 @@
         </item>
         <item>
         <title>归档</title>
-        <link>http://example.org/page/archives/</link>
+        <link>https://singlebee.github.io/page/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/page/archives/</guid>
+        <guid>https://singlebee.github.io/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>影像馆</title>
-        <link>http://example.org/page/%E6%97%B6%E5%85%89%E6%9C%BA/</link>
+        <link>https://singlebee.github.io/page/%E6%97%B6%E5%85%89%E6%9C%BA/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/page/%E6%97%B6%E5%85%89%E6%9C%BA/</guid>
+        <guid>https://singlebee.github.io/page/%E6%97%B6%E5%85%89%E6%9C%BA/</guid>
         <description>&lt;h3 id=&#34;画册&#34;&gt;画册&lt;/h3&gt;
 &lt;p&gt;可能会压制一下。因为有很多拿相机拍的，体积可能略显可怕。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>搜索</title>
-        <link>http://example.org/page/search/</link>
+        <link>https://singlebee.github.io/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/page/search/</guid>
+        <guid>https://singlebee.github.io/page/search/</guid>
         <description></description>
         </item>
         

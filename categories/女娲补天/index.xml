@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>女娲补天 on 烤肉肉</title>
-        <link>http://example.org/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/</link>
+        <link>https://singlebee.github.io/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/</link>
         <description>Recent content in 女娲补天 on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于我用ChatGPT修改博客主题那些事</title>
-        <link>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/</link>
+        <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/</link>
         <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/</guid>
+        <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/</guid>
         <description>&lt;p&gt;前提：本人没有系统学过编程，基本的代码知识都是慢慢试错学会的。可以视为小学生代码水平。&lt;/p&gt;
 &lt;h2 id=&#34;关于我用chatgpt修改博客主题那些事&#34;&gt;关于我用ChatGPT修改博客主题那些事&lt;/h2&gt;
 &lt;p&gt;你是否也在为装修博客困扰？你是否苦于不会写代码而一筹莫展？是否因为看到别人的博客艳羡不已？
@@ -91,10 +91,10 @@
         </item>
         <item>
         <title>关于我写博客如何实现闭环那些事</title>
-        <link>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
+        <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
+        <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
         <description>&lt;p&gt;边摸索边记录。&lt;/p&gt;
 &lt;h2 id=&#34;1-部署&#34;&gt;1. 部署&lt;/h2&gt;
 &lt;p&gt;经历了WordPress的臃肿和hexo要装一堆东西的痛苦之后，终于开始接触hugo，这款基于go语言开发的博客引擎。体验下来就直呼“&lt;strong&gt;快！太快了！&lt;/strong&gt;”，go语言这么强的嘛，快到我第一直觉是报错😂。
@@ -106,8 +106,8 @@
 &lt;p&gt;一是用vscode编辑，vscode很好用，被很多人成为天下第一编辑器，用来写点简单代码非常轻松，而且还支持git版本控制，甚至能直接push到GitHub，这个的好处是改主题的时候还能写点文章。缺点就是Markdown写起来不是很顺手.&lt;/p&gt;
 &lt;h3 id=&#34;22-obsidian&#34;&gt;2.2. obsidian&lt;/h3&gt;
 &lt;p&gt;另一个就是基于obsidian去写，obsidian写Markdown体验是真好，而且最大的特色是双链结构，但是目前不清楚双链对hugo的影响。缺点就是写着写着突然想改点主题没办法改😂（待测试双链对博客的影响）&lt;/p&gt;
-&lt;p&gt;实际测试下来，虽然不能直接使用[[]]实现链接，但是可以通过短代码实现。详见&lt;a class=&#34;link&#34; href=&#34;http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;同时我发现，使用obsidian写含有标签的内容，很容易报错。就像&lt;a class=&#34;link&#34; href=&#34;http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;这篇文章如果用obsidian打开，全是红的，但是用vscode打开就还行。&lt;/p&gt;
+&lt;p&gt;实际测试下来，虽然不能直接使用[[]]实现链接，但是可以通过短代码实现。详见&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;同时我发现，使用obsidian写含有标签的内容，很容易报错。就像&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;这篇文章如果用obsidian打开，全是红的，但是用vscode打开就还行。&lt;/p&gt;
 &lt;h2 id=&#34;3同步&#34;&gt;3.同步&lt;/h2&gt;
 &lt;h3 id=&#34;onedrive&#34;&gt;onedrive&lt;/h3&gt;
 &lt;p&gt;很想同时实现手机和电脑同步编辑的需求，实测了onedrive且不说不能快速同步，在网页打开编辑了一下直接报错给我复制了一个副本出来。虽然实际上来说也不是不行，但很明显不是最佳方案。&lt;/p&gt;
@@ -141,10 +141,10 @@
         </item>
         <item>
         <title>初始之地</title>
-        <link>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</link>
+        <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</guid>
+        <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</guid>
         <description>&lt;p&gt;这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。&lt;/p&gt;
 &lt;p&gt;本站美化将基于Stack进行修改。目前在研究这个主题的功能。&lt;/p&gt;
 &lt;h1 id=&#34;需求&#34;&gt;需求&lt;/h1&gt;

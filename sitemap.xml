@@ -2,109 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://singlebee.github.io/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://singlebee.github.io/categories/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/</loc>
+    <loc>https://singlebee.github.io/post/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://singlebee.github.io/tags/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E5%8F%BD%E5%8F%BD%E5%96%B3%E5%96%B3/</loc>
+    <loc>https://singlebee.github.io/categories/%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E5%8F%BD%E5%8F%BD%E5%96%B3%E5%96%B3/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
+    <loc>https://singlebee.github.io/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC3%E5%91%A8/</loc>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC3%E5%91%A8/</loc>
     <lastmod>2023-06-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/chatgpt/</loc>
+    <loc>https://singlebee.github.io/tags/chatgpt/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/</loc>
+    <loc>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/</loc>
+    <loc>https://singlebee.github.io/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/</loc>
     <lastmod>2023-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC2%E5%91%A8/</loc>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC2%E5%91%A8/</loc>
     <lastmod>2023-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/unity/</loc>
+    <loc>https://singlebee.github.io/tags/unity/</loc>
     <lastmod>2023-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B9%8B%E6%97%85/</loc>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B9%8B%E6%97%85/</loc>
     <lastmod>2023-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/%E4%B9%B0%E4%B9%B0%E4%B9%B0/</loc>
+    <loc>https://singlebee.github.io/tags/%E4%B9%B0%E4%B9%B0%E4%B9%B0/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E4%B9%B0%E7%82%B9%E4%BB%80%E4%B9%88%E5%A5%BD/</loc>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E4%B9%B0%E7%82%B9%E4%BB%80%E4%B9%88%E5%A5%BD/</loc>
     <lastmod>2023-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/hugo/</loc>
+    <loc>https://singlebee.github.io/tags/hugo/</loc>
     <lastmod>2023-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/</loc>
+    <loc>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/</loc>
     <lastmod>2023-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/%E5%BD%B1%E8%AF%84/</loc>
+    <loc>https://singlebee.github.io/tags/%E5%BD%B1%E8%AF%84/</loc>
     <lastmod>2023-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC1%E5%91%A8/</loc>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC1%E5%91%A8/</loc>
     <lastmod>2023-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/%E8%BF%99%E7%9F%A5%E8%AF%86%E4%BB%96%E4%B8%8D%E8%BF%9B%E8%84%91%E5%AD%90/</loc>
+    <loc>https://singlebee.github.io/categories/%E8%BF%99%E7%9F%A5%E8%AF%86%E4%BB%96%E4%B8%8D%E8%BF%9B%E8%84%91%E5%AD%90/</loc>
     <lastmod>2023-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/git/</loc>
+    <loc>https://singlebee.github.io/tags/git/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/git%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/git%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/obsidian/</loc>
+    <loc>https://singlebee.github.io/tags/obsidian/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/page/</loc>
+    <loc>https://singlebee.github.io/page/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</loc>
+    <loc>https://singlebee.github.io/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
+    <loc>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</loc>
+    <loc>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/%E6%8A%98%E8%85%BE/</loc>
+    <loc>https://singlebee.github.io/tags/%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/%E7%BE%8E%E5%8C%96/</loc>
+    <loc>https://singlebee.github.io/tags/%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E8%A1%A5%E6%A1%A3/%E7%8E%B2%E8%8A%BD%E9%94%81%E9%97%A8/</loc>
+    <loc>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/%E7%8E%B2%E8%8A%BD%E9%94%81%E9%97%A8/</loc>
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E8%A1%A5%E6%A1%A3/%E7%A9%BF%E9%9D%B4%E5%AD%90%E7%9A%84%E7%8C%AB2/</loc>
+    <loc>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/%E7%A9%BF%E9%9D%B4%E5%AD%90%E7%9A%84%E7%8C%AB2/</loc>
     <lastmod>2023-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/post/%E8%A1%A5%E6%A1%A3/%E7%9E%AC%E6%81%AF%E5%85%A8%E5%AE%87%E5%AE%99/</loc>
+    <loc>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/%E7%9E%AC%E6%81%AF%E5%85%A8%E5%AE%87%E5%AE%99/</loc>
     <lastmod>2023-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/page/archives/</loc>
+    <loc>https://singlebee.github.io/page/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/test/</loc>
+    <loc>https://singlebee.github.io/categories/test/</loc>
   </url><url>
-    <loc>http://example.org/page/%E6%97%B6%E5%85%89%E6%9C%BA/</loc>
+    <loc>https://singlebee.github.io/page/%E6%97%B6%E5%85%89%E6%9C%BA/</loc>
   </url><url>
-    <loc>http://example.org/page/search/</loc>
+    <loc>https://singlebee.github.io/page/search/</loc>
   </url>
 </urlset>
