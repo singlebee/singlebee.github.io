@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on 烤肉肉</title>
+        <link>http://example.org/tags/</link>
+        <description>Recent content in Tags on 烤肉肉</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>浮生记</title>
+        <link>http://example.org/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</link>
+        <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ChatGPT</title>
+        <link>http://example.org/tags/chatgpt/</link>
+        <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/chatgpt/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>unity</title>
+        <link>http://example.org/tags/unity/</link>
+        <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/unity/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>买买买</title>
+        <link>http://example.org/tags/%E4%B9%B0%E4%B9%B0%E4%B9%B0/</link>
+        <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/%E4%B9%B0%E4%B9%B0%E4%B9%B0/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>hugo</title>
+        <link>http://example.org/tags/hugo/</link>
+        <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/hugo/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>影评</title>
+        <link>http://example.org/tags/%E5%BD%B1%E8%AF%84/</link>
+        <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/%E5%BD%B1%E8%AF%84/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>git</title>
+        <link>http://example.org/tags/git/</link>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/git/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>obsidian</title>
+        <link>http://example.org/tags/obsidian/</link>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/obsidian/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>折腾</title>
+        <link>http://example.org/tags/%E6%8A%98%E8%85%BE/</link>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/%E6%8A%98%E8%85%BE/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>美化</title>
+        <link>http://example.org/tags/%E7%BE%8E%E5%8C%96/</link>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/tags/%E7%BE%8E%E5%8C%96/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

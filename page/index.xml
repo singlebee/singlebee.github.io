@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on 烤肉肉</title>
+        <link>http://example.org/page/</link>
+        <description>Recent content in Pages on 烤肉肉</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于</title>
+        <link>http://example.org/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</link>
+        <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</guid>
+        <description>&lt;p&gt;我其实不太会写自我介绍。就随便写点。&lt;/p&gt;
+&lt;h2 id=&#34;关于小熊也关于我&#34;&gt;关于小熊也关于我&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;这个标题来自以前听过的一首歌的歌词。&lt;/li&gt;
+&lt;li&gt;在本站你将看到大量废话文学，因为本人不具备任何逻辑对话能力，所以不接受批评。&lt;/li&gt;
+&lt;li&gt;间歇性会插入一些读后感观后感游戏品鉴。&lt;/li&gt;
+&lt;li&gt;非文学专业也非计算机专业，读的书不多见的人也不多，写不出真知灼见。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;准备写一篇“2023年了我为什么还想搭博客”。&lt;/p&gt;
+&lt;h2 id=&#34;可能写些什么&#34;&gt;可能写些什么&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;浮生记&lt;/strong&gt;：用来写下一些所思所想，其实和&lt;code&gt;月光下的叽叽喳喳&lt;/code&gt;感觉没啥区别。沈复有本自传散文叫《浮生六记》。&lt;code&gt;「浮生」二字意思是「人生」，語本《莊子．刻意》：「其生若浮，其死若休。」&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;月光下的叽叽喳喳&lt;/strong&gt;： 补档，用来补档以前的内容。
+&amp;ndash;update：本来是用月光下的叽叽喳喳当周记的，后来感觉浮生记更符合周记的调性。就改了。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;这知识他不进脑子&lt;/strong&gt;： 可能是开发过程中的一些有意思的事，也可能是一些我觉得有意思的常识，大概率是过一段时间就会忘记的东西。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;女娲补天&lt;/strong&gt;：本站的一些修改过程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其实以前有写书影游总结，但现在精力大不如从前，两三个月都可能写不出一篇总结，这个科目目前就搁置吧。&lt;/p&gt;
+&lt;h2 id=&#34;关于站名&#34;&gt;关于站名&lt;/h2&gt;
+&lt;h3 id=&#34;蜜蜂的蜂窝&#34;&gt;蜜蜂的蜂窝&lt;/h3&gt;
+&lt;p&gt;最早的站点名，用了好多年了。（待更新）&lt;/p&gt;
+&lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
+&lt;p&gt;本人技术力有限，但抄袭别人代码的能力很强，你看到的所有改动大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2023-6-17&#34;&gt;2023-6-17&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;给网站添加了背景。&lt;/li&gt;
+&lt;li&gt;在footer上添加了夸大其词的建站时间。详细见&lt;a class=&#34;link&#34; href=&#34;http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/&#34; &gt;关于我用ChatGPT修改博客主题那些事&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;全局圆角，还是圆角好看。&lt;/li&gt;
+&lt;li&gt;修改了左侧menu的字体大小，之前&lt;code&gt;1.4rem&lt;/code&gt;看起来太小了。&lt;/li&gt;
+&lt;li&gt;新增了【影像馆】，以后可以用来放点相册什么的。其实本来是想叫它【时光机】的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2023-6-6&#34;&gt;2023-6-6&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;主题默认启用了&lt;code&gt;PhotoSwipe&lt;/code&gt;，但是我目前不需要这玩意，所以删除了主题&lt;code&gt;.layout._default.single.html&lt;/code&gt;下的&lt;code&gt;photoswipe&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;新增了大量&lt;a class=&#34;link&#34; href=&#34;http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2023-6-4&#34;&gt;2023-6-4&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;基于&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack&lt;/a&gt;主题的exampleSite小幅修改。&lt;/li&gt;
+&lt;li&gt;文案的小幅修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2023-6-3&#34;&gt;2023-6-3&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;基于hugo建站。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>http://example.org/page/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>影像馆</title>
+        <link>http://example.org/page/%E6%97%B6%E5%85%89%E6%9C%BA/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/page/%E6%97%B6%E5%85%89%E6%9C%BA/</guid>
+        <description>&lt;h3 id=&#34;画册&#34;&gt;画册&lt;/h3&gt;
+&lt;p&gt;可能会压制一下。因为有很多拿相机拍的，体积可能略显可怕。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>http://example.org/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/page/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

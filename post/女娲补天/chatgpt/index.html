@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='零代码开发不再是梦'>
+<title>关于我用ChatGPT修改博客主题那些事</title>
+
+<link rel='canonical' href='http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/'>
+
+<link rel="stylesheet" href="/scss/style.min.f033cfd1df9e6f9eedb0160c4a8e913a66005a8f2f1873b7202ff5d1479e29c7.css"><meta property='og:title' content='关于我用ChatGPT修改博客主题那些事'>
+<meta property='og:description' content='零代码开发不再是梦'>
+<meta property='og:url' content='http://example.org/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/'>
+<meta property='og:site_name' content='烤肉肉'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='ChatGPT' /><meta property='article:published_time' content='2023-06-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-17T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="关于我用ChatGPT修改博客主题那些事">
+<meta name="twitter:description" content="零代码开发不再是梦">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu9e7a7fd731e1f5c55ee1b3fc1398eaab_50725_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">👻</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">烤肉肉</a></h1>
+            <h2 class="site-description">烤肉肉的秘密基地。</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/%E6%97%B6%E5%85%89%E6%9C%BA/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ghost-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M10 9h.01" />
+  <path d="M14 9h.01" />
+  <path d="M12 3a7 7 0 0 1 7 7v1l1 0a2 2 0 1 1 0 4l-1 0v3l2 3h-10a6 6 0 0 1 -6 -5.775l0 -.226l-1 0a2 2 0 0 1 0 -4l1 0v-1a7 7 0 0 1 7 -7z" />
+  <path d="M11 14h2a1 1 0 0 0 -2 0z" />
+</svg>
+                
+                <span>影像馆</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">大纲/目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于我用chatgpt修改博客主题那些事">关于我用ChatGPT修改博客主题那些事</a></li>
+    <li><a href="#背景图片">背景图片</a></li>
+    <li><a href="#建站时间">建站时间</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/" >
+                女娲补天
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/">关于我用ChatGPT修改博客主题那些事</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            零代码开发不再是梦
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2023/06/17</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读将浪费: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>前提：本人没有系统学过编程，基本的代码知识都是慢慢试错学会的。可以视为小学生代码水平。</p>
+<h2 id="关于我用chatgpt修改博客主题那些事">关于我用ChatGPT修改博客主题那些事</h2>
+<p>你是否也在为装修博客困扰？你是否苦于不会写代码而一筹莫展？是否因为看到别人的博客艳羡不已？
+今天，为大家隆重介绍一下零代码开发！21世纪最伟大的计算机发明——ChatGPT！</p>
+<p>好啦，不乱扯了，ChatGPT从公布开始已经被媒体写烂了。其实在申请Dell·E的资格的时候我就知道了OpenAI。可惜OpenAI注册需要验证手机号，国内的手机都通不过。
+换句话说，OpenAI不希望国内用户使用这个服务，国人当自强呐。（百度你搞ai是最早搞的，中文数据你又不缺，你搞半天搞出来的文心一言哪里能用）</p>
+<p>当然，互联网是自由的。用不了总有人帮我们。之前一直在用<a class="link" href="https://freegpt.one/"  target="_blank" rel="noopener"
+    >FreeGpt</a>，本来挂代理就能上，今天不知道为什么上不了。然后就发现了GitHub上有一个<a class="link" href="https://github.com/LiLittleCat/awesome-free-chatgpt"  target="_blank" rel="noopener"
+    >仓库</a>收集了不少。</p>
+<p>随便点了一个进去提问。</p>
+<h2 id="背景图片">背景图片</h2>
+<p>最开始困扰我的，就是背景图片，我往<code>./assets/scss/variables.scss</code>上添加<code>background-img</code>并没有效果，明明在控制台中能看到。</p>
+<p>然后我就向ChatGPT提问了。</p>
+<p>ChatGPT说我应该在<code>./assets/scss/custom.scss</code>中添加代码。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    background-image: url(&#39;图片地址&#39;);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    background-repeat: no-repeat;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    background-size: cover;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> }
+</span></span></code></pre></div><p>复制→粘贴→保存。</p>
+<p>成了。</p>
+<p>装修博客竟然如此简单。</p>
+<h2 id="建站时间">建站时间</h2>
+<p>这个是我博客一直都有的常驻项目，所以我肯定要加的。
+其实ChatGPT给出的写法和我以前的写法差不多。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>     <span style="color:#75715e">//建站时间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">startTime</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#e6db74">&#34;2015/6/1&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//当前时间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">currentTime</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//时间间隔，单位为毫秒
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">currentTime</span>.<span style="color:#a6e22e">getTime</span>() <span style="color:#f92672">-</span> <span style="color:#a6e22e">startTime</span>.<span style="color:#a6e22e">getTime</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//计算出相差天数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">daysDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//计算出小时数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">hoursDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//计算相差分钟数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">minutesDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//计算相差秒数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">secondsDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//输出时间差
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;running_time&#34;</span>).<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">daysDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;天&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">hoursDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;小时&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">minutesDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;分&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">secondsDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;秒&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 让定时器延迟一秒钟启动，以免在刚加载页面时就更新时间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">updateTime</span>, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">updateTime</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 当前时间
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">currentTime</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 时间间隔，单位为毫秒
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">currentTime</span>.<span style="color:#a6e22e">getTime</span>() <span style="color:#f92672">-</span> <span style="color:#a6e22e">startTime</span>.<span style="color:#a6e22e">getTime</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 计算出相差天数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">daysDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 计算出小时数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">hoursDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 计算相差分钟数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">minutesDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 计算相差秒数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">secondsDiff</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">timeDiff</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 输出时间差
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;running_time&#34;</span>).<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">daysDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;天&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">hoursDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;小时&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">minutesDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;分&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">secondsDiff</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;秒&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 让定时器不断重复执行
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">updateTime</span>, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>第一次提问ChatGPT没考虑到js在加载页前就更新时间，使得网站的正计时静止。于是再次向他提问就修改了这个问题。代码写起来很快，改起问题来也很快。</p>
+<p>写代码的快乐都被它抢走了，我就是一个无情的复制机器了。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/chatgpt/">ChatGPT</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>MIT</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/katex.js"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/katex.min.js"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/contrib/auto-render.min.js"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        烤肉肉
+        &copy; 
+        
+            2015 - 
+        
+        2023
+        <p>本站始建于<span id="start_time">2015年6月1日</span><span style="color: red;margin:0px 10px;">❤</span>已在暴风骤雨中不稳定运行<br><span id="running_time" style="font-size: large;"></span></p>
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        
+    </section>
+    
+    <script type="text/javascript">
+        
+        var startTime = new Date("2015/6/1");
+        
+        var currentTime = new Date();
+        
+        var timeDiff = currentTime.getTime() - startTime.getTime();
+        
+        var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
+        timeDiff = timeDiff % (24 * 3600 * 1000);
+        
+        var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
+        timeDiff = timeDiff % (3600 * 1000);
+        
+        var minutesDiff = Math.floor(timeDiff / (60 * 1000));
+        timeDiff = timeDiff % (60 * 1000);
+        
+        var secondsDiff = Math.floor(timeDiff / 1000);
+        
+        document.getElementById("running_time").innerText = daysDiff + "天" + hoursDiff + "小时" + minutesDiff + "分" + secondsDiff + "秒";
+      
+        
+        setTimeout(updateTime, 1000);
+      
+        function updateTime() {
+          
+          var currentTime = new Date();
+          
+          var timeDiff = currentTime.getTime() - startTime.getTime();
+          
+          var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
+          timeDiff = timeDiff % (24 * 3600 * 1000);
+          
+          var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
+          timeDiff = timeDiff % (3600 * 1000);
+          
+          var minutesDiff = Math.floor(timeDiff / (60 * 1000));
+          timeDiff = timeDiff % (60 * 1000);
+          
+          var secondsDiff = Math.floor(timeDiff / 1000);
+          
+          document.getElementById("running_time").innerText = daysDiff + "天" + hoursDiff + "小时" + minutesDiff + "分" + secondsDiff + "秒";
+          
+          setTimeout(updateTime, 1000);
+        }
+      </script>
+      
+</footer>
+
+
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
