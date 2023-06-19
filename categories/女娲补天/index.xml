@@ -115,8 +115,8 @@
 &lt;p&gt;原本打算用七牛云的每月赠送10G流量的服务，但后来象友告知要备案的域名，这就很难受。&lt;/p&gt;
 &lt;p&gt;扒拉了一下其他博主的图床，有的是加入又拍云，有的是自建图床，这些都不太符合我白嫖怪的风格。&lt;/p&gt;
 &lt;p&gt;搜一下大部分实现图片的教程都是基于picGO+七牛云或者阿里oss之类的，成本过高不适合我。在这个过程里我发现了一款叫&lt;a class=&#34;link&#34; href=&#34;https://getsharex.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ShareX&lt;/a&gt;的软件，结合了屏幕截图和档案上传的功能。
-&lt;img src=&#34;https://i.vgy.me/Jsa4NJ.jpg&#34;
+    &gt;ShareX&lt;/a&gt;的软件，结合了屏幕截图和档案上传的功能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.vgy.me/Jsa4NJ.jpg&#34;
 	
 	
 	
@@ -125,8 +125,8 @@
 		alt=&#34;软件截图&#34;
 	
 	
-&gt;
-并可以针对不同档案类型上传不同的网站。在这里我发现了vgy.me这个英国佬提供的图床，虽然说我搜到了很多个免费图床，&lt;code&gt;vgy&lt;/code&gt;也大多出现在了推荐的文章里，但一开始我并没有多在意。现在结合&lt;code&gt;ShareX&lt;/code&gt;，整个流程和其他人使用&lt;code&gt;picgo&lt;/code&gt;体验是差不多的了，这就比其他免费图床好了。&lt;/p&gt;
+&gt;&lt;/p&gt;
+&lt;p&gt;并可以针对不同档案类型上传不同的网站。在这里我发现了vgy.me这个英国佬提供的图床，虽然说我搜到了很多个免费图床，&lt;code&gt;vgy&lt;/code&gt;也大多出现在了推荐的文章里，但一开始我并没有多在意。现在结合&lt;code&gt;ShareX&lt;/code&gt;，整个流程和其他人使用&lt;code&gt;picgo&lt;/code&gt;体验是差不多的了，这就比其他免费图床好了。&lt;/p&gt;
 &lt;p&gt;考虑到这个图床是英国佬建立的，为了加快渲染速度，我选择先压缩图片。较小的图像意味着更快的加载速度。我采用之前在别的博主那看到的&lt;a class=&#34;link&#34; href=&#34;https://squoosh.app/?utm_medium=PWA&amp;amp;utm_source=launcher&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Squoosh&lt;/a&gt;来压缩图片。这个网站倒是确实是有损压缩，肉眼可见的多了噪点，不过问题不大。&lt;/p&gt;
 &lt;p&gt;
@@ -137,6 +137,21 @@
 &lt;div class=&#34;notice notice-note&#34; &gt;
     &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34; fill=&#34;hsl(200, 65%, 65%)&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;更新，vgy不支持webp格式。悲报。&lt;/p&gt;&lt;/div&gt;
 &lt;/p&gt;
+&lt;h2 id=&#34;5-发布&#34;&gt;5. 发布&lt;/h2&gt;
+&lt;p&gt;虽然主流的白嫖手段是利用&lt;code&gt;GitHub Pages&lt;/code&gt;，完全免费、不需要搭建、免费使用HTTPS等。&lt;/p&gt;
+&lt;p&gt;但有一个问题是，我得把库设置为公开，不然别人就无法访问了。可是私人博客公开库意味着别人fork一下整个博客都拷贝走了(不过应该没人会无聊到拷贝这么废物的博客)。&lt;/p&gt;
+&lt;p&gt;目前是下了一个&lt;code&gt;GitHub desktop&lt;/code&gt;来实现同步，实在懒得记&lt;code&gt;git&lt;/code&gt;的命令（是个废物）。&lt;/p&gt;
+&lt;p&gt;网上搜到有利用网站托管的&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，有空研究一下。&lt;/p&gt;
+&lt;p&gt;终究免费的不是最好的解决方案。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/347990778?utm_id=0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;vercel 网站托管&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
         </item>
         <item>
@@ -157,9 +172,9 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 迁移以前的文章。&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 部署到GitHub&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 部署到GitHub&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 测试obsidian双链对博客的影响&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修改主题的颜色、壁纸等，目前感觉很多值得优化的地方。&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修改主题的颜色、壁纸等，目前感觉很多值得优化的地方。&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 目前是关闭评论的状态，以后可以添加，目前不需要。我记得第一次建站的时候还是用多说，不过刚搜一下好像已经关了。&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 在别人网站上看到了有意思的聊天气泡，可以试着玩一下。&lt;/li&gt;
 &lt;/ul&gt;
