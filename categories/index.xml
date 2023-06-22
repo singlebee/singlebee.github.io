@@ -7,11 +7,11 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>月光下的叽叽喳喳</title>
-        <link>https://singlebee.github.io/categories/%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E5%8F%BD%E5%8F%BD%E5%96%B3%E5%96%B3/</link>
+        <title>浮生记</title>
+        <link>https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/</link>
         <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://singlebee.github.io/categories/%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E5%8F%BD%E5%8F%BD%E5%96%B3%E5%96%B3/</guid>
+        <guid>https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/</guid>
         <description></description>
         </item>
         <item>
@@ -28,6 +28,14 @@
         <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/categories/%E5%AD%A4%E7%8B%AC%E7%9A%84%E5%BC%80%E5%8F%91%E8%80%85/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>月光下的叽叽喳喳</title>
+        <link>https://singlebee.github.io/categories/%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E5%8F%BD%E5%8F%BD%E5%96%B3%E5%96%B3/</link>
+        <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/categories/%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E5%8F%BD%E5%8F%BD%E5%96%B3%E5%96%B3/</guid>
         <description></description>
         </item>
         <item>
@@ -95,14 +103,6 @@
         <description></description>
         </item>
         <item>
-        <title>随笔</title>
-        <link>https://singlebee.github.io/categories/%E9%9A%8F%E7%AC%94/</link>
-        <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://singlebee.github.io/categories/%E9%9A%8F%E7%AC%94/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>随便写了点东西</title>
         <link>https://singlebee.github.io/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E4%BA%86%E7%82%B9%E4%B8%9C%E8%A5%BF/</link>
         <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
@@ -111,19 +111,19 @@
         <description></description>
         </item>
         <item>
-        <title>windows-phone之路</title>
-        <link>https://singlebee.github.io/categories/windows-phone%E4%B9%8B%E8%B7%AF/</link>
-        <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
-        
-        <guid>https://singlebee.github.io/categories/windows-phone%E4%B9%8B%E8%B7%AF/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>学习笔记</title>
         <link>https://singlebee.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>windows-phone之路</title>
+        <link>https://singlebee.github.io/categories/windows-phone%E4%B9%8B%E8%B7%AF/</link>
+        <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/categories/windows-phone%E4%B9%8B%E8%B7%AF/</guid>
         <description></description>
         </item>
         <item>
