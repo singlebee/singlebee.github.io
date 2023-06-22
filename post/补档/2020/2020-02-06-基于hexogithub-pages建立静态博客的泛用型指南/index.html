@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。
+当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。
+2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。
+本文用于记录博客的建立与维护。
+常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。
+承 首先确立流程：
+安装 Git 安装 Node.js 安装 hexo GitHub 创建个人仓库 生成 SSh key 并添加到 GitHub 将 hexo 部署到 GitHub 建站完成，然后开始写泛用性指南 1、安装 Git Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。
+**下载地址：**从官网下载Git即可，安装选项全部默认就行了。
+后文的“输入”默认都是用 git 执行
+ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。'>
+<title>基于hexo&#43;GitHub Pages建立静态博客的泛用型指南</title>
+
+<link rel='canonical' href='https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-06-%E5%9F%BA%E4%BA%8Ehexogithub-pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/'>
+
+<link rel="stylesheet" href="/scss/style.min.f033cfd1df9e6f9eedb0160c4a8e913a66005a8f2f1873b7202ff5d1479e29c7.css"><meta property='og:title' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南'>
+<meta property='og:description' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。
+当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。
+2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。
+本文用于记录博客的建立与维护。
+常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。
+承 首先确立流程：
+安装 Git 安装 Node.js 安装 hexo GitHub 创建个人仓库 生成 SSh key 并添加到 GitHub 将 hexo 部署到 GitHub 建站完成，然后开始写泛用性指南 1、安装 Git Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。
+**下载地址：**从官网下载Git即可，安装选项全部默认就行了。
+后文的“输入”默认都是用 git 执行
+ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。'>
+<meta property='og:url' content='https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-06-%E5%9F%BA%E4%BA%8Ehexogithub-pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/'>
+<meta property='og:site_name' content='烤肉肉'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2020-02-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-02-06T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="基于hexo&#43;GitHub Pages建立静态博客的泛用型指南">
+<meta name="twitter:description" content="基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。
+当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。
+2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。
+本文用于记录博客的建立与维护。
+常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。
+承 首先确立流程：
+安装 Git 安装 Node.js 安装 hexo GitHub 创建个人仓库 生成 SSh key 并添加到 GitHub 将 hexo 部署到 GitHub 建站完成，然后开始写泛用性指南 1、安装 Git Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。
+**下载地址：**从官网下载Git即可，安装选项全部默认就行了。
+后文的“输入”默认都是用 git 执行
+ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu9e7a7fd731e1f5c55ee1b3fc1398eaab_50725_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">👻</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">烤肉肉</a></h1>
+            <h2 class="site-description">烤肉肉的秘密基地。</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/%E6%97%B6%E5%85%89%E6%9C%BA/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ghost-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M10 9h.01" />
+  <path d="M14 9h.01" />
+  <path d="M12 3a7 7 0 0 1 7 7v1l1 0a2 2 0 1 1 0 4l-1 0v3l2 3h-10a6 6 0 0 1 -6 -5.775l0 -.226l-1 0a2 2 0 0 1 0 -4l1 0v-1a7 7 0 0 1 7 -7z" />
+  <path d="M11 14h2a1 1 0 0 0 -2 0z" />
+</svg>
+                
+                <span>影像馆</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">大纲/目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e8b5b7-起起"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E8%B5%B7" title="起"></a>起</a></li>
+    <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e689bf-承承"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%89%BF" title="承"></a>承</a>
+      <ul>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d971e38081e5ae89e8a385-git-1安装-git1安装-git"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#1%E3%80%81%E5%AE%89%E8%A3%85-Git" title="1、安装 Git"></a>1、安装 Git</a></li>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d972e38081e5ae89e8a385-node-js-2安装-nodejs2安装-nodejs"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#2%E3%80%81%E5%AE%89%E8%A3%85-Node-js" title="2、安装 Node.js"></a>2、安装 Node.js</a></li>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d973e38081e5ae89e8a385-hexo-3安装-hexo3安装-hexo"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#3%E3%80%81%E5%AE%89%E8%A3%85-Hexo" title="3、安装 Hexo"></a>3、安装 Hexo</a></li>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d974e38081e5889be5bbba-github-e4bb93e5ba93-4创建-github-仓库4创建-github-仓库"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#4%E3%80%81%E5%88%9B%E5%BB%BA-GitHub-%E4%BB%93%E5%BA%93" title="4、创建 GitHub 仓库"></a>4、创建 GitHub 仓库</a></li>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d975e38081e7949fe68890-ssh-key-e5b9b6e983a8e7bdb2e588b0-github-5生成-ssh-key-并部署到-github5生成-ssh-key-并部署到-github"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#5%E3%80%81%E7%94%9F%E6%88%90-SSH-key-%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub" title="5、生成 SSH key 并部署到 GitHub"></a>5、生成 SSH key 并部署到 GitHub</a></li>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d976e38081e983a8e7bdb2-hexo-e588b0-github-6部署-hexo-到-github6部署-hexo-到-github"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#6%E3%80%81%E9%83%A8%E7%BD%B2-hexo-%E5%88%B0-GitHub" title="6、部署 hexo 到 GitHub"></a>6、部署 hexo 到 GitHub</a></li>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d977e38081e58699e69687e7aba0-7写文章7写文章"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#7%E3%80%81%E5%86%99%E6%96%87%E7%AB%A0" title="7、写文章"></a>7、写文章</a></li>
+      </ul>
+    </li>
+    <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e8bdac-转转"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E8%BD%AC" title="转"></a>转</a>
+      <ul>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e69bb4e68da2e4b8bbe9a298-更换主题更换主题"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98" title="更换主题"></a>更换主题</a></li>
+        <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e6b7bbe58aa0e5bbbae7ab99e697b6e997b4-添加建站时间添加建站时间"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%B7%BB%E5%8A%A0%E5%BB%BA%E7%AB%99%E6%97%B6%E9%97%B4" title="添加建站时间"></a>添加建站时间</a></li>
+      </ul>
+    </li>
+    <li><a href="#httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e59088-合合"><a href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo+GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E5%90%88" title="合"></a>合</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/_code/" >
+                _code
+            </a>
+        
+            <a href="/categories/%E6%9C%88%E5%85%89%E4%B8%8B%E7%9A%84%E5%8F%BD%E5%8F%BD%E5%96%B3%E5%96%B3/" >
+                月光下的叽叽喳喳
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-06-%E5%9F%BA%E4%BA%8Ehexogithub-pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/">基于hexo&#43;GitHub Pages建立静态博客的泛用型指南</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2020/02/06</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读将浪费: 3 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e59fbae4ba8ehexo-github-pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97-基于hexogithub-pages建立静态博客的泛用型指南基于hexogithub-pages建立静态博客的泛用型指南"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E5%9F%BA%E4%BA%8Ehexo-GitHub-Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97"  title="基于hexo&#43;GitHub Pages建立静态博客的泛用型指南"
+     target="_blank" rel="noopener"
+    ></a>基于hexo+GitHub Pages建立静态博客的泛用型指南</h1>
+<h2 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e8b5b7-起起"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E8%B5%B7"  title="起"
+     target="_blank" rel="noopener"
+    ></a>起</h2>
+<p>前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。</p>
+<p>当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。</p>
+<p>2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。</p>
+<p>本文用于记录博客的建立与维护。</p>
+<p>常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。</p>
+<h2 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e689bf-承承"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%89%BF"  title="承"
+     target="_blank" rel="noopener"
+    ></a>承</h2>
+<p>首先确立流程：</p>
+<ol>
+<li>安装 Git</li>
+<li>安装 Node.js</li>
+<li>安装 hexo</li>
+<li>GitHub 创建个人仓库</li>
+<li>生成 SSh key 并添加到 GitHub</li>
+<li>将 hexo 部署到 GitHub</li>
+<li>建站完成，然后开始写泛用性指南</li>
+</ol>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d971e38081e5ae89e8a385-git-1安装-git1安装-git"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#1%E3%80%81%E5%AE%89%E8%A3%85-Git"  title="1、安装 Git"
+     target="_blank" rel="noopener"
+    ></a>1、安装 Git</h3>
+<p>Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。</p>
+<p>**下载地址：**从官网<a class="link" href="https://git-scm.com/downloads"  target="_blank" rel="noopener"
+    >下载Git</a>即可，安装选项全部默认就行了。</p>
+<p>后文的“输入”默认都是用 git 执行</p>
+<p>ps：可以在cmd里输入 <code>git -v</code> 查看版本信息确认是否安装成功。</p>
+<p>pps：cmd是指命令提示符，开始菜单输入cmd即可打开。</p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d972e38081e5ae89e8a385-node-js-2安装-nodejs2安装-nodejs"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#2%E3%80%81%E5%AE%89%E8%A3%85-Node-js"  title="2、安装 Node.js"
+     target="_blank" rel="noopener"
+    ></a>2、安装 Node.js</h3>
+<p>Hexo 基于 Node.js 编写，所以需要安装 Node.js。</p>
+<p>**下载地址：**同样是<a class="link" href="https://nodejs.org/zh-cn/"  target="_blank" rel="noopener"
+    >官网下载</a>稳定版即可。安装同样是全部默认。</p>
+<p>ps：在 cmd 输入 <code>node -v</code> 查看版本信息确认是否安装成功。</p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d973e38081e5ae89e8a385-hexo-3安装-hexo3安装-hexo"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#3%E3%80%81%E5%AE%89%E8%A3%85-Hexo"  title="3、安装 Hexo"
+     target="_blank" rel="noopener"
+    ></a>3、安装 Hexo</h3>
+<p>前期准备到此为止，这里开始进入正题。</p>
+<p>首先在你想要的地方创建一个文件夹“小学生的秘密基地”，用于存放blog文件。</p>
+<p>在文件夹内右键选择 ‘Git bash here’，用于定位到该目录。</p>
+<p>输入 <code>npm install hexo-cli -g</code>，用于安装 Hexo。或许有报错，但没关系。</p>
+<p>ps：输入 <code>hexo -v</code> 确认版本信息确认是否安装成功。</p>
+<p>输入 <code>hexo init Blog</code> 初始化网站，代码中的 Blog 叫啥都行，<strong>后文默认 Blog 文件夹为根文件夹</strong>。</p>
+<p>输入 <code>cd blog</code> 进入博客文件夹。</p>
+<p>输入 <code>npm install</code> 安装必备组件。</p>
+<p>至此，Blog 目录下应该生成了些许文件：</p>
+<ul>
+<li>public：存放生成的页面</li>
+<li>scaffolds：生成文章的模板</li>
+<li>source：存放写的文章</li>
+<li>themes：主题</li>
+<li>_config.yml：博客的配置文件</li>
+</ul>
+<p>可以用记事本稍微修改修改下配置文件。</p>
+<p>输入<code>hexo g</code> 生成静态页面。</p>
+<p>输入 <code>hexo s</code> 打开本地服务器可以本地预览，我以后基本都省略了这步。</p>
+<p>在浏览器中打开 <a class="link" href="http://localhost:4000/"  target="_blank" rel="noopener"
+    >http://localhost:4000</a>就可以看到博客的预览了。</p>
+<p>Ctrl+c关闭本地服务器。</p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d974e38081e5889be5bbba-github-e4bb93e5ba93-4创建-github-仓库4创建-github-仓库"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#4%E3%80%81%E5%88%9B%E5%BB%BA-GitHub-%E4%BB%93%E5%BA%93"  title="4、创建 GitHub 仓库"
+     target="_blank" rel="noopener"
+    ></a>4、创建 GitHub 仓库</h3>
+<p>没注册的先注册，用户名就是将来的域名前缀。</p>
+<p>新建项目仓库：New repository，项目名就是 <code>yourname.github.io</code> ，这里的yourname 就是你的用户名，我记得不是自己的用户名那个域名就会很长，虽然可以通过绑定自己的个人域名来解决。总之问题不大。</p>
+<ul>
+<li>记得勾选README的初始化。</li>
+</ul>
+<p>创建完成后，仓库的右侧有个 settings 按钮，下拉有个 GitHub Pages 的分栏，Source里应该有个选项，选 master branch 就会将你的网站在那个后缀为‘GitHub.io’的链接上公开。</p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d975e38081e7949fe68890-ssh-key-e5b9b6e983a8e7bdb2e588b0-github-5生成-ssh-key-并部署到-github5生成-ssh-key-并部署到-github"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#5%E3%80%81%E7%94%9F%E6%88%90-SSH-key-%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub"  title="5、生成 SSH key 并部署到 GitHub"
+     target="_blank" rel="noopener"
+    ></a>5、生成 SSH key 并部署到 GitHub</h3>
+<p>整这玩意就是为了以后上传文件的时候不用输密码（除非你在设置 ssh key 的时候设置了密码）</p>
+<p><strong>首先创建一个 ssh key ：</strong></p>
+<p>输入：<code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code></p>
+<p>邮箱名想改的改，不改会不会出错我没试过。</p>
+<p>这时候会让你输入一个文件名，用于保存刚才生成的 ssh key ，我换了几个文件夹都没成功，不输入直接回车默认倒成功了。</p>
+<p>接着会提示你输入两次密码（是ssh key 的密码，用于日后 push 文件时要输的）直接回车，以后轻松。</p>
+<p>接下来显示什么Your public key has been saved 啥的就表示你的ssh key已经创建成功了。</p>
+<p><strong>添加你的 ssh key 到 GitHub 上：</strong></p>
+<p>输入 <code>clip &lt; ~/.ssh/id_rsa.pub</code> ，用于拷贝id_rsa.pub 文件里的内容。不嫌麻烦用记事本打开复制应该也是可以的。</p>
+<p>登录 GitHub 账号，右上角Account Setting ，选择菜单栏里的 SSH key 。</p>
+<p>点击 Add SSH key，把刚刚复制的内容粘贴单到对应输入框（前后不要有空格），Title的输入框里随便取个名字就行。</p>
+<p>输入 <code>ssh -T git@github.com</code></p>
+<p>会显示 Are you sure you want to continue connecting (yes/no)?</p>
+<p>输入 yes</p>
+<p>这时候会要你输密码。就刚刚的ssh key的密码。</p>
+<p>总之成功会有 successfully 的字眼，失败会有 denied 字眼。</p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d976e38081e983a8e7bdb2-hexo-e588b0-github-6部署-hexo-到-github6部署-hexo-到-github"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#6%E3%80%81%E9%83%A8%E7%BD%B2-hexo-%E5%88%B0-GitHub"  title="6、部署 hexo 到 GitHub"
+     target="_blank" rel="noopener"
+    ></a>6、部署 hexo 到 GitHub</h3>
+<p>最后一步了，博客根目录输入 <code>npm install hexo-deployer-git --save</code> 安装 deploy-git。</p>
+<p>修改根目录下的config文件：</p>
+<pre tabindex="0"><code>deploy: type: git epository: 你GitHub项目地址，例如我的：https://github.com/singlebee/singlebee.github.io branch: master
+</code></pre><p>然后输入 <code>hexo clean</code> 清除你生成的东西，有时候改了东西网页却没变可以用这个清除一下。在某些情况（尤其是更换主题后），如果发现对站点的更改无论如何也不生效，就可能需要运行该命令。</p>
+<p>输入 <code>hexo g</code> 生成静态文件</p>
+<p>输入 <code>hexo d</code> 部署到服务器</p>
+<p>ps：deploy阶段可能会弹出要求输入密码</p>
+<p>过一小会就可通过之前的 GitHub pages 设置的域名打开博客了。</p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d977e38081e58699e69687e7aba0-7写文章7写文章"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#7%E3%80%81%E5%86%99%E6%96%87%E7%AB%A0"  title="7、写文章"
+     target="_blank" rel="noopener"
+    ></a>7、写文章</h3>
+<p>[2020/2/7] 基于hexo+GitHub Pages 建立了本博客，不但简陋而且粗糙。</p>
+<p>这篇文章是用 Tea 这个客户端编写文件，再导出为 Markdown 格式的文件，再拖入 根目录\source\_posts 目录下，vscode倒也能实时预览 .md 文件，但总感觉没这个轻便。</p>
+<p>写完后在根目录输入 <code>hexo g -d</code> 便可以更新博客了。相比于在网页编辑好再发送 还是麻烦了点。</p>
+<h2 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e8bdac-转转"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E8%BD%AC"  title="转"
+     target="_blank" rel="noopener"
+    ></a>转</h2>
+<p>这一部分主要用于记录日后的更新。从此处开始往下的内容将不再是面向小白读者，自娱自乐的内容，酌情观看。</p>
+<p>[2020/2/8] 替换了主题 Nexmoe</p>
+<p>一个比较特别的Hexo主题：<a class="link" href="https://github.com/nexmoe/hexo-theme-nexmoe"  target="_blank" rel="noopener"
+    >GitHub地址</a></p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e69bb4e68da2e4b8bbe9a298-更换主题更换主题"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"  title="更换主题"
+     target="_blank" rel="noopener"
+    ></a>更换主题</h3>
+<p>主题的更换十分简单，基本思路就是在网上找喜欢的 theme ，将其复制到 <code>博客根目录\theme</code> 下，修改根目录下的config文件，将theme相关的内容改为需要的主题。</p>
+<p>以下为 Nexmoe 主题的更换教程：</p>
+<pre tabindex="0"><code>cd themes # 载入主题目录git clone https://github.com/nexmoe/hexo-theme-nexmoe.git nexmoe # 安装cd nexmoe # 进入 Nexmoe 主题目录npm i --save hexo-wordcount# Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) # npm install hexo-wordcount@2 --savecp -i _config.example.yml _config.yml修改博客配置文件
+</code></pre><p>更多主题可以前往<a class="link" href="https://hexo.io/themes/"  target="_blank" rel="noopener"
+    >hexo主题官网</a>查看。</p>
+<p>[2020/2/9] 添加了建站时间。</p>
+<h3 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e6b7bbe58aa0e5bbbae7ab99e697b6e997b4-添加建站时间添加建站时间"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%B7%BB%E5%8A%A0%E5%BB%BA%E7%AB%99%E6%97%B6%E9%97%B4"  title="添加建站时间"
+     target="_blank" rel="noopener"
+    ></a>添加建站时间</h3>
+<p>之前 WordPress 站点里就整了这个，很喜欢这个功能。基本逻辑如下：</p>
+<ol>
+<li>创建一个时间点，用作建站时间A</li>
+<li>获取当前时间点B</li>
+<li>B-A=建站时间（秒）</li>
+<li>将秒换算成天</li>
+</ol>
+<p>没找到footer，估计这个主题没有footer，把信息写在了header里了。</p>
+<p>修改<code>根目录\themes\nexmoe\layout\_partial\header.ejs</code><br>
+找到合适的地方加进去</p>
+<pre tabindex="0"><code>&lt;span id=&#34;sitetime&#34;&gt;&lt;/span&gt;
+</code></pre><pre tabindex="0"><code>&lt;script language=javascript&gt;    function siteTime() {        window.setTimeout(&#34;siteTime()&#34;, 1000);        var seconds = 1000;        var minutes = seconds * 60;        var hours = minutes * 60;        var days = hours * 24;        var years = days * 365;        var today = new Date();        var todayYear = today.getFullYear();        var todayMonth = today.getMonth() + 1;        var todayDate = today.getDate();        var todayHour = today.getHours();        var todayMinute = today.getMinutes();        var todaySecond = today.getSeconds();        var t1 = Date.UTC(2020, 02, 07, 22, 00, 00); //建站时间 2020-2-07 22:00:00        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);        var diff = t2 - t1;        var diffYears = Math.floor(diff / years);        var diffDays = Math.floor((diff / days) - diffYears * 365);        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);        //还没一年，注释掉年        //document.getElementById(&#34;sitetime&#34;).innerHTML = &#34;本站已运行 &#34; +diffYears+&#34; 年 &#34;+diffDays + &#34; 天 &#34; + diffHours + &#34; 小时 &#34; + diffMinutes + &#34; 分钟 &#34; + diffSeconds + &#34; 秒&#34;;        document.getElementById(&#34;sitetime&#34;).innerHTML = &#34;本站已稳定运行 &#34; +diffDays + &#34; 天 &#34; + diffHours + &#34; 小时 &#34; + diffMinutes + &#34; 分钟 &#34; + diffSeconds + &#34; 秒&#34;;    }    siteTime();&lt;/script&gt;
+</code></pre><p>待解决事项：</p>
+<ul>
+<li>index 页面上文章图片问题（目前认为过大）</li>
+<li>文章页面的copyright和index下的copyright未统一</li>
+<li>头像和网页icon还未添加</li>
+<li>404页面还未制作</li>
+<li>tag 的引入</li>
+<li>考虑在侧边栏添加一个网易云音乐的播放列表</li>
+<li>已加入的文章的头图需要更换</li>
+<li>todo list前的样式希望隐藏去黑点</li>
+<li>背景想换</li>
+<li>more…</li>
+</ul>
+<h2 id="httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e59088-合合"><a class="link" href="https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E5%90%88"  title="合"
+     target="_blank" rel="noopener"
+    ></a>合</h2>
+<p>[2020/2/7] 注销了微信公众号（于同月9号恢复注销，仅是为了同步文章时间）</p>
+<p>[2020/2/7] 建立博客</p>
+<p>[2020/2/8] 替换主题</p>
+<p>[2020/2/8] 初步完工《泛用性指南》</p>
+<p>[2020/2/9]</p>
+<ol>
+<li>主题更换及添加建站时间</li>
+<li>调整了copyright部分的样式</li>
+<li>调整了文章页面的样式</li>
+<li>替换了头像</li>
+<li>新增了颜文字抖动特效</li>
+<li>给已有文章添加了tags</li>
+<li>替换了文章头图</li>
+<li>添加了favicon</li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>不可转载</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/katex.js"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/katex.min.js"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.6/contrib/auto-render.min.js"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        烤肉肉
+        &copy; 
+        
+            2015 - 
+        
+        2023
+        <p>本站始建于<span id="start_time">2015年6月1日</span><span style="color: red;margin:0px 10px;">❤</span>已在暴风骤雨中不稳定运行<br><span id="running_time" style="font-size: large;"></span></p>
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        
+    </section>
+    
+    <script type="text/javascript">
+        
+        var startTime = new Date("2015/6/1");
+        
+        var currentTime = new Date();
+        
+        var timeDiff = currentTime.getTime() - startTime.getTime();
+        
+        var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
+        timeDiff = timeDiff % (24 * 3600 * 1000);
+        
+        var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
+        timeDiff = timeDiff % (3600 * 1000);
+        
+        var minutesDiff = Math.floor(timeDiff / (60 * 1000));
+        timeDiff = timeDiff % (60 * 1000);
+        
+        var secondsDiff = Math.floor(timeDiff / 1000);
+        
+        document.getElementById("running_time").innerText = daysDiff + "天" + hoursDiff + "小时" + minutesDiff + "分" + secondsDiff + "秒";
+      
+        
+        setTimeout(updateTime, 1000);
+      
+        function updateTime() {
+          
+          var currentTime = new Date();
+          
+          var timeDiff = currentTime.getTime() - startTime.getTime();
+          
+          var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
+          timeDiff = timeDiff % (24 * 3600 * 1000);
+          
+          var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
+          timeDiff = timeDiff % (3600 * 1000);
+          
+          var minutesDiff = Math.floor(timeDiff / (60 * 1000));
+          timeDiff = timeDiff % (60 * 1000);
+          
+          var secondsDiff = Math.floor(timeDiff / 1000);
+          
+          document.getElementById("running_time").innerText = daysDiff + "天" + hoursDiff + "小时" + minutesDiff + "分" + secondsDiff + "秒";
+          
+          setTimeout(updateTime, 1000);
+        }
+      </script>
+      
+</footer>
+
+
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

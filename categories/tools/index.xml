@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>tools on 烤肉肉</title>
+        <link>https://singlebee.github.io/categories/tools/</link>
+        <description>Recent content in tools on 烤肉肉</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 16 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>谈谈复式记账</title>
+        <link>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2021/2021-01-16-%E8%B0%88%E8%B0%88%E5%A4%8D%E5%BC%8F%E8%AE%B0%E8%B4%A6/</link>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2021/2021-01-16-%E8%B0%88%E8%B0%88%E5%A4%8D%E5%BC%8F%E8%AE%B0%E8%B4%A6/</guid>
+        <description>&lt;h2 id=&#34;为什么要记账&#34;&gt;为什么要记账&lt;/h2&gt;
+&lt;p&gt;收入这么点其实越发有记账需求，时刻能知道自己的财务状况，才能把握接下来的支出。特别是经过这几年的折磨，越发觉得记账的必要性。看似几块钱没必要记账来费心费力，但我认为&lt;strong&gt;算账其实是了解自己的一个过程&lt;/strong&gt;。注意这里写的是算账不是记账，记账与算账是两码事。通过算账了解自己的收入，以及消费习惯等等，以此优化自己的支出策略。但算账不可能凭空脑子来算，得有记录，于是记账这个小习惯也是必要的。&lt;/p&gt;
+&lt;p&gt;2021年第一天开始我就下了个随手记，到今天也连续记账了半个多月了。虽然才半个月，他的弊端就已经初现端倪。&lt;/p&gt;
+&lt;h2 id=&#34;为什么复式记账&#34;&gt;为什么复式记账&lt;/h2&gt;
+&lt;p&gt;我姑且也算在财务室干过的人，先大概理一下我的财务知识，财务三大主表&lt;strong&gt;损益表&lt;/strong&gt;、&lt;strong&gt;资产负债表&lt;/strong&gt;和现金流量表。其中资产负债表用来表示出表的这个时刻是盈利状态还是亏损状态，满足会计第一恒等式：&lt;strong&gt;资产=负债+所有者权益&lt;/strong&gt;；而损益表表示的是一段时间内的财务状况，满足公式&lt;strong&gt;收入-费用=利润&lt;/strong&gt;。如果将财务知识结构到最简单的层次就是这两点，其他的基本都是围绕于这两公式，而它们之间则是由各种勾稽关系联系起来。&lt;/p&gt;
+&lt;p&gt;这也是为什么觉得随手记不好用的原因。随手记本质是单式记账，也就是所谓的流水账。比如我2021年1月15日在麦当劳吃了12块的1+1套餐，用随手记它是如何记账的呢？&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;随手记的记账方式&lt;/p&gt;
+&lt;p&gt;虽然仔细看设置里也有用的什么支付方式，但本质并不会变。可能这种需求对大部分人就足够了，但我可能因为有接受过一点点财务训练，总觉得需要更宏观的去掌握整个资产的流动。复式记账他是如何记账的呢？&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;借贷记账法&lt;/p&gt;
+&lt;p&gt;假设视为借方为增贷方为减，可以发现在复式记账下有两个科目的数值变动，但总量没变。也就是那句有名的&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有借必有贷，借贷必相等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这种记账方式带来的，便是记账准确无误，而且能为财务分析带来便利。但随时有笔支出都进行记账其实挺麻烦的，虽然可以用随手记这种app来实现，但弊端刚刚也说了，流水账不能告诉我我现在的财务状况。而且我也&lt;strong&gt;不喜欢大数据&lt;/strong&gt;，数据要存云端就是给自己找不舒服，我就是这么不相信互联网公司，这种把自己的财务隐私暴露给互联网公司的做法简直太不可取了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>工具及网站</title>
+        <link>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-08-%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/</link>
+        <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-08-%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/</guid>
+        <description>&lt;p&gt;当我用markdown写博客时我用到的工具。&lt;/p&gt;
+&lt;h1 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99e8bdafe4bbb6-软件软件&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#%E8%BD%AF%E4%BB%B6&#34;  title=&#34;软件&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;软件&lt;/h1&gt;
+&lt;h2 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99e7bc96e8be91e7b1bb-编辑类编辑类&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#%E7%BC%96%E8%BE%91%E7%B1%BB&#34;  title=&#34;编辑类&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;编辑类&lt;/h2&gt;
+&lt;p&gt;这不用的是markdown的语法，所以主要考虑的也是markdown的编辑能力。我的需求不多：启动速度快、轻量、最好能实时预览。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99vscode-vscodevscode&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#vscode&#34;  title=&#34;vscode&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;vscode&lt;/h3&gt;
+&lt;p&gt;首当其冲的便是&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;vscode&lt;/a&gt;。除了可以用来写markdown以外，主题的各种文件也主要是通过它来改。宇宙最好的编辑器。&lt;/p&gt;
+&lt;p&gt;体验报告：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;启动速度快&lt;/li&gt;
+&lt;li&gt;轻量&lt;/li&gt;
+&lt;li&gt;实时预览&lt;/li&gt;
+&lt;li&gt;free&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99tea-teatea&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#Tea&#34;  title=&#34;Tea&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;Tea&lt;/h3&gt;
+&lt;p&gt;在用vscode写markdown之前我是用的&lt;a class=&#34;link&#34; href=&#34;https://haocha.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tea&lt;/a&gt;,优点轻便，实时渲染，界面简洁。但是老要多一步导出到博客里就很麻烦了。&lt;/p&gt;
+&lt;p&gt;体验报告：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;启动速度快&lt;/li&gt;
+&lt;li&gt;轻量&lt;/li&gt;
+&lt;li&gt;实时预览,甚至还有markdown语法，忘记了直接就可以查&lt;/li&gt;
+&lt;li&gt;free&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99typora-typoratypora&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#typora&#34;  title=&#34;typora&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;typora&lt;/h3&gt;
+&lt;p&gt;准备体验一下&lt;a class=&#34;link&#34; href=&#34;https://www.typora.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;typora&lt;/a&gt;，看官网似乎和上面的Tea优点功能相差无几，不过Tea不能直接编辑markdown文件这个似乎专门用来编辑的。&lt;/p&gt;
+&lt;p&gt;尚未体验无法出具完整报告。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;free&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99e7bd91e7ab99-网站网站&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#%E7%BD%91%E7%AB%99&#34;  title=&#34;网站&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;网站&lt;/h1&gt;
+&lt;p&gt;刚建站不久，用的网站还不太多，也没固定下来。&lt;/p&gt;
+&lt;h2 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99e59bbee5ba8a-图床图床&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#%E5%9B%BE%E5%BA%8A&#34;  title=&#34;图床&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;图床&lt;/h2&gt;
+&lt;p&gt;我这博客需要大量图片外链，所以必定是需要图床的。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99e5beaee58d9ae79bb8e5868c-微博相册微博相册&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#%E5%BE%AE%E5%8D%9A%E7%9B%B8%E5%86%8C&#34;  title=&#34;微博相册&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;微博相册&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;速度快&lt;/li&gt;
+&lt;li&gt;free&lt;/li&gt;
+&lt;li&gt;上传方便&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;感觉缺点就上传挺麻烦的。所以我也就偶尔用用。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99e5a496e993bee5b7a5e58e82-外链工厂外链工厂httpwwwwailianwork&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#%E5%A4%96%E9%93%BE%E5%B7%A5%E5%8E%82&#34;  title=&#34;外链工厂&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.wailian.work/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;外链工厂&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;速度快&lt;/li&gt;
+&lt;li&gt;free&lt;/li&gt;
+&lt;li&gt;上传方便&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;就是不知道稳定不稳定，靠谱不靠谱。基本上那些不是很需要备份的图片可以考虑这个。&lt;/p&gt;
+&lt;h1 id=&#34;httpssinglebeegithubio20200209e5b7a5e585b7e58f8ae7bd91e7ab99more-moremore&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/09/%E5%B7%A5%E5%85%B7%E5%8F%8A%E7%BD%91%E7%AB%99/#more&#34;  title=&#34;more&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;more&lt;/h1&gt;
+&lt;p&gt;用到再加&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

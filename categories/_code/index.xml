@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>_code on 烤肉肉</title>
+        <link>https://singlebee.github.io/categories/_code/</link>
+        <description>Recent content in _code on 烤肉肉</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/_code/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Argon 主题修改记录</title>
+        <link>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2021/2021-01-10-argon-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2021/2021-01-10-argon-%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;p&gt;Argon是个挺简洁的主题，所以基于他进行修改可以较快达到我的需求。&lt;/p&gt;
+&lt;h2 id=&#34;页脚增加版权和建站时间&#34;&gt;页脚增加版权和建站时间&lt;/h2&gt;
+&lt;p&gt;这里是我以前最常修改的地方，可能也是最简单的地方。修改footer.php即可。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;div class=&amp;#34;my-face&amp;#34; &amp;gt;╮(๑•́ ₃•̀๑)╭&amp;lt;/div&amp;gt;
+&amp;lt;span id=&amp;#34;runtime_span&amp;#34; style=&amp;#34;color: #fff;&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;div&amp;gt;Copyright © 2021 SingleBee&amp;lt;/div&amp;gt;
+
+&amp;lt;!--建站时间--&amp;gt;
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt;
+function show_runtime()
+{window.setTimeout(&amp;#34;show_runtime()&amp;#34;,1000);X=new 
+Date(&amp;#34;1/1/2021 00:00:00&amp;#34;);
+//建站时间
+Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
+a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
+runtime_span.innerHTML=&amp;#34;网站已在暴风骤雨中萌萌哒运行: &amp;#34;+A+&amp;#34;天&amp;#34;+B+&amp;#34;小时&amp;#34;+C+&amp;#34;分&amp;#34;+D+&amp;#34;秒&amp;#34;}show_runtime();
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;至此已完成了绝大部分需求，但我hexo的网站上的页脚的颜表情是有抖动特效的，但我在这个主题里的style.css里添加css的内容并没有实现抖动。&lt;/p&gt;
+&lt;h2 id=&#34;顏文字抖动特效&#34;&gt;顏文字抖动特效&lt;/h2&gt;
+&lt;p&gt;最后我利用WordPress内建的css编辑器实现了该特效。&lt;/p&gt;
+&lt;p&gt;[collapse title=&amp;ldquo;抖动css特效&amp;rdquo; color=&amp;ldquo;indigo&amp;rdquo;] .my-face { display: inline-block; padding: 1px; font-size: 12px; -webkit-transform-origin: center center; -ms-transform-origin: center center; transform-origin: center center; -webkit-animation-name: shaky-slow; -ms-animation-name: shaky-slow; animation-name: shaky-slow; -webkit-animation-duration: 4s; -ms-animation-duration: 4s; animation-duration: 4s; -webkit-animation-iteration-count: infinite; -ms-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; -ms-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-delay: 0s; -ms-animation-delay: 0s; animation-delay: 0s; -webkit-animation-play-state: running; -ms-animation-play-state: running; animation-play-state: running; } @-webkit-keyframes shaky-slow { 0% { -webkit-transform: translate(0px, 0px) rotate(0deg) } 2% { -webkit-transform: translate(-1px, 1.5px) rotate(1.5deg) } 4% { -webkit-transform: translate(1.3px, 0px) rotate(-0.5deg) } 6% { -webkit-transform: translate(1.4px, 1.4px) rotate(-2deg) } 8% { -webkit-transform: translate(-1.3px, -1px) rotate(-1.5deg) } 10% { -webkit-transform: translate(1.4px, 0px) rotate(-2deg) } 12% { -webkit-transform: translate(-1.3px, -1px) rotate(-2deg) } 14% { -webkit-transform: translate(1.5px, 1.3px) rotate(1.5deg) } 16% { -webkit-transform: translate(1.5px, -1.5px) rotate(-1.5deg) } 18% { -webkit-transform: translate(1.3px, -1.3px) rotate(-2deg) } 20% { -webkit-transform: translate(1px, 1px) rotate(-0.5deg) } 22% { -webkit-transform: translate(1.3px, 1.5px) rotate(-2deg) } 24% { -webkit-transform: translate(-1.4px, -1px) rotate(2deg) } 26% { -webkit-transform: translate(1.3px, -1.3px) rotate(0.5deg) } 28% { -webkit-transform: translate(1.6px, -1.6px) rotate(-2deg) } 30% { -webkit-transform: translate(-1.3px, -1.3px) rotate(-1.5deg) } 32% { -webkit-transform: translate(-1px, 0px) rotate(2deg) } 34% { -webkit-transform: translate(1.3px, 1.3px) rotate(-0.5deg) } 36% { -webkit-transform: translate(1.3px, 1.6px) rotate(1.5deg) } 38% { -webkit-transform: translate(1.3px, -1.6px) rotate(1.5deg) } 40% { -webkit-transform: translate(-1.4px, -1px) rotate(-0.5deg) } 42% { -webkit-transform: translate(-1.4px, 1.3px) rotate(-0.5deg) } 44% { -webkit-transform: translate(-1.6px, 1.4px) rotate(0.5deg) } 46% { -webkit-transform: translate(-2.1px, -1.3px) rotate(-0.5deg) } 48% { -webkit-transform: translate(1px, 1.6px) rotate(1.5deg) } 50% { -webkit-transform: translate(1.6px, 1.6px) rotate(1.5deg) } 52% { -webkit-transform: translate(-1.4px, 1.6px) rotate(0.5deg) } 54% { -webkit-transform: translate(1.6px, -1px) rotate(-2deg) } 56% { -webkit-transform: translate(1.3px, -1.6px) rotate(-2deg) } 58% { -webkit-transform: translate(-1.3px, -1.6px) rotate(0.5deg) } 60% { -webkit-transform: translate(1.3px, 1.6px) rotate(-0.5deg) } 62% { -webkit-transform: translate(0px, 0px) rotate(-1.5deg) } 64% { -webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg) } 66% { -webkit-transform: translate(1.6px, -1.6px) rotate(0.5deg) } 68% { -webkit-transform: translate(0px, -1.6px) rotate(-2deg) } 70% { -webkit-transform: translate(-1.6px, 1px) rotate(1.5deg) } 72% { -webkit-transform: translate(-1.6px, 1.6px) rotate(2deg) } 74% { -webkit-transform: translate(1.3px, -1.6px) rotate(-0.5deg) } 76% { -webkit-transform: translate(1.4px, 1px) rotate(-0.5deg) } 78% { -webkit-transform: translate(-1px, 1.4px) rotate(2deg) } 80% { -webkit-transform: translate(1.4px, 1.6px) rotate(2deg) } 82% { -webkit-transform: translate(-1.6px, -1.6px) rotate(-0.5deg) } 84% { -webkit-transform: translate(-1.4px, 1.4px) rotate(-2deg) } 86% { -webkit-transform: translate(1px, 1.4px) rotate(-2deg) } 88% { -webkit-transform: translate(-1.4px, 1.4px) rotate(-1.5deg) } 90% { -webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg) } 92% { -webkit-transform: translate(-1.6px, 1.6px) rotate(2deg) } 94% { -webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg) } 96% { -webkit-transform: translate(-1.4px, 1.3px) rotate(-2deg) } 98% { -webkit-transform: translate(1.3px, 1px) rotate(-0.5deg) } } @keyframes shaky-slow { 0% { transform: translate(0px, 0px) rotate(0deg) } 2% { transform: translate(-1px, 1.5px) rotate(1.5deg) } 4% { transform: translate(1.3px, 0px) rotate(-0.5deg) } 6% { transform: translate(1.4px, 1.4px) rotate(-2deg) } 8% { transform: translate(-1.3px, -1px) rotate(-1.5deg) } 10% { transform: translate(1.4px, 0px) rotate(-2deg) } 12% { transform: translate(-1.3px, -1px) rotate(-2deg) } 14% { transform: translate(1.5px, 1.3px) rotate(1.5deg) } 16% { transform: translate(1.5px, -1.5px) rotate(-1.5deg) } 18% { transform: translate(1.3px, -1.3px) rotate(-2deg) } 20% { transform: translate(1px, 1px) rotate(-0.5deg) } 22% { transform: translate(1.3px, 1.5px) rotate(-2deg) } 24% { transform: translate(-1.4px, -1px) rotate(2deg) } 26% { transform: translate(1.3px, -1.3px) rotate(0.5deg) } 28% { transform: translate(1.6px, -1.6px) rotate(-1.5deg) } 30% { transform: translate(-1.3px, -1.3px) rotate(-1.5deg) } 32% { transform: translate(-1px, 0px) rotate(2deg) } 34% { transform: translate(1.3px, 1.3px) rotate(-0.5deg) } 36% { transform: translate(1.3px, 1.6px) rotate(1.5deg) } 38% { transform: translate(1.3px, -1.6px) rotate(1.5deg) } 40% { transform: translate(-1.4px, -1px) rotate(-0.5deg) } 42% { transform: translate(-1.4px, 1.3px) rotate(-0.5deg) } 44% { transform: translate(-1.6px, 1.4px) rotate(0.5deg) } 46% { transform: translate(-2.1px, -1.3px) rotate(-0.5deg) } 48% { transform: translate(1px, 1.6px) rotate(1.5deg) } 50% { transform: translate(1.6px, 1.6px) rotate(1.5deg) } 52% { transform: translate(-1.4px, 1.6px) rotate(0.5deg) } 54% { transform: translate(1.6px, -1px) rotate(-2deg) } 56% { transform: translate(1.3px, -1.6px) rotate(-2deg) } 58% { transform: translate(-1.3px, -1.6px) rotate(0.5deg) } 60% { transform: translate(1.3px, 1.6px) rotate(-0.5deg) } 62% { transform: translate(0px, 0px) rotate(-1.5deg) } 64% { transform: translate(-1.6px, -1.6px) rotate(-2deg) } 66% { transform: translate(1.6px, -1.6px) rotate(0.5deg) } 68% { transform: translate(0px, -1.6px) rotate(-2deg) } 70% { transform: translate(-1.6px, 1px) rotate(1.5deg) } 72% { transform: translate(-1.6px, 1.6px) rotate(2deg) } 74% { transform: translate(1.3px, -1.6px) rotate(-0.5deg) } 76% { transform: translate(1.4px, 1px) rotate(-0.5deg) } 78% { transform: translate(-1px, 1.4px) rotate(2deg) } 80% { transform: translate(1.4px, 1.6px) rotate(2deg) } 82% { transform: translate(-1.6px, -1.6px) rotate(-0.5deg) } 84% { transform: translate(-1.4px, 1.4px) rotate(-2deg) } 86% { transform: translate(1px, 1.4px) rotate(-2deg) } 88% { transform: translate(-1.4px, 1.4px) rotate(-1.5deg) } 90% { transform: translate(-1.6px, -1.6px) rotate(-2deg) } 92% { transform: translate(-1.4px, 1.6px) rotate(2deg) } 94% { transform: translate(-1.6px, -1.6px) rotate(-2deg) } 96% { transform: translate(-1.4px, 1.3px) rotate(-2deg) } 98% { transform: translate(1.3px, 1px) rotate(-0.5deg) } } [/collapse]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://singlebee.github.io/images/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这种方法的样式修改应该是高于主题内css的，所以就不用在主题文件里去找了。坡而肥。&lt;/p&gt;
+&lt;h2 id=&#34;一些样式修改&#34;&gt;一些样式修改&lt;/h2&gt;
+&lt;p&gt;因为我实在不知道这个主题的css是靠什么修改，依旧用的WordPress内建的css编辑器。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/*顶栏菜单放大*/
+.navbar-nav .nav-link {
+	font-size: 1rem;
+}
+.navbar-brand {
+	font-family: &amp;#39;Noto Serif SC&amp;#39;,serif;
+	font-size: 1.25rem;
+	margin-right: 2rem;
+	padding-bottom: .2rem;
+}
+.navbar-nav .nav-item {
+	margin-right:0;
+}
+.mr-lg-5, .mx-lg-5 {
+	margin-right:1rem !important;
+}
+.navbar-toggler-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 0.9rem;
+	padding-left: 1rem;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;主题设置&#34;&gt;主题设置&lt;/h2&gt;
+&lt;p&gt;整到这我才发现这个主题是带有设置选项的，我可能是星际玩太久了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在里面开启了代码高亮。&lt;/li&gt;
+&lt;li&gt;设置了banner标题和副标题，并自带标题打字动画。&lt;/li&gt;
+&lt;li&gt;替换了页面背景，虽然目前还没找到合适的背景，但找到了替换地址。&lt;/li&gt;
+&lt;li&gt;新增调用一言api。&lt;/li&gt;
+&lt;li&gt;公示渲染才用Katex，和我上班时用的一样。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>给博客底部添加网站运行时间</title>
+        <link>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-12-28-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</link>
+        <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-12-28-%E7%BB%99%E5%8D%9A%E5%AE%A2%E5%BA%95%E9%83%A8%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</guid>
+        <description>&lt;p&gt;之前网站就很喜欢给footer添加各种各样的东西，其中之一就是网站运行时间。&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+&lt;p&gt;在footer.php中找到合适的位置添加代码：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;span id=&amp;#34;runtime_span&amp;#34; style=&amp;#34;color: #b9b9b9;&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;!--建站时间--&amp;gt;
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt;
+function show_runtime()
+{window.setTimeout(&amp;#34;show_runtime()&amp;#34;,1000);X=new 
+Date(&amp;#34;1/1/2021 00:00:00&amp;#34;);
+Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
+a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
+runtime_span.innerHTML=&amp;#34;网站已在暴风骤雨中运行: &amp;#34;+A+&amp;#34;天&amp;#34;+B+&amp;#34;小时&amp;#34;+C+&amp;#34;分&amp;#34;+D+&amp;#34;秒&amp;#34;}show_runtime();
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;建站时间修改第六行Date里的时间就行了。&lt;/p&gt;
+&lt;h2 id=&#34;效果&#34;&gt;效果&lt;/h2&gt;
+&lt;p&gt;划到最底下就可以看到了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>基于hexo&#43;GitHub Pages建立静态博客的泛用型指南</title>
+        <link>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-06-%E5%9F%BA%E4%BA%8Ehexogithub-pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/</link>
+        <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-06-%E5%9F%BA%E4%BA%8Ehexogithub-pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;h1 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e59fbae4ba8ehexo-github-pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97-基于hexogithub-pages建立静态博客的泛用型指南基于hexogithub-pages建立静态博客的泛用型指南&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E5%9F%BA%E4%BA%8Ehexo-GitHub-Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97&#34;  title=&#34;基于hexo&amp;#43;GitHub Pages建立静态博客的泛用型指南&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;基于hexo+GitHub Pages建立静态博客的泛用型指南&lt;/h1&gt;
+&lt;h2 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e8b5b7-起起&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E8%B5%B7&#34;  title=&#34;起&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;起&lt;/h2&gt;
+&lt;p&gt;前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。&lt;/p&gt;
+&lt;p&gt;当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。&lt;/p&gt;
+&lt;p&gt;2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。&lt;/p&gt;
+&lt;p&gt;本文用于记录博客的建立与维护。&lt;/p&gt;
+&lt;p&gt;常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。&lt;/p&gt;
+&lt;h2 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e689bf-承承&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%89%BF&#34;  title=&#34;承&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;承&lt;/h2&gt;
+&lt;p&gt;首先确立流程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装 Git&lt;/li&gt;
+&lt;li&gt;安装 Node.js&lt;/li&gt;
+&lt;li&gt;安装 hexo&lt;/li&gt;
+&lt;li&gt;GitHub 创建个人仓库&lt;/li&gt;
+&lt;li&gt;生成 SSh key 并添加到 GitHub&lt;/li&gt;
+&lt;li&gt;将 hexo 部署到 GitHub&lt;/li&gt;
+&lt;li&gt;建站完成，然后开始写泛用性指南&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d971e38081e5ae89e8a385-git-1安装-git1安装-git&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#1%E3%80%81%E5%AE%89%E8%A3%85-Git&#34;  title=&#34;1、安装 Git&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;1、安装 Git&lt;/h3&gt;
+&lt;p&gt;Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。&lt;/p&gt;
+&lt;p&gt;**下载地址：**从官网&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载Git&lt;/a&gt;即可，安装选项全部默认就行了。&lt;/p&gt;
+&lt;p&gt;后文的“输入”默认都是用 git 执行&lt;/p&gt;
+&lt;p&gt;ps：可以在cmd里输入 &lt;code&gt;git -v&lt;/code&gt; 查看版本信息确认是否安装成功。&lt;/p&gt;
+&lt;p&gt;pps：cmd是指命令提示符，开始菜单输入cmd即可打开。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d972e38081e5ae89e8a385-node-js-2安装-nodejs2安装-nodejs&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#2%E3%80%81%E5%AE%89%E8%A3%85-Node-js&#34;  title=&#34;2、安装 Node.js&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;2、安装 Node.js&lt;/h3&gt;
+&lt;p&gt;Hexo 基于 Node.js 编写，所以需要安装 Node.js。&lt;/p&gt;
+&lt;p&gt;**下载地址：**同样是&lt;a class=&#34;link&#34; href=&#34;https://nodejs.org/zh-cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载&lt;/a&gt;稳定版即可。安装同样是全部默认。&lt;/p&gt;
+&lt;p&gt;ps：在 cmd 输入 &lt;code&gt;node -v&lt;/code&gt; 查看版本信息确认是否安装成功。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d973e38081e5ae89e8a385-hexo-3安装-hexo3安装-hexo&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#3%E3%80%81%E5%AE%89%E8%A3%85-Hexo&#34;  title=&#34;3、安装 Hexo&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;3、安装 Hexo&lt;/h3&gt;
+&lt;p&gt;前期准备到此为止，这里开始进入正题。&lt;/p&gt;
+&lt;p&gt;首先在你想要的地方创建一个文件夹“小学生的秘密基地”，用于存放blog文件。&lt;/p&gt;
+&lt;p&gt;在文件夹内右键选择 ‘Git bash here’，用于定位到该目录。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;npm install hexo-cli -g&lt;/code&gt;，用于安装 Hexo。或许有报错，但没关系。&lt;/p&gt;
+&lt;p&gt;ps：输入 &lt;code&gt;hexo -v&lt;/code&gt; 确认版本信息确认是否安装成功。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;hexo init Blog&lt;/code&gt; 初始化网站，代码中的 Blog 叫啥都行，&lt;strong&gt;后文默认 Blog 文件夹为根文件夹&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;cd blog&lt;/code&gt; 进入博客文件夹。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;npm install&lt;/code&gt; 安装必备组件。&lt;/p&gt;
+&lt;p&gt;至此，Blog 目录下应该生成了些许文件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;public：存放生成的页面&lt;/li&gt;
+&lt;li&gt;scaffolds：生成文章的模板&lt;/li&gt;
+&lt;li&gt;source：存放写的文章&lt;/li&gt;
+&lt;li&gt;themes：主题&lt;/li&gt;
+&lt;li&gt;_config.yml：博客的配置文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可以用记事本稍微修改修改下配置文件。&lt;/p&gt;
+&lt;p&gt;输入&lt;code&gt;hexo g&lt;/code&gt; 生成静态页面。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;hexo s&lt;/code&gt; 打开本地服务器可以本地预览，我以后基本都省略了这步。&lt;/p&gt;
+&lt;p&gt;在浏览器中打开 &lt;a class=&#34;link&#34; href=&#34;http://localhost:4000/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:4000&lt;/a&gt;就可以看到博客的预览了。&lt;/p&gt;
+&lt;p&gt;Ctrl+c关闭本地服务器。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d974e38081e5889be5bbba-github-e4bb93e5ba93-4创建-github-仓库4创建-github-仓库&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#4%E3%80%81%E5%88%9B%E5%BB%BA-GitHub-%E4%BB%93%E5%BA%93&#34;  title=&#34;4、创建 GitHub 仓库&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;4、创建 GitHub 仓库&lt;/h3&gt;
+&lt;p&gt;没注册的先注册，用户名就是将来的域名前缀。&lt;/p&gt;
+&lt;p&gt;新建项目仓库：New repository，项目名就是 &lt;code&gt;yourname.github.io&lt;/code&gt; ，这里的yourname 就是你的用户名，我记得不是自己的用户名那个域名就会很长，虽然可以通过绑定自己的个人域名来解决。总之问题不大。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;记得勾选README的初始化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;创建完成后，仓库的右侧有个 settings 按钮，下拉有个 GitHub Pages 的分栏，Source里应该有个选项，选 master branch 就会将你的网站在那个后缀为‘GitHub.io’的链接上公开。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d975e38081e7949fe68890-ssh-key-e5b9b6e983a8e7bdb2e588b0-github-5生成-ssh-key-并部署到-github5生成-ssh-key-并部署到-github&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#5%E3%80%81%E7%94%9F%E6%88%90-SSH-key-%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub&#34;  title=&#34;5、生成 SSH key 并部署到 GitHub&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;5、生成 SSH key 并部署到 GitHub&lt;/h3&gt;
+&lt;p&gt;整这玩意就是为了以后上传文件的时候不用输密码（除非你在设置 ssh key 的时候设置了密码）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;首先创建一个 ssh key ：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;输入：&lt;code&gt;ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;邮箱名想改的改，不改会不会出错我没试过。&lt;/p&gt;
+&lt;p&gt;这时候会让你输入一个文件名，用于保存刚才生成的 ssh key ，我换了几个文件夹都没成功，不输入直接回车默认倒成功了。&lt;/p&gt;
+&lt;p&gt;接着会提示你输入两次密码（是ssh key 的密码，用于日后 push 文件时要输的）直接回车，以后轻松。&lt;/p&gt;
+&lt;p&gt;接下来显示什么Your public key has been saved 啥的就表示你的ssh key已经创建成功了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;添加你的 ssh key 到 GitHub 上：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;clip &amp;lt; ~/.ssh/id_rsa.pub&lt;/code&gt; ，用于拷贝id_rsa.pub 文件里的内容。不嫌麻烦用记事本打开复制应该也是可以的。&lt;/p&gt;
+&lt;p&gt;登录 GitHub 账号，右上角Account Setting ，选择菜单栏里的 SSH key 。&lt;/p&gt;
+&lt;p&gt;点击 Add SSH key，把刚刚复制的内容粘贴单到对应输入框（前后不要有空格），Title的输入框里随便取个名字就行。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;ssh -T git@github.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;会显示 Are you sure you want to continue connecting (yes/no)?&lt;/p&gt;
+&lt;p&gt;输入 yes&lt;/p&gt;
+&lt;p&gt;这时候会要你输密码。就刚刚的ssh key的密码。&lt;/p&gt;
+&lt;p&gt;总之成功会有 successfully 的字眼，失败会有 denied 字眼。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d976e38081e983a8e7bdb2-hexo-e588b0-github-6部署-hexo-到-github6部署-hexo-到-github&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#6%E3%80%81%E9%83%A8%E7%BD%B2-hexo-%E5%88%B0-GitHub&#34;  title=&#34;6、部署 hexo 到 GitHub&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;6、部署 hexo 到 GitHub&lt;/h3&gt;
+&lt;p&gt;最后一步了，博客根目录输入 &lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt; 安装 deploy-git。&lt;/p&gt;
+&lt;p&gt;修改根目录下的config文件：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;deploy: type: git epository: 你GitHub项目地址，例如我的：https://github.com/singlebee/singlebee.github.io branch: master
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后输入 &lt;code&gt;hexo clean&lt;/code&gt; 清除你生成的东西，有时候改了东西网页却没变可以用这个清除一下。在某些情况（尤其是更换主题后），如果发现对站点的更改无论如何也不生效，就可能需要运行该命令。&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;hexo g&lt;/code&gt; 生成静态文件&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;hexo d&lt;/code&gt; 部署到服务器&lt;/p&gt;
+&lt;p&gt;ps：deploy阶段可能会弹出要求输入密码&lt;/p&gt;
+&lt;p&gt;过一小会就可通过之前的 GitHub pages 设置的域名打开博客了。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d977e38081e58699e69687e7aba0-7写文章7写文章&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#7%E3%80%81%E5%86%99%E6%96%87%E7%AB%A0&#34;  title=&#34;7、写文章&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;7、写文章&lt;/h3&gt;
+&lt;p&gt;[2020/2/7] 基于hexo+GitHub Pages 建立了本博客，不但简陋而且粗糙。&lt;/p&gt;
+&lt;p&gt;这篇文章是用 Tea 这个客户端编写文件，再导出为 Markdown 格式的文件，再拖入 根目录\source\_posts 目录下，vscode倒也能实时预览 .md 文件，但总感觉没这个轻便。&lt;/p&gt;
+&lt;p&gt;写完后在根目录输入 &lt;code&gt;hexo g -d&lt;/code&gt; 便可以更新博客了。相比于在网页编辑好再发送 还是麻烦了点。&lt;/p&gt;
+&lt;h2 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e8bdac-转转&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E8%BD%AC&#34;  title=&#34;转&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;转&lt;/h2&gt;
+&lt;p&gt;这一部分主要用于记录日后的更新。从此处开始往下的内容将不再是面向小白读者，自娱自乐的内容，酌情观看。&lt;/p&gt;
+&lt;p&gt;[2020/2/8] 替换了主题 Nexmoe&lt;/p&gt;
+&lt;p&gt;一个比较特别的Hexo主题：&lt;a class=&#34;link&#34; href=&#34;https://github.com/nexmoe/hexo-theme-nexmoe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub地址&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e69bb4e68da2e4b8bbe9a298-更换主题更换主题&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98&#34;  title=&#34;更换主题&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;更换主题&lt;/h3&gt;
+&lt;p&gt;主题的更换十分简单，基本思路就是在网上找喜欢的 theme ，将其复制到 &lt;code&gt;博客根目录\theme&lt;/code&gt; 下，修改根目录下的config文件，将theme相关的内容改为需要的主题。&lt;/p&gt;
+&lt;p&gt;以下为 Nexmoe 主题的更换教程：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd themes # 载入主题目录git clone https://github.com/nexmoe/hexo-theme-nexmoe.git nexmoe # 安装cd nexmoe # 进入 Nexmoe 主题目录npm i --save hexo-wordcount# Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) # npm install hexo-wordcount@2 --savecp -i _config.example.yml _config.yml修改博客配置文件
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;更多主题可以前往&lt;a class=&#34;link&#34; href=&#34;https://hexo.io/themes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hexo主题官网&lt;/a&gt;查看。&lt;/p&gt;
+&lt;p&gt;[2020/2/9] 添加了建站时间。&lt;/p&gt;
+&lt;h3 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e6b7bbe58aa0e5bbbae7ab99e697b6e997b4-添加建站时间添加建站时间&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E6%B7%BB%E5%8A%A0%E5%BB%BA%E7%AB%99%E6%97%B6%E9%97%B4&#34;  title=&#34;添加建站时间&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;添加建站时间&lt;/h3&gt;
+&lt;p&gt;之前 WordPress 站点里就整了这个，很喜欢这个功能。基本逻辑如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建一个时间点，用作建站时间A&lt;/li&gt;
+&lt;li&gt;获取当前时间点B&lt;/li&gt;
+&lt;li&gt;B-A=建站时间（秒）&lt;/li&gt;
+&lt;li&gt;将秒换算成天&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;没找到footer，估计这个主题没有footer，把信息写在了header里了。&lt;/p&gt;
+&lt;p&gt;修改&lt;code&gt;根目录\themes\nexmoe\layout\_partial\header.ejs&lt;/code&gt;&lt;br&gt;
+找到合适的地方加进去&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;span id=&amp;#34;sitetime&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;script language=javascript&amp;gt;    function siteTime() {        window.setTimeout(&amp;#34;siteTime()&amp;#34;, 1000);        var seconds = 1000;        var minutes = seconds * 60;        var hours = minutes * 60;        var days = hours * 24;        var years = days * 365;        var today = new Date();        var todayYear = today.getFullYear();        var todayMonth = today.getMonth() + 1;        var todayDate = today.getDate();        var todayHour = today.getHours();        var todayMinute = today.getMinutes();        var todaySecond = today.getSeconds();        var t1 = Date.UTC(2020, 02, 07, 22, 00, 00); //建站时间 2020-2-07 22:00:00        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);        var diff = t2 - t1;        var diffYears = Math.floor(diff / years);        var diffDays = Math.floor((diff / days) - diffYears * 365);        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);        //还没一年，注释掉年        //document.getElementById(&amp;#34;sitetime&amp;#34;).innerHTML = &amp;#34;本站已运行 &amp;#34; +diffYears+&amp;#34; 年 &amp;#34;+diffDays + &amp;#34; 天 &amp;#34; + diffHours + &amp;#34; 小时 &amp;#34; + diffMinutes + &amp;#34; 分钟 &amp;#34; + diffSeconds + &amp;#34; 秒&amp;#34;;        document.getElementById(&amp;#34;sitetime&amp;#34;).innerHTML = &amp;#34;本站已稳定运行 &amp;#34; +diffDays + &amp;#34; 天 &amp;#34; + diffHours + &amp;#34; 小时 &amp;#34; + diffMinutes + &amp;#34; 分钟 &amp;#34; + diffSeconds + &amp;#34; 秒&amp;#34;;    }    siteTime();&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;待解决事项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;index 页面上文章图片问题（目前认为过大）&lt;/li&gt;
+&lt;li&gt;文章页面的copyright和index下的copyright未统一&lt;/li&gt;
+&lt;li&gt;头像和网页icon还未添加&lt;/li&gt;
+&lt;li&gt;404页面还未制作&lt;/li&gt;
+&lt;li&gt;tag 的引入&lt;/li&gt;
+&lt;li&gt;考虑在侧边栏添加一个网易云音乐的播放列表&lt;/li&gt;
+&lt;li&gt;已加入的文章的头图需要更换&lt;/li&gt;
+&lt;li&gt;todo list前的样式希望隐藏去黑点&lt;/li&gt;
+&lt;li&gt;背景想换&lt;/li&gt;
+&lt;li&gt;more…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;httpssinglebeegithubio20200207e59fbae4ba8ehexogithub20pagese5bbbae7ab8be99d99e68081e58d9ae5aea2e79a84e6b39be794a8e59e8be68c87e58d97e59088-合合&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/07/%E5%9F%BA%E4%BA%8Ehexo&amp;#43;GitHub%20Pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/#%E5%90%88&#34;  title=&#34;合&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;/a&gt;合&lt;/h2&gt;
+&lt;p&gt;[2020/2/7] 注销了微信公众号（于同月9号恢复注销，仅是为了同步文章时间）&lt;/p&gt;
+&lt;p&gt;[2020/2/7] 建立博客&lt;/p&gt;
+&lt;p&gt;[2020/2/8] 替换主题&lt;/p&gt;
+&lt;p&gt;[2020/2/8] 初步完工《泛用性指南》&lt;/p&gt;
+&lt;p&gt;[2020/2/9]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;主题更换及添加建站时间&lt;/li&gt;
+&lt;li&gt;调整了copyright部分的样式&lt;/li&gt;
+&lt;li&gt;调整了文章页面的样式&lt;/li&gt;
+&lt;li&gt;替换了头像&lt;/li&gt;
+&lt;li&gt;新增了颜文字抖动特效&lt;/li&gt;
+&lt;li&gt;给已有文章添加了tags&lt;/li&gt;
+&lt;li&gt;替换了文章头图&lt;/li&gt;
+&lt;li&gt;添加了favicon&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
