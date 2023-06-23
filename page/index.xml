@@ -47,7 +47,8 @@
 &lt;ul&gt;
 &lt;li&gt;添加了全文总字数。&lt;/li&gt;
 &lt;li&gt;将readingtime改为了支持中文，之前只统计英文字符。&lt;/li&gt;
-&lt;li&gt;修改了部分样式。（主要是字体大小和H标签的样式）&lt;/li&gt;
+&lt;li&gt;修改了部分样式。（主要是字体样式和H标签的样式）默认字体&lt;a class=&#34;link&#34; href=&#34;https://chiron-fonts.github.io/usage/webfont/#3-cdn-jsdelivr&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;昭源黑體&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-22&#34;&gt;2023-6-22&lt;/h3&gt;
 &lt;ul&gt;
