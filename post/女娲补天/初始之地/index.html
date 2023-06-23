@@ -1,36 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。
-本站美化将基于Stack进行修改。目前在研究这个主题的功能。
-需求 完善关于页面。 完善蜂窝的历史，可以追溯到15年。 记录本站的修改版本记录 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。 迁移以前的文章。 部署到GitHub 测试obsidian双链对博客的影响 修改主题的颜色、壁纸等，目前感觉很多值得优化的地方。 目前是关闭评论的状态，以后可以添加，目前不需要。我记得第一次建站的时候还是用多说，不过刚搜一下好像已经关了。 在别人网站上看到了有意思的聊天气泡，可以试着玩一下。 问题记录 记录问题1： 头文件中slug是做什么用的。
-已解决，对于静态网页来说，slug就是有效url的末尾部分的字段。毕竟如果文件名是中文，可能会被转码。写不写无所谓，我没SEO的需求。实际测试中浏览器中能显示中文，只是复制下来的链接会转码，不利于分享。属于链接优化的内容，据说简短的slug能增加被搜索引擎获取的能力。 记录问题2： 目前尚不清楚是哪个设置使得必须得是index.md才能被读取，在初始的config.yaml版本下并不会使得index.zh-cn.md失效。
-已解决，主题自带多语种支持，修改i18n下的文件就可以了。 记录问题3： 尚不确定emoji的支持情况。🎈🎆🎗🎠🧧🎃
-经过测试似乎是支持的。 记录问题4：sub、abbr、kbd、mark，这几个Markdown语法在该主题下没有效果，很奇怪的是sub没用但是sup虽然大概率用不上。 记录问题5： 似乎没能支持KaTex,明明已经在配置里打开了math。
-已解決，主题中自带的Katex的cdn挂了连不上，换个公开的加速服务1的就ok了。（从控制台可以发现还有一些挂了，只是目前没有使用） 时间错乱，这个问题在发现的时候就解决了，问题来自我修改了config里的params.dateFormat，写了个数字大于博客创立日，时间就错乱了。不过问题也有，如果日期是今天的文章会不显示。目前迷惑中。 开源项目 CDN 加速服务&amp;#160;&amp;#x21a9;&amp;#xfe0e;'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。 本站美化将'>
 <title>初始之地</title>
 
 <link rel='canonical' href='https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/'>
 
-<link rel="stylesheet" href="/scss/style.min.f033cfd1df9e6f9eedb0160c4a8e913a66005a8f2f1873b7202ff5d1479e29c7.css"><meta property='og:title' content='初始之地'>
-<meta property='og:description' content='这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。
-本站美化将基于Stack进行修改。目前在研究这个主题的功能。
-需求 完善关于页面。 完善蜂窝的历史，可以追溯到15年。 记录本站的修改版本记录 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。 迁移以前的文章。 部署到GitHub 测试obsidian双链对博客的影响 修改主题的颜色、壁纸等，目前感觉很多值得优化的地方。 目前是关闭评论的状态，以后可以添加，目前不需要。我记得第一次建站的时候还是用多说，不过刚搜一下好像已经关了。 在别人网站上看到了有意思的聊天气泡，可以试着玩一下。 问题记录 记录问题1： 头文件中slug是做什么用的。
-已解决，对于静态网页来说，slug就是有效url的末尾部分的字段。毕竟如果文件名是中文，可能会被转码。写不写无所谓，我没SEO的需求。实际测试中浏览器中能显示中文，只是复制下来的链接会转码，不利于分享。属于链接优化的内容，据说简短的slug能增加被搜索引擎获取的能力。 记录问题2： 目前尚不清楚是哪个设置使得必须得是index.md才能被读取，在初始的config.yaml版本下并不会使得index.zh-cn.md失效。
-已解决，主题自带多语种支持，修改i18n下的文件就可以了。 记录问题3： 尚不确定emoji的支持情况。🎈🎆🎗🎠🧧🎃
-经过测试似乎是支持的。 记录问题4：sub、abbr、kbd、mark，这几个Markdown语法在该主题下没有效果，很奇怪的是sub没用但是sup虽然大概率用不上。 记录问题5： 似乎没能支持KaTex,明明已经在配置里打开了math。
-已解決，主题中自带的Katex的cdn挂了连不上，换个公开的加速服务1的就ok了。（从控制台可以发现还有一些挂了，只是目前没有使用） 时间错乱，这个问题在发现的时候就解决了，问题来自我修改了config里的params.dateFormat，写了个数字大于博客创立日，时间就错乱了。不过问题也有，如果日期是今天的文章会不显示。目前迷惑中。 开源项目 CDN 加速服务&amp;#160;&amp;#x21a9;&amp;#xfe0e;'>
+<link rel="stylesheet" href="/scss/style.min.6343ff0b4df023704bf31b0860f66fbf673223f4649f60f739ce63339afc3102.css"><meta property='og:title' content='初始之地'>
+<meta property='og:description' content='这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。 本站美化将'>
 <meta property='og:url' content='https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/'>
 <meta property='og:site_name' content='烤肉肉'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='美化' /><meta property='article:tag' content='折腾' /><meta property='article:published_time' content='2023-06-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-04T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="初始之地">
-<meta name="twitter:description" content="这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。
-本站美化将基于Stack进行修改。目前在研究这个主题的功能。
-需求 完善关于页面。 完善蜂窝的历史，可以追溯到15年。 记录本站的修改版本记录 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。 迁移以前的文章。 部署到GitHub 测试obsidian双链对博客的影响 修改主题的颜色、壁纸等，目前感觉很多值得优化的地方。 目前是关闭评论的状态，以后可以添加，目前不需要。我记得第一次建站的时候还是用多说，不过刚搜一下好像已经关了。 在别人网站上看到了有意思的聊天气泡，可以试着玩一下。 问题记录 记录问题1： 头文件中slug是做什么用的。
-已解决，对于静态网页来说，slug就是有效url的末尾部分的字段。毕竟如果文件名是中文，可能会被转码。写不写无所谓，我没SEO的需求。实际测试中浏览器中能显示中文，只是复制下来的链接会转码，不利于分享。属于链接优化的内容，据说简短的slug能增加被搜索引擎获取的能力。 记录问题2： 目前尚不清楚是哪个设置使得必须得是index.md才能被读取，在初始的config.yaml版本下并不会使得index.zh-cn.md失效。
-已解决，主题自带多语种支持，修改i18n下的文件就可以了。 记录问题3： 尚不确定emoji的支持情况。🎈🎆🎗🎠🧧🎃
-经过测试似乎是支持的。 记录问题4：sub、abbr、kbd、mark，这几个Markdown语法在该主题下没有效果，很奇怪的是sub没用但是sup虽然大概率用不上。 记录问题5： 似乎没能支持KaTex,明明已经在配置里打开了math。
-已解決，主题中自带的Katex的cdn挂了连不上，换个公开的加速服务1的就ok了。（从控制台可以发现还有一些挂了，只是目前没有使用） 时间错乱，这个问题在发现的时候就解决了，问题来自我修改了config里的params.dateFormat，写了个数字大于博客创立日，时间就错乱了。不过问题也有，如果日期是今天的文章会不显示。目前迷惑中。 开源项目 CDN 加速服务&amp;#160;&amp;#x21a9;&amp;#xfe0e;">
+<meta name="twitter:description" content="这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。 本站美化将">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -239,6 +221,16 @@
   <path d="M18 16.496v1.504l1 1" />
 </svg>
                 <time class="article-time--published">2023/06/04</time>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                917 个字
             </div>
         
 
@@ -253,8 +245,9 @@
 
 
                 <time class="article-time--reading">
-                    阅读将浪费: 1 分钟
+                    阅读本文将浪费: 2 分钟生命
                 </time>
+                
             </div>
         
     </footer>
@@ -355,7 +348,7 @@
 
 
 
-        <span>不可转载</span>
+        <span>不可转载 | 要热爱自己的生活</span>
     </section>
     </footer>
 

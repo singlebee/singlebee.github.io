@@ -1,45 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。
-当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。
-2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。
-本文用于记录博客的建立与维护。
-常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。
-承 首先确立流程：
-安装 Git 安装 Node.js 安装 hexo GitHub 创建个人仓库 生成 SSh key 并添加到 GitHub 将 hexo 部署到 GitHub 建站完成，然后开始写泛用性指南 1、安装 Git Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。
-**下载地址：**从官网下载Git即可，安装选项全部默认就行了。
-后文的“输入”默认都是用 git 执行
-ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年'>
 <title>基于hexo&#43;GitHub Pages建立静态博客的泛用型指南</title>
 
 <link rel='canonical' href='https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-06-%E5%9F%BA%E4%BA%8Ehexogithub-pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/'>
 
-<link rel="stylesheet" href="/scss/style.min.f033cfd1df9e6f9eedb0160c4a8e913a66005a8f2f1873b7202ff5d1479e29c7.css"><meta property='og:title' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南'>
-<meta property='og:description' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。
-当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。
-2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。
-本文用于记录博客的建立与维护。
-常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。
-承 首先确立流程：
-安装 Git 安装 Node.js 安装 hexo GitHub 创建个人仓库 生成 SSh key 并添加到 GitHub 将 hexo 部署到 GitHub 建站完成，然后开始写泛用性指南 1、安装 Git Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。
-**下载地址：**从官网下载Git即可，安装选项全部默认就行了。
-后文的“输入”默认都是用 git 执行
-ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。'>
+<link rel="stylesheet" href="/scss/style.min.6343ff0b4df023704bf31b0860f66fbf673223f4649f60f739ce63339afc3102.css"><meta property='og:title' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南'>
+<meta property='og:description' content='基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年'>
 <meta property='og:url' content='https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-06-%E5%9F%BA%E4%BA%8Ehexogithub-pages%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%B3%9B%E7%94%A8%E5%9E%8B%E6%8C%87%E5%8D%97/'>
 <meta property='og:site_name' content='烤肉肉'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2020-02-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-02-06T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="基于hexo&#43;GitHub Pages建立静态博客的泛用型指南">
-<meta name="twitter:description" content="基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年的服务器最后发现一年下来也就写了十来篇，也就懒得续费了。时值 HTML 5 的规范刚定了下来，微信公众号在乱军中杀出一条血路。好像 hexo 与 GitHubpages 也是当年出来的，总而言之当年服务器懒得续费之后便把文章转向了 GitHubpages 和微信公众号两边。
-当年的微信公众号才起步，网页编辑器甚至可以改 HTML 源码，而对应的 GitHub pages 这边就很麻烦，要先写好文章，再在本地生成文件，再提交到服务器。因为我一开始便是接触的 WordPress 这种可以直接在网页上编辑的动态博客，对于静态博客这种东西还是不那么喜欢。渐渐地我就没去管静态博客了。
-2020年初，中国遭遇到了名为 2019-nCoV 的病毒所威胁，这个事件待疫情结束后我再看看记录不记录吧。总而言之，[2020/2/7] 我在微信公众号上久违地更新了一篇《小学生观察笔记》，然后在阅读只有 2 的情况下因为“遭到多人举报而删除”了。毕竟大公司也要恰饭，思来想去我便把公众号注销了，同时开始从头维护一个博客。
-本文用于记录博客的建立与维护。
-常驻系统为 win 10 所以本文主要面向 Windows系统 。但我也是菜鸡一个，如果有其他的人看到了这篇文章觉得哪里不对可以教教我；个人博客，喷子大可不必，直接右上角即可关闭。
-承 首先确立流程：
-安装 Git 安装 Node.js 安装 hexo GitHub 创建个人仓库 生成 SSh key 并添加到 GitHub 将 hexo 部署到 GitHub 建站完成，然后开始写泛用性指南 1、安装 Git Git 是个将本地文件更方便上传到 GitHub 去的工具，还是个很优秀的版本管理系统。以后要是有心情，就再细细去学 git 的教程。
-**下载地址：**从官网下载Git即可，安装选项全部默认就行了。
-后文的“输入”默认都是用 git 执行
-ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。">
+<meta name="twitter:description" content="基于hexo&#43;GitHub Pages建立静态博客的泛用型指南 起 前几年玩过 WordPress 建站，其实还蛮好玩的，也正是因此为契机才正式接触到了编程。整了一年">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -297,6 +270,16 @@ ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。"
   <path d="M18 16.496v1.504l1 1" />
 </svg>
                 <time class="article-time--published">2020/02/06</time>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                3321 个字
             </div>
         
 
@@ -311,8 +294,9 @@ ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。"
 
 
                 <time class="article-time--reading">
-                    阅读将浪费: 3 分钟
+                    阅读本文将浪费: 7 分钟生命
                 </time>
+                
             </div>
         
     </footer>
@@ -515,7 +499,7 @@ ps：可以在cmd里输入 git -v 查看版本信息确认是否安装成功。"
 
 
 
-        <span>不可转载</span>
+        <span>不可转载 | 要热爱自己的生活</span>
     </section>
     </footer>
 
