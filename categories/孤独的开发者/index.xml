@@ -39,7 +39,7 @@
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt;mark text=&amp;#34;高亮测试&amp;#34;  &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在&lt;code&gt;./assets/scss/custom.css&lt;/code&gt;中可以为主题自定义css。高亮目前用的黄，我觉得还行，以后看到有意思的颜色再换吧。&lt;/p&gt;
 &lt;h3 id=&#34;隐藏&#34;&gt;隐藏&lt;/h3&gt;
-&lt;p&gt;之前看到象友的&lt;!-- raw HTML omitted --&gt;标签很有意思，这个用短代码应该也能实现。&lt;/p&gt;
+&lt;p&gt;之前看到象友的&lt;detail&gt;标签很有意思，这个用短代码应该也能实现。&lt;/p&gt;
 &lt;p&gt;同样的位置新建detail.html：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;details&lt;/span&gt;&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;summary&lt;/span&gt;&amp;gt;{{ (.Get 0) | markdownify }}&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;summary&lt;/span&gt;&amp;gt;

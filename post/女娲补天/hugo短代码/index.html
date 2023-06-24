@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/'>
 
-<link rel="stylesheet" href="/scss/style.min.6343ff0b4df023704bf31b0860f66fbf673223f4649f60f739ce63339afc3102.css"><meta property='og:title' content='hugo短代码'>
+<link rel="stylesheet" href="/scss/style.min.7f31e8c36906d4463d5589e99b8f086f0adafb75f9cb652947f9f1cc4921d329.css"><meta property='og:title' content='hugo短代码'>
 <meta property='og:description' content='一些抄袭和研究'>
 <meta property='og:url' content='https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/'>
 <meta property='og:site_name' content='烤肉肉'>
@@ -332,7 +332,7 @@
 <pre tabindex="0"><code>{{&lt;mark text=&#34;高亮测试&#34;  &gt;}}
 </code></pre><p>在<code>./assets/scss/custom.css</code>中可以为主题自定义css。高亮目前用的黄，我觉得还行，以后看到有意思的颜色再换吧。</p>
 <h3 id="隐藏">隐藏</h3>
-<p>之前看到象友的<!-- raw HTML omitted -->标签很有意思，这个用短代码应该也能实现。</p>
+<p>之前看到象友的<detail>标签很有意思，这个用短代码应该也能实现。</p>
 <p>同样的位置新建detail.html：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">details</span>&gt;
 </span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">summary</span>&gt;{{ (.Get 0) | markdownify }}&lt;/<span style="color:#f92672">summary</span>&gt;
@@ -479,13 +479,7 @@
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/hugo/">hugo</a>
-        
-    </section>
-
-
+    
     
     <section class="article-copyright">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -495,10 +489,17 @@
 </svg>
 
 
-
-        <span>不可转载 | 要热爱自己的生活</span>
+ 
+        <span>MIT License</span>
     </section>
-    </footer>
+    
+    
+    <section class="article-tags">
+        
+            <a href="/tags/hugo/">hugo</a>
+        
+    </section>
+</footer>
 
 
     
@@ -538,6 +539,7 @@
     
 
     <footer class="site-footer">
+    
     <section class="copyright">
         烤肉肉
         &copy; 

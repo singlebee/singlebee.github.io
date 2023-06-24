@@ -18,10 +18,10 @@
 &lt;h2 id=&#34;为什么复式记账&#34;&gt;为什么复式记账&lt;/h2&gt;
 &lt;p&gt;我姑且也算在财务室干过的人，先大概理一下我的财务知识，财务三大主表&lt;strong&gt;损益表&lt;/strong&gt;、&lt;strong&gt;资产负债表&lt;/strong&gt;和现金流量表。其中资产负债表用来表示出表的这个时刻是盈利状态还是亏损状态，满足会计第一恒等式：&lt;strong&gt;资产=负债+所有者权益&lt;/strong&gt;；而损益表表示的是一段时间内的财务状况，满足公式&lt;strong&gt;收入-费用=利润&lt;/strong&gt;。如果将财务知识结构到最简单的层次就是这两点，其他的基本都是围绕于这两公式，而它们之间则是由各种勾稽关系联系起来。&lt;/p&gt;
 &lt;p&gt;这也是为什么觉得随手记不好用的原因。随手记本质是单式记账，也就是所谓的流水账。比如我2021年1月15日在麦当劳吃了12块的1+1套餐，用随手记它是如何记账的呢？&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;时间&lt;/td&gt;&lt;td&gt;花费&lt;/td&gt;&lt;td&gt;用途&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2021-1-15&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;三餐&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;随手记的记账方式&lt;/p&gt;
 &lt;p&gt;虽然仔细看设置里也有用的什么支付方式，但本质并不会变。可能这种需求对大部分人就足够了，但我可能因为有接受过一点点财务训练，总觉得需要更宏观的去掌握整个资产的流动。复式记账他是如何记账的呢？&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;借方&lt;/td&gt;&lt;td&gt;贷方&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;资产-现金&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;费用-三餐&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;借贷记账法&lt;/p&gt;
 &lt;p&gt;假设视为借方为增贷方为减，可以发现在复式记账下有两个科目的数值变动，但总量没变。也就是那句有名的&lt;/p&gt;
 &lt;blockquote&gt;
