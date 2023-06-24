@@ -48,14 +48,10 @@
 &lt;ul&gt;
 &lt;li&gt;添加了显示全文总字数。&lt;/li&gt;
 &lt;li&gt;将readingtime改为了支持中文，之前只统计英文字符。&lt;/li&gt;
-<<<<<<< HEAD
 &lt;li&gt;修改了部分样式。（主要是字体样式和H标签的样式）默认字体改为&lt;a class=&#34;link&#34; href=&#34;https://chiron-fonts.github.io/usage/webfont/#3-cdn-jsdelivr&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;昭源黑體&lt;/a&gt;，不过不清楚其他人打开是不是这个样子，我本地安装了这个字体。&lt;/li&gt;
 &lt;li&gt;修改了copyright的样式。&lt;/li&gt;
 &lt;li&gt;给头像加了一个非常没有意义的hover特效。&lt;/li&gt;
-=======
-&lt;li&gt;修改了部分样式。（主要是字体大小和H标签的样式）&lt;/li&gt;
->>>>>>> parent of fdbf1a1 (1.1)
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-22&#34;&gt;2023-6-22&lt;/h3&gt;
 &lt;ul&gt;
