@@ -886,6 +886,10 @@ Persona！(雾)&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
 &lt;p&gt;本人技术力有限，但抄袭别人代码的能力很强，你看到的所有改动大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2023-6-27&#34;&gt;2023-6-27&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;给tag加上了hover的颜色。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-23&#34;&gt;2023-6-23&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;添加了显示全文总字数。&lt;/li&gt;
@@ -893,7 +897,7 @@ Persona！(雾)&lt;/p&gt;
 &lt;li&gt;修改了部分样式。（主要是字体样式和H标签的样式）默认字体改为&lt;a class=&#34;link&#34; href=&#34;https://chiron-fonts.github.io/usage/webfont/#3-cdn-jsdelivr&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;昭源黑體&lt;/a&gt;，不过不清楚其他人打开是不是这个样子，我本地安装了这个字体。&lt;/li&gt;
 &lt;li&gt;修改了copyright的样式。&lt;/li&gt;
-&lt;li&gt;给头像加了一个非常没有意义的hover特效。&lt;/li&gt;
+&lt;li&gt;给头像加了一个非常没有意义的hover动画。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-22&#34;&gt;2023-6-22&lt;/h3&gt;
 &lt;ul&gt;
@@ -1370,7 +1374,7 @@ runtime_span.innerHTML=&amp;#34;网站已在暴风骤雨中运行: &amp;#34;+A+&
 &lt;p&gt;说实话，这本书适合在初中之前读完，纯粹就一本少年读物，可能因为四大名著的名声实在太响了，被过度解读最严重的一本书。&lt;/p&gt;
 &lt;p&gt;在中国长大的人应该没有不知道西游记的，更别提齐天大圣孙悟空更是全球知名，但小说《西游记》里孙悟空的战斗力似乎并没有很高。我一直记得我越看越觉得这孙悟空的战斗力怎么谁都打不过，要说大闹天宫，真正跟孙悟空有过搏斗的也就巨灵神，哪吒非常放水，二郎神一个下放在人间的关系户随便打，太上老君随便扔个东西下来就收掉了孙悟空。要说孙悟空的战力是真的不行，根本不是小时候传的那么强。&lt;/p&gt;
 &lt;p&gt;再就是我很怀疑斜月三星洞的菩提老祖是观音。菩提老祖给孙悟空取名字的时候是这么取的：“祖师道：“我门中有十二个字，分派起名，到你乃第十辈之小徒矣。”猴王道：“那十二个字？”祖师道：“乃‘广大智慧真如性海颖悟圆觉’十二字。排到你，正当‘悟’字。”&lt;/p&gt;
-&lt;p&gt;行者、八戒是唐僧给取的名字，八戒的道名是猪悟能，也是悟字辈，观音给取的。值得玩味的是唐僧没有给沙僧取名字，沙僧的名字是沙悟净，也是观音给取的。再就是孙悟空见如来都只点个头的，见观音那是扶手作揖点头哈腰的，这态度只有对师傅的时候有过。&lt;/p&gt;
+&lt;p&gt;行者、八戒是唐僧给取的名字，八戒的道名是猪悟能，也是悟字辈，观音给取的。值得玩味的是唐僧没有给沙僧取名字，沙僧的名字是沙悟净，也是观音给取的。再就是孙悟空见如来都只点个头的，见观音那是俯首作揖点头哈腰的，这态度只有对菩提老祖的时候有过。&lt;/p&gt;
 &lt;p&gt;总之，我觉得《西游记》其实是本漏洞百出的少儿读物，列入四大名著有点不够格，正是因为这漏洞百出才衍生出了各种过度解读，各种阴谋论。&lt;/p&gt;
 &lt;h2 id=&#34;httpssinglebeegithubio2020061814e68891e79a84e5bf83e58faae682b2e4bca4e4b883e6aca1-e7baaae4bcafe4bca6-我的心只悲伤七次---纪伯伦我的心只悲伤七次--纪伯伦&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/06/18/14/#%E6%88%91%E7%9A%84%E5%BF%83%E5%8F%AA%E6%82%B2%E4%BC%A4%E4%B8%83%E6%AC%A1-%E7%BA%AA%E4%BC%AF%E4%BC%A6&#34;  title=&#34;我的心只悲伤七次  -纪伯伦&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1821,15 +1825,13 @@ runtime_span.innerHTML=&amp;#34;网站已在暴风骤雨中运行: &amp;#34;+A+&
         <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E8%A1%A5%E6%A1%A3/2020/2020-02-13-07-%E4%BA%BA%E6%98%AF%E4%BC%9A%E6%80%9D%E8%80%83%E7%9A%84%E8%8A%A6%E8%8B%87/</guid>
-        <description>&lt;h1 id=&#34;httpssinglebeegithubio202002137e5b08fe5ada6e7949fe79a84e591a2e59683e99a8fe7ac94-小学生的呢喃随笔小学生的呢喃随笔&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/2020/02/13/7/#%E5%B0%8F%E5%AD%A6%E7%94%9F%E7%9A%84%E5%91%A2%E5%96%83%E9%9A%8F%E7%AC%94&#34;  title=&#34;小学生的呢喃随笔&#34;
-     target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;/a&gt;小学生的呢喃随笔&lt;/h1&gt;
+        <description>&lt;h2 id=&#34;小学生的呢喃随笔&#34;&gt;小学生的呢喃随笔&lt;/h2&gt;
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=&#34;100%&#34; height=&#34;86&#34; src=&#34;https://music.163.com/outchain/player?type=2&amp;amp;id=35307163&amp;amp;auto=0&amp;amp;height=66&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;喝了咖啡迷迷糊糊碎碎念，所以我也不知道会写啥。&lt;/p&gt;
 &lt;p&gt;我发现Markdown作为一种标记语言写文章很大一部分让人更注重文字和文章结构了。&lt;/p&gt;
 &lt;p&gt;但相对的，我想加点花里胡哨的东西就变得麻烦了起来。&lt;/p&gt;
 &lt;p&gt;前一篇文章写的时候，有提到人喜欢非黑即白的二元论，因为逻辑简单。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;人，是会思考的芦苇&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;人是会思考的芦苇&#34;&gt;&lt;strong&gt;人，是会思考的芦苇&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;也可能从小看的电视剧里运用了太多的二元论的描写了：这个人如果不是好人，那他就是坏人。&lt;/p&gt;
 &lt;p&gt;当然，随着年龄的长大，渐渐感受到也不是那么绝对了。&lt;/p&gt;
 &lt;p&gt;好人可能会自私；可能会为了心里的正义做出不正义的事情；可能性格不完美；而那些我们以为的坏人也有良善的一面：比如大奸臣在家是模范丈夫，在邻里是模范。&lt;/p&gt;
@@ -1838,14 +1840,14 @@ runtime_span.innerHTML=&amp;#34;网站已在暴风骤雨中运行: &amp;#34;+A+&
 &lt;p&gt;为了不走路发明出汽车；为了不开车发明出自动驾驶。&lt;/p&gt;
 &lt;p&gt;为了思考问题更轻松，而思考。&lt;/p&gt;
 &lt;p&gt;创造的本质是解放生产力，解放生产力的动力是因为懒。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;逝去的时光不可追&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;逝去的时光不可追&#34;&gt;&lt;strong&gt;逝去的时光不可追&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;昨天通关了DQ11，里面恶魔说了句大意如此的话，那个瞬间我想到了很多东西。&lt;/p&gt;
 &lt;p&gt;逝去的时光是我们曾经做过的错事；是我们失去的人；是我们不曾做过的事；是我们念念不忘的世界；是我们不想离开的时光。&lt;/p&gt;
 &lt;p&gt;那些时光可能并不如记忆中那么美好，但当你回忆起来时，甘之如饴。&lt;/p&gt;
 &lt;p&gt;大脑本能的会将一些不想记住的东西忘记。&lt;/p&gt;
 &lt;p&gt;像游戏里的小萝莉为了拯救勇者一行人，哪怕牺牲了自己也要拯救那一丝希望。&lt;/p&gt;
 &lt;p&gt;而小萝莉的孪生姐妹本应最伤心的她，却剪断自己的长发，当头发随风飘逝的时候，勇者一行便是斩断追忆，继承了小萝莉的意志，有了斩断黑暗的力量。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;愚昧源自想活着&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;愚昧源自想活着&#34;&gt;&lt;strong&gt;愚昧源自想活着&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;随着互联网的发展，给谣言的传播提供了良好的土壤，就像把老鼠扔进装满粮食的仓库一样。本来说21世纪都进行了20年了，打击谣言的力度变强了之后，理应没那么多受骗的人了。&lt;/p&gt;
 &lt;p&gt;但什么时代都有人受骗呐。没受骗的人坐的高高的看着受骗的人，摇着头说这些人怎么这么愚昧。&lt;/p&gt;
 &lt;p&gt;但静下来想想，愚昧可能是因为想活着。&lt;/p&gt;
@@ -1855,10 +1857,10 @@ runtime_span.innerHTML=&amp;#34;网站已在暴风骤雨中运行: &amp;#34;+A+&
 &lt;p&gt;如何活得更久是医学史永恒的命题吧。&lt;/p&gt;
 &lt;p&gt;我记得之前看的一本书上说，我们所有的焦虑本质上都来自对死亡的恐惧。&lt;/p&gt;
 &lt;p&gt;这也就是熬夜的吸引人的地方：熬夜让人有一种可以将当前状态延续下去的错觉，这种错觉让人上瘾。（即使本身是摧残健康）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;确认偏差&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;确认偏差&#34;&gt;&lt;strong&gt;确认偏差&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;人会为了证明一个观点去找能证明这个观点的证据，遇到相反的证据便会认为那是个例便置之不理。&lt;/p&gt;
 &lt;p&gt;这也是小学生观察笔记的初衷，尝试从不同的角度看一些问题：不让自己囹圄在大多数人的观点里。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;荐书环节&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;荐书环节&#34;&gt;&lt;strong&gt;荐书环节&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;人，是一根会思考的芦苇。&lt;/p&gt;
 &lt;p&gt;《&lt;a class=&#34;link&#34; href=&#34;https://book.douban.com/subject/26975206/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;人是一根会思考的芦苇&lt;/a&gt;》，豆瓣评分：8.3&lt;/p&gt;

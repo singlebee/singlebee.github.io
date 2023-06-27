@@ -44,6 +44,10 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
 &lt;p&gt;本人技术力有限，但抄袭别人代码的能力很强，你看到的所有改动大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2023-6-27&#34;&gt;2023-6-27&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;给tag加上了hover的颜色。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-23&#34;&gt;2023-6-23&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;添加了显示全文总字数。&lt;/li&gt;
@@ -51,7 +55,7 @@
 &lt;li&gt;修改了部分样式。（主要是字体样式和H标签的样式）默认字体改为&lt;a class=&#34;link&#34; href=&#34;https://chiron-fonts.github.io/usage/webfont/#3-cdn-jsdelivr&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;昭源黑體&lt;/a&gt;，不过不清楚其他人打开是不是这个样子，我本地安装了这个字体。&lt;/li&gt;
 &lt;li&gt;修改了copyright的样式。&lt;/li&gt;
-&lt;li&gt;给头像加了一个非常没有意义的hover特效。&lt;/li&gt;
+&lt;li&gt;给头像加了一个非常没有意义的hover动画。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-22&#34;&gt;2023-6-22&lt;/h3&gt;
 &lt;ul&gt;
