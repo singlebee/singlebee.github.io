@@ -37,7 +37,8 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;这样他就无脑自动生成了一个开发界面。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://vikk.xyz/wp-content/uploads/2015/01/QQ%e5%9b%be%e7%89%8720150126155703.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;http://vikk.xyz/wp-content/uploads/2015/01/QQ%e5%9b%be%e7%89%8720150126155703-300x169.png&#34;
+    &gt;&lt;figure&gt;
+&lt;img src=&#34;http://vikk.xyz/wp-content/uploads/2015/01/QQ%e5%9b%be%e7%89%8720150126155703-300x169.png&#34;
 	
 	
 	
@@ -46,7 +47,16 @@
 		alt=&#34;QQ图片20150126155703&#34;
 	
 	
-&gt;&lt;/a&gt;&lt;/p&gt;
+	alt=&#34;QQ图片20150126155703&#34;
+&gt;
+&lt;center&gt;&lt;figcaption&gt;QQ图片20150126155703&lt;/figcaption&gt;&lt;/center&gt;
+
+&lt;/figure&gt;
+
+
+
+	
+	&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;打开之后就是这个样子，为什么感觉一股的html的感觉（看不清点大图）。&lt;/p&gt;
 &lt;p&gt;这不直接改下文字就可以了不是，做这么无聊的软件太不符合自己的格调了，让我再体验一下。&lt;/p&gt;
 &lt;p&gt;（半个小时之后）&lt;/p&gt;
@@ -69,7 +79,8 @@
 &lt;p&gt;我就是这么的杀马特。&lt;/p&gt;
 &lt;p&gt;好，运行。效果如下图。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://vikk.xyz/wp-content/uploads/2015/01/QQ%e5%9b%be%e7%89%8720150126184500.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;http://vikk.xyz/wp-content/uploads/2015/01/QQ%e5%9b%be%e7%89%8720150126184500-300x288.png&#34;
+    &gt;&lt;figure&gt;
+&lt;img src=&#34;http://vikk.xyz/wp-content/uploads/2015/01/QQ%e5%9b%be%e7%89%8720150126184500-300x288.png&#34;
 	
 	
 	
@@ -78,7 +89,16 @@
 		alt=&#34;QQ图片20150126184500&#34;
 	
 	
-&gt;&lt;/a&gt;&lt;/p&gt;
+	alt=&#34;QQ图片20150126184500&#34;
+&gt;
+&lt;center&gt;&lt;figcaption&gt;QQ图片20150126184500&lt;/figcaption&gt;&lt;/center&gt;
+
+&lt;/figure&gt;
+
+
+
+	
+	&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;感觉十分简单。&lt;/p&gt;
 </description>
         </item>
