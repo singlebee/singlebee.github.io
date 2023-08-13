@@ -3,27 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://singlebee.github.io/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/tags/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC9%E6%9C%9F/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
+    <lastmod>2023-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC8%E5%91%A8/</loc>
+    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC7%E5%91%A8/</loc>
+    <lastmod>2023-07-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/%E5%8D%81%E5%A4%A7%E5%90%8D%E8%8F%9C/</loc>
+    <lastmod>2023-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/hugo/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://singlebee.github.io/post/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://singlebee.github.io/tags/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC6%E5%91%A8/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://singlebee.github.io/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/</loc>
