@@ -6,7 +6,7 @@
         <description>Recent content on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://singlebee.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>第10期 | 开始一些新的风格</title>
+        <title>2023#34 | 开始一些新的风格</title>
         <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC10%E6%9C%9F/</link>
         <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
         
@@ -97,11 +97,11 @@
 &lt;p&gt;他家手撕鸡确实好吃，但又我不会顿顿想吃，可是他又偏偏送了我两包酸包菜，我大概率会随手放一边，当我下次没胃口的时候看到这个酸包菜我就会想起这家手撕鸡。&lt;/p&gt;
 &lt;p&gt;不得不说，这个店是动了心思的，天气热手撕鸡是凉菜，于是包装袋是和汉堡王同样的具有保温效果的包装袋。送到手的时候，冰可乐甚至往外透冷气。&lt;/p&gt;
 &lt;h2 id=&#34;winget&#34;&gt;winget&lt;/h2&gt;
-&lt;p&gt;winget是微软开发的一款软件管理程序（应该吧），主要的作用是方便，一来可以省去去找官网下载软件的麻烦，更可以避免安装附加软件的困扰。直接打开&lt;code&gt;powershell&lt;/code&gt;就能用，用&lt;code&gt;winget&lt;/code&gt;指令就能调用。
-&lt;code&gt;winget search {软件名称}&lt;/code&gt; 搜索
-&lt;code&gt;winget install {软件名称}&lt;/code&gt;安装软件
-&lt;code&gt;winget upgrade --all&lt;/code&gt; 升级
-扔在后台就行了，一切静默安装，非常省心。&lt;/p&gt;
+&lt;p&gt;winget是微软开发的一款软件管理程序（应该吧），主要的作用是方便，一来可以省去去找官网下载软件的麻烦，更可以避免安装附加软件的困扰。直接打开&lt;code&gt;powershell&lt;/code&gt;就能用，用&lt;code&gt;winget&lt;/code&gt;指令就能调用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;winget search {软件名称}&lt;/code&gt; 搜索&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;winget install {软件名称}&lt;/code&gt;安装软件&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;winget upgrade --all&lt;/code&gt; 升级&lt;/p&gt;
+&lt;p&gt;扔在后台就行了，一切静默安装，非常省心。&lt;/p&gt;
 &lt;h2 id=&#34;尝试艺术&#34;&gt;尝试艺术&lt;/h2&gt;
 &lt;p&gt;本来今天想学画像素画，但是画了两笔就开始烦躁了，于是开始网上冲浪。在谷歌艺术上冲了半天浪，体验了一波艺术。
 &lt;figure&gt;
@@ -127,6 +127,8 @@
 &lt;p&gt;这张画是莫奈比较经典的「撑伞的女人」，画中人是莫奈的妻子卡蜜尔，在他旁边的是她年幼的儿子。这幅画我感觉很灵动，整幅画只用了蓝绿棕等大自然中非常常见的颜色，给人一种非常舒适宁静的感觉。画面中他妻子和儿子的构图形成一个非常好的平衡的关系。尽管这是莫奈早期的作品，但可以看到光影的捕捉已经很出色了。伞上的高光与草地上的阴影、衣服的褶皱所构成的阴影、儿子所处的位置的阴影都做到了区分，细细品味仿佛置身在同一个草地上，享受着同样的风。&lt;/p&gt;
 &lt;h3 id=&#34;一些补充&#34;&gt;一些补充&lt;/h3&gt;
 &lt;p&gt;搜了下相关的资料，画这幅画时，卡蜜尔已经身患绝症了。看着即将离开自己的亲人，风仿佛就能将她带走。我看到莫奈在卡蜜尔逝世后让莫奈的继女在同样的地方摆同样的姿势，又画了两幅「撑阳伞的女人」，那两幅图的天空都不如原作的天空那么明亮，虽然构图、色彩都和原作非常像，除了人脸以外，人脸是完全模糊的。&lt;/p&gt;
+&lt;p&gt;或许从三幅画可以看得出莫奈的痛苦，他只能以这种方式纪念着卡蜜尔。
+其实如果利用谷歌艺术的艺术家作品里按时间排序，可以看到早期的莫奈还是很喜欢画人像的，从1887年代开始就逐渐不怎么画人了。即使是画了人，也是这种无足轻重随笔带过的人。&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;
 &lt;img src=&#34;https://xlog.app/cdn-cgi/image/width=1200,quality=75,format=auto,onerror=redirect/https://ipfs.xlog.app/ipfs/bafybeib6kc2uv2i3tfpgsfic6lhwstoqup7bt6smy3shy5hbmdymeh7lum&#34;
 	
@@ -145,8 +147,6 @@
 
 	
 	&lt;/p&gt;
-&lt;p&gt;或许从三幅画可以看得出莫奈的痛苦，他只能以这种方式纪念着卡蜜尔。
-其实如果利用谷歌艺术的艺术家作品里按时间排序，可以看到早期的莫奈还是很喜欢画人像的，从1887年代开始就逐渐不怎么画人了。即使是画了人，也是这种无足轻重随笔带过的人。&lt;/p&gt;
 &lt;p&gt;而到了晚期，是完全没有人了，全是睡莲日落什么的。&lt;/p&gt;
 &lt;h2 id=&#34;input&#34;&gt;Input&lt;/h2&gt;
 &lt;p&gt;这一个环节将作为以后周记的新增环节，现已加入模板，用于收录每周接收到的有趣电波。但因为新增这个企划的时间比较晚（周六才弄），应该会遗漏蛮多的。&lt;/p&gt;
