@@ -6,7 +6,29 @@
         <description>Recent content in 浮生记 on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 17 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2023#38</title>
+        <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC15%E6%9C%9F/</link>
+        <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC15%E6%9C%9F/</guid>
+        <description>&lt;h2 id=&#34;喜提域名&#34;&gt;喜提域名&lt;/h2&gt;
+&lt;p&gt;翻了一下用 hugo 新建博客到现在已经写了15篇周记了，一直不好意思买域名把博客正式上线，一直在蹭 Github Pages。终于在一些小事的推动下买了域名正式上线了。买了个最便宜的域名，我感觉没必要买那么贵的，我的博客配不上那么高贵的域名。&lt;/p&gt;
+&lt;p&gt;欢呼~鼓掌~&lt;/p&gt;
+&lt;p&gt;虽然不是第一次买域名了，但是还是折腾了好久才把域名解析成功，估计是歪打正着能用了。本着能用就不要动的原则，就先不管操作流程对不对了。&lt;/p&gt;
+&lt;p&gt;虽然能跑了，但是并没有启用&lt;code&gt;https&lt;/code&gt;。我看到&lt;code&gt; Github 官方基于 HTTPS 配合 CND，能让网站的加载速度更快，还能提供额外的防御 DDoS 攻击的保护&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;抠抠索索如我，那我必须整上。&lt;/p&gt;
+&lt;p&gt;参考了&lt;a class=&#34;link&#34; href=&#34;https://github.blog/2018-05-01-github-pages-custom-domains-https/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这篇&lt;/a&gt;文章，我实际上做的也就是在根目录下新建了个&lt;code&gt;CNAME&lt;/code&gt;文件，然后强制执行HTTPS就完事了。&lt;/p&gt;
+&lt;h2 id=&#34;input&#34;&gt;Input&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;冲浪看到一个&lt;a class=&#34;link&#34; href=&#34;https://pubdev.top/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Flutter可视化发现好玩有趣的包&lt;/a&gt;的网站，感觉还蛮好的。可惜目前用不来，看着空流口水。比如&lt;a class=&#34;link&#34; href=&#34;https://pubdev.top/#/packages/flutter_deck&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这个&lt;/a&gt;就好有意思的感觉。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>2023#37 | 普通且迷茫</title>
         <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC14%E6%9C%9F/</link>
         <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>

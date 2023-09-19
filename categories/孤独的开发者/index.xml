@@ -182,56 +182,6 @@
 &lt;/div&gt;
 </description>
         </item>
-        <item>
-        <title>windows phone之路暂停更新的公告</title>
-        <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2012-2021-%E8%A1%A5%E6%A1%A3/2015/2015-01-27-windows-phone%E4%B9%8B%E8%B7%AF%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0%E7%9A%84%E5%85%AC%E5%91%8A/</link>
-        <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
-        
-        <guid>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2012-2021-%E8%A1%A5%E6%A1%A3/2015/2015-01-27-windows-phone%E4%B9%8B%E8%B7%AF%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0%E7%9A%84%E5%85%AC%E5%91%8A/</guid>
-        <description>&lt;p&gt;公告&lt;/p&gt;
-&lt;p&gt;         由于受到不可抗力的影响，windows phone之路暂停更新，不怪别的，自己在一个垃圾学校，连免费使用VS的资格都申请不到。&lt;/p&gt;
-&lt;p&gt;暂时留坑。&lt;/p&gt;
-&lt;p&gt;蜜蜂的公关部宣&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>windows phone之路（3）</title>
-        <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2012-2021-%E8%A1%A5%E6%A1%A3/2015/2015-01-26-windows-phone%E4%B9%8B%E8%B7%AF3/</link>
-        <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
-        
-        <guid>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2012-2021-%E8%A1%A5%E6%A1%A3/2015/2015-01-26-windows-phone%E4%B9%8B%E8%B7%AF3/</guid>
-        <description>&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;在之前的体验里，我发现他似乎十分类似于html，所以我继续深入了解了一下。&lt;/p&gt;
-&lt;p&gt;百度上说他似乎是什么XAML （eXtensible Application Markup Language），不要羡慕我英语好，这是抄过来的。（捂脸）&lt;/p&gt;
-&lt;p&gt;XAML似乎是一种XML的特例。&lt;a class=&#34;link&#34; href=&#34;http://zh.wikipedia.org/wiki/XML&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;维基百科&lt;/a&gt;上也说他是一种标记语言，这么看的话和html很像了，XML设计用来传送及携带数据信息，不用来表现或展示数据，HTML语言则用来表现数据，所以XML用途的焦点是它说明数据是什么，以及携带数据信息。&lt;/p&gt;
-&lt;p&gt;而XAML似乎更复杂一点，维基百科上说他有着HTML的外观，又柔和了XML的语法。&lt;/p&gt;
-&lt;p&gt;在ｗｐ里，使用XAML来定义手机的页面布局。&lt;/p&gt;
-&lt;p&gt;XAML相比于后台代码，可以实时的在模拟界面里面预览，代码似乎也比较简洁。&lt;/p&gt;
-&lt;p&gt;再接下来，我偶然发现了一个神奇的机制——文本转换器，似乎他十分机智。&lt;/p&gt;
-&lt;p&gt;优化了很多代码。这样应该会使得代码变得更简洁。&lt;/p&gt;
-&lt;p&gt;ｂａｌａｂａｌａｂａｌａ&lt;/p&gt;
-&lt;p&gt;好难。。。。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>windows phone之路（1）</title>
-        <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2012-2021-%E8%A1%A5%E6%A1%A3/2015/2015-01-26-windows-phone%E4%B9%8B%E8%B7%AF1/</link>
-        <pubDate>Fri, 23 Jan 2015 00:00:00 +0000</pubDate>
-        
-        <guid>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2012-2021-%E8%A1%A5%E6%A1%A3/2015/2015-01-26-windows-phone%E4%B9%8B%E8%B7%AF1/</guid>
-        <description>&lt;p&gt;作为一个手残和小白，积极的学习新鲜事物才是我们应该做的。 我觉得自己学的东西应该是给自己用的，而我手上只有一个lumia 920，所以学习wp软件开发是必然的（大雾）X D&lt;/p&gt;
-&lt;p&gt;好，一开始应该是要配置开发环境，我觉得只有C那种是可以不用配置开发环境直接学的吧（虽然连指针都没学会就弃了）ORZ&lt;/p&gt;
-&lt;p&gt;经过百度，发现这wp开发环境是要Microsoft Visual Studio 2013，遂从&lt;a class=&#34;link&#34; href=&#34;http://www.visualstudio.com/zh-cn/products/free-developer-offers-vs&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官网&lt;/a&gt;下载。虽然我 不知道是不是这样做，边做边写记录的感觉还真不错。&lt;/p&gt;
-&lt;p&gt;不知道这些是些什么，先全装着再说。&lt;/p&gt;
-&lt;p&gt;安装的很慢，好吃内存的东西啊。_(:3」∠)_&lt;/p&gt;
-&lt;p&gt;安装后提示我cpu不支持虚拟化，百度后知道虚拟化似乎是模拟器的需要。&lt;/p&gt;
-&lt;p&gt;不支持就不支持吧，反正我有lumia 920 .（晚上更新，重启下电脑似乎就支持了，汗）&lt;/p&gt;
-&lt;p&gt;（晚上再次更新，原来是bios没有开启）&lt;/p&gt;
-&lt;p&gt;基本环境就十分轻松的搭建完成了。下这个下了这么久（╯－＿－）╯╧╧。&lt;/p&gt;
-</description>
-        </item>
         
     </channel>
 </rss>
