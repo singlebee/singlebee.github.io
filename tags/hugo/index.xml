@@ -81,7 +81,7 @@
     &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34; fill=&#34;hsl(0, 65%, 65%)&#34;&gt;&lt;path d=&#34;M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zM124 296c-6.6.0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h264c6.6.0 12 5.4 12 12v56c0 6.6-5.4 12-12 12H124z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;要突出显示页面上的 Hugo/GO 模板代码，请在左大括号之后添加/* 和右大括号之前添加*/。&lt;/p&gt;&lt;/div&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;自带的ref&#34;&gt;自带的ref&lt;/h2&gt;
-&lt;p&gt;今天会发现短代码，是因为我想做博客内的交叉引用，如果直接用链接好麻烦，如果换个域名什么的就全没了。查了一圈才发现hugo可以用短代码链接其他文件。&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;今天会发现短代码，是因为我想做博客内的交叉引用，直接用链接好麻烦，如果换个域名什么的就全没了。查了一圈才发现hugo可以用短代码链接其他文件。&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;例如我要链接到&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/&#34; &gt;初始之地&lt;/a&gt;，只需要输入：&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[初始之地]({{&amp;lt;ref &amp;#34;初始之地&amp;#34;&amp;gt;}})
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;抄来的一些代码&#34;&gt;抄来的一些代码&lt;/h2&gt;

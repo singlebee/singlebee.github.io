@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>初始之地</title>
+        <title>女娲补天</title>
         <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</link>
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
@@ -27,8 +27,10 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 部署到GitHub&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 测试obsidian双链对博客的影响&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修改主题的颜色、壁纸等，目前感觉很多值得优化的地方。&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 目前是关闭评论的状态，以后可以添加，目前不需要。我记得第一次建站的时候还是用多说，不过刚搜一下好像已经关了。&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 目前是关闭评论的状态，以后可以添加，目前不需要。我记得第一次建站的时候还是用多说，不过刚搜一下好像已经关闭服务了。&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 在别人网站上看到了有意思的聊天气泡，可以试着玩一下。&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; footer部分想美化一下&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 想添加一个图鉴专栏（书影游）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;问题记录&#34;&gt;问题记录&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -63,6 +65,11 @@
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 时间错乱，这个问题在发现的时候就解决了，问题来自我修改了config里的params.dateFormat，写了个数字大于博客创立日，时间就错乱了。不过问题也有，如果日期是今天的文章会不显示。目前迷惑中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 为了实现图鉴专栏，我需要一个能跳转到不会受到&lt;code&gt;menu&lt;/code&gt;样式影响的文件。所以我修改了&lt;code&gt;.\layouts\partials\sidebar\left.html&lt;/code&gt;里相关的内容，直接利用&lt;code&gt;social&lt;/code&gt;跳转外链的特性，其实直接自己额外写一个应该也可以，只不过太麻烦了，改一改&lt;code&gt;social&lt;/code&gt;就能用何必呢。当然缺点就是不能在menu里排序，只能存在它之前或者之后。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
