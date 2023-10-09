@@ -18,7 +18,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完善关于页面。
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完善蜂窝的历史，可以追溯到15年。&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完善蜂窝的历史，可以追溯到15年。&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 记录本站的修改版本记录&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -29,7 +29,7 @@
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 修改主题的颜色、壁纸等，目前感觉很多值得优化的地方。&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 目前是关闭评论的状态，以后可以添加，目前不需要。我记得第一次建站的时候还是用多说，不过刚搜一下好像已经关闭服务了。&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 在别人网站上看到了有意思的聊天气泡，可以试着玩一下。&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; footer部分想美化一下&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; footer部分想美化一下&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 想添加一个图鉴专栏（书影游）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;问题记录&#34;&gt;问题记录&lt;/h1&gt;

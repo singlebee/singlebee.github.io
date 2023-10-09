@@ -46,6 +46,13 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
 &lt;p&gt;技术力有限，但抄袭别人代码的能力很强，你看到的所有改动灵感大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2023-10-9&#34;&gt;2023-10-9&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;参照&lt;a class=&#34;link&#34; href=&#34;https://4o.cx/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这个网站&lt;/a&gt;修改了&lt;code&gt;H3、H4&lt;/code&gt;的样式。&lt;/li&gt;
+&lt;li&gt;同样基于上面网站，修改了&lt;code&gt;li&lt;/code&gt;的样式。&lt;/li&gt;
+&lt;li&gt;修改了图片的占比，之前96%似乎有点大，但加入了hover来放大。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;2023-9-19&#34;&gt;2023-9-19&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;购买了域名并解析成功，强制https等。&lt;/li&gt;
