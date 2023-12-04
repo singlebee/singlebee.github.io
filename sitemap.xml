@@ -2,23 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC19%E6%9C%9F/</loc>
-    <lastmod>2023-10-29T12:40:15+08:00</lastmod>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC22%E6%9C%9F/</loc>
+    <lastmod>2023-12-04T12:07:14+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/</loc>
-    <lastmod>2023-10-29T12:40:15+08:00</lastmod>
+    <lastmod>2023-12-04T12:07:14+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/</loc>
-    <lastmod>2023-10-29T12:40:15+08:00</lastmod>
+    <lastmod>2023-12-04T12:07:14+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/</loc>
-    <lastmod>2023-10-29T12:40:15+08:00</lastmod>
+    <lastmod>2023-12-04T12:07:14+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
-    <lastmod>2023-10-29T12:40:15+08:00</lastmod>
+    <lastmod>2023-12-04T12:07:14+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
-    <lastmod>2023-10-29T12:40:15+08:00</lastmod>
+    <lastmod>2023-12-04T12:07:14+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC21%E6%9C%9F/</loc>
+    <lastmod>2023-11-26T12:03:04+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC20%E6%9C%9F/</loc>
+    <lastmod>2023-11-02T15:32:43+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC19%E6%9C%9F/</loc>
+    <lastmod>2023-10-30T14:33:45+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC18%E6%9C%9F/</loc>
     <lastmod>2023-10-16T13:45:44+08:00</lastmod>
@@ -352,6 +361,9 @@
   </url><url>
     <loc>https://singlebee.github.io/</loc>
     <lastmod>2023-06-05T06:30:21+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E5%87%A0%E4%BD%95%E7%94%BB%E6%9D%BF%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</loc>
+    <lastmod>2023-11-24T11:10:15+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/test/</loc>
     <lastmod>2023-06-03T20:54:41+08:00</lastmod>
