@@ -6,7 +6,60 @@
         <description>Recent content in 女娲补天 on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/categories/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>博客多平台同步方案</title>
+        <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/</link>
+        <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/</guid>
+        <description>&lt;p&gt;以前用wordpress建站的时候，任何地点登录后台就能开始写作。改为用静态博客后多端同步的问题一直困扰着我，因为可以选择的方案太多了，反而不想折腾。&lt;/p&gt;
+&lt;p&gt;首先明确我的需求，因为我给自己定了每周写周记，现在的情况是周末我反而会在外面，很可能没有办法用主电脑写作。但我大部分时候肯定还是要用主电脑的，所以同步到手机上编辑只是一个轻量需求。所以第一要成本低，第二要方便整个工作流打开的软件越少越好。obsidian昂贵的同步方案最开始就被否了。&lt;/p&gt;
+&lt;p&gt;虽然我知道最佳的备份方案一定是git，但我这种非开发人员真的不爱用这么麻烦的东西。而且假如我需要在手机上编辑，这时候我需要一个git把文件拉下来，再用一个支持markdown的软件来编辑，而我希望手机上手机软件越少越好，同理备受好评的坚果云的方案也被我否了。&lt;/p&gt;
+&lt;h3 id=&#34;obsidian-remotely-save-插件onedrive-实现多平台同步&#34;&gt;Obsidian Remotely Save 插件+OneDrive 实现多平台同步&lt;/h3&gt;
+&lt;p&gt;因为我用的是obsidian来处理PC上md文件的编写管理，加上obsidian是有多端同步的功能，能只用obsidian解决就用obsidian解决。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先在插件社区下载&lt;strong&gt;Remotely Save&lt;/strong&gt; 这个插件，然后启用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&#34;https://i.vgy.me/A662d9.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;一图流&#34;
+	
+	
+	alt=&#34;一图流&#34;
+&gt;
+&lt;center&gt;&lt;figcaption&gt;一图流&lt;/figcaption&gt;&lt;/center&gt;
+
+&lt;/figure&gt;
+
+
+
+	
+	&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;选择远程服务选&lt;code&gt;OneDrive&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;鉴权，这一步是为了获得你onedirve的授权。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;检查一下是否能用了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;左侧菜单栏就有了同步按钮，按下就能同步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;移动端安装obsidian，安装同款插件，同样上述步骤。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>在图片下显示说明文字</title>
         <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%9C%A8%E5%9B%BE%E7%89%87%E4%B8%8B%E6%98%BE%E7%A4%BA%E8%AF%B4%E6%98%8E%E6%96%87%E5%AD%97/</link>
         <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
@@ -169,8 +222,7 @@
 &lt;p&gt;实际测试下来，虽然不能直接使用[[]]实现链接，但是可以通过短代码实现。详见&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;同时我发现，使用obsidian写含有标签的内容，很容易报错。就像&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;这篇文章如果用obsidian打开，全是红的，但是用vscode打开就还行。&lt;/p&gt;
 &lt;h2 id=&#34;3同步&#34;&gt;3.同步&lt;/h2&gt;
-&lt;h3 id=&#34;onedrive&#34;&gt;onedrive&lt;/h3&gt;
-&lt;p&gt;很想同时实现手机和电脑同步编辑的需求，实测了onedrive且不说不能快速同步，在网页打开编辑了一下直接报错给我复制了一个副本出来。虽然实际上来说也不是不行，但很明显不是最佳方案。&lt;/p&gt;
+&lt;p&gt;可以看这&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/&#34; &gt;博客基于obsidian多平台同步方案&lt;/a&gt;尝试了同步方案。目前实测每次同步大概15s左右。&lt;/p&gt;
 &lt;h2 id=&#34;4-图床解决方案&#34;&gt;4. 图床解决方案&lt;/h2&gt;
 &lt;p&gt;原本打算用七牛云的每月赠送10G流量的服务，但后来象友告知要备案的域名，这就很难受。&lt;/p&gt;
 &lt;p&gt;扒拉了一下其他博主的图床，有的是加入又拍云，有的是自建图床，这些都不太符合我白嫖怪的风格。&lt;/p&gt;
@@ -240,7 +292,7 @@
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 记录本站的修改版本记录&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 迁移以前的文章。&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 部署到GitHub&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 测试obsidian双链对博客的影响&lt;/li&gt;

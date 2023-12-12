@@ -6,7 +6,115 @@
         <description>Recent content on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://singlebee.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>2023#50 | 英伦风</title>
+        <title>2023#49 | 报复式周记</title>
+        <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC23%E6%9C%9F/</link>
+        <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC23%E6%9C%9F/</guid>
+        <description>&lt;p&gt;写博客的热情其实依旧并不高涨，也可能是因为天气冷了，手放键盘上肌肉都是僵硬的，打字各种不顺手。  但是这周写完居然写了这么多，姑且算是报复式增长吧。&lt;/p&gt;
+&lt;h2 id=&#34;逝者如斯夫不舍昼夜&#34;&gt;逝者如斯夫，不舍昼夜&lt;/h2&gt;
+&lt;p&gt;看了看之前写的周记，有一天有提到『时间是不存在的』，当时这么写是想到了这个概念但因为不想多写就随便糊弄了一下，所以今天干脆来理顺一下自己的思路，思维要发散！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;只要简单翻阅圣殿骑士团留下来的资料，就可以发现艾萨克爵士就提出过『时间是可以测量但不可察觉』的概念。古典物理学里一直认为时间是绝对的、均衡地流动着，与外部任何事物都没有关系。简单的来理解应该就是时间轴，在这个理论下任何一个时间点，宇宙中所有的事件都是同时发生的，符合大众认知。时间的测量通常依赖于周期性的物理过程，例如通过观察地球绕太阳的公转周期来确定一年的长度，或者通过测量原子钟的振动周期来获得更高精度的时间计量。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上帝是公平的，每个人一天都是24小时。——不知道哪个天才想出来的金句&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;麻瓜世界公认的时间其实是一种固有认知的错觉，在诈骗行业熠熠生辉的量子力学认为，时间的概念正变得模糊不清。该诈骗理论发现波函数可以同时存在于多个状态，而且它们之间可以相互干涉。这意味着时间不再是可预测的，而是随机的、不确定的。当然正因为该理论臭名昭著，所以目前很难向大众推广『时间其实是不存在的』这个结论。&lt;/p&gt;
+&lt;p&gt;但我们可以用一个比较简单的事实来侧面说明现在的时间标准是没有价值的，这些年经常去月球旅行的朋友们可能比较清楚，往返月球的时间越来越长了，因为潮汐力的影响，使得地球和月球之间的距离略有增加，每年增加约3.8厘米（这也是这些年官方给出的一直在涨价的原因，笑死）。月球的远离使得地球自转速度变慢，而目前麻瓜世界里公认的一天是等同于地球自转一周的时间，可是按这个标准每一天都在变得比前一天更长一点。在恐龙时期一天只有23小时，一年大约会比现在多出一个星期左右。&lt;/p&gt;
+&lt;p&gt;想必学过时间魔法的都听过著名的大法师阿尔伯特的名言：『&lt;em&gt;&lt;strong&gt;时间是相对的，它的唯一价值取决于我们在时间流逝时做了什么&lt;/strong&gt;&lt;/em&gt;』，英国魔药学教授霍拉斯·斯拉格霍恩就拥有一个魔法沙漏，沙子下漏的速度和谈话的质量保持一致，聊的火热的时候沙子就会下落地很慢。在大法师阿尔伯特的理论下，每个事件在时空中都有自己的坐标或位置，没有绝对的时间和空间。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;每逢接近过年的时候、进入新月份的时候，就会有一群遗老出来多愁善感，以前可能跟着徒增焦虑，自从顿悟了『时间并不存在』后，倒也见怪不怪了。虽然看似写了一大堆，实际上看似有用的就几句话。也不知道自己写了些什么，图一乐。这种写作风格可能是借鉴了以前看过的scp文学的精神胡写乱写，写的时候倒也开心。年底没啥好总结的，没什么比还活着更了不起的了。&lt;/p&gt;
+&lt;h2 id=&#34;利用whisper做字幕&#34;&gt;利用Whisper做字幕&lt;/h2&gt;
+&lt;p&gt;原本是因为工作需要将语音转换为文字，后来更是直接将视频转为文字，也就是制作字幕。有人向我推荐了剪映的语音转文字功能，用于制作字幕效果确实还不错（准确度还可以），但我的音频中有很多语气词，例如“嗯”、“啊”等等，这些都需要我手动删除，处理起来就很烦躁了。&lt;/p&gt;
+&lt;p&gt;然后在互联网冲浪的时候看到了&amp;rsquo;Whisper&amp;rsquo; ，OpenAI公布的自动语音辨识模型，与chatGPT不同，这个开源了这么久反而没什么人提及它。然后再搜了搜，发现果然已经有人打包做好了GUI版。额外还需要下载ggml语音模型，据说写这个gui的人是用的&amp;rsquo;ggml-medium.bin&amp;rsquo;这个模型，下这个就好。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Const-me/Whisper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WhisperDesktop github链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://huggingface.co/ggerganov/whisper.cpp/tree/main&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ggml 语言模组&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;怎么用就不演示了，毕竟是上班时间摸鱼在这写，随便摸索一下就知道怎么用了，实测这些语气助词什么的全过滤了，准确度也比剪映的好（下班后想拿部电影试试，结果十多分钟后就开始输出重复的文字，这个不清楚怎么回事）。&lt;/p&gt;
+&lt;p&gt;今年剪映把很多功能都转为了收费功能，我记得10月份休假回来看到白色屏幕那个素材都变成了收费功能（后来取消了），保不齐现在的语音转文字以后也要收费。&lt;/p&gt;
+&lt;p&gt;所以说开源大法好啊！&lt;/p&gt;
+&lt;p&gt;我是导出srt格式，也是能转成txt的。你完全可以把那种公开课、开会录像什么的导成字幕，然后用ai去做总结，或者翻译，自由发挥。&lt;/p&gt;
+&lt;h2 id=&#34;查理的巧克力工厂&#34;&gt;查理的巧克力工厂&lt;/h2&gt;
+&lt;p&gt;因为有计划这个周末或者晚些时候去看「旺卡」，于是又重温了一下这部电影。上一次看是19年，上次只给了4星。&lt;/p&gt;
+&lt;p&gt;这是一部带有一丝丝黑暗气质的儿童童话电影，长大了看确实没啥味道。今天边看的时候还边说我要是查理肯定呆不到最后，不如把票卖了。&lt;/p&gt;
+&lt;p&gt;其实第二次看反而还没有上次看的时候那么喜欢，这部电影有很多刻板印象，导致说教的意思过于抢眼。比如打电动的孩子有暴力倾向；爱吃东西的孩子就像头猪；溺爱的孩子骄横跋扈；嚼口香糖那个女孩应该是自负吧。要我说要不就多写几个孩子凑出七宗罪来（色欲好像凑不了）。&lt;/p&gt;
+&lt;p&gt;但同时又get到了很多之前没注意到的电影梗。比如传送巧克力那里，有希区柯克的电影「惊魂记」和库布里克的经典电影「2001太空漫游」中的片段。旺卡和父亲决裂那，他父亲连夜「搬家」颇有「亚当斯一家」那种黑色幽默感，可能这个导演童年就是受「亚当斯一家」那种幽默的影响，我看他好多作品都是这种黑暗童话风。&lt;/p&gt;
+&lt;h2 id=&#34;赛博夜话&#34;&gt;赛博夜话&lt;/h2&gt;
+&lt;p&gt;我记得前段时间我也有在思考AI是不是发展错方向了，应该把创作这种活交给人类，ai就老老实实替我去上班。  但最近我似乎有了新的想法，现在的ai反而是在让更多的人能更低门槛地进行创作。&lt;/p&gt;
+&lt;p&gt;比如让chatgpt写文章，我文笔稀烂但是ai能帮我把我想表达的东西写得更有逻辑一些。&lt;/p&gt;
+&lt;p&gt;比如ai绘画，正常练控笔都得练好久吧，现在只要在几个关键字之间尝试，就能画出个勉强能看的图。&lt;/p&gt;
+&lt;p&gt;还有ai编程，正经学编程多累，而很多时候只是要造一个小轮子，这时候ai给你写出来，复制过去改一改就能用了。&lt;/p&gt;
+&lt;p&gt;不过问题就在于付出努力的那些创作者们，他们的生存空间被挤占了。现在ai毕竟还有不足，很多图片一眼过去就是ai，这个时候大家还是愿意谴责ai的。等以后ai发展到没有那么多缺点的时候，美术生的噩梦可能就来了，公众还愿不愿意继续站在道德高地就不好说了（1分钟能出100张免费的图你找设计师画2天还得给钱，只怕别人笑你傻子），至少资本肯定会更乐意用ai。&lt;/p&gt;
+&lt;p&gt;我倒是挺支持创作者的，ai给我的感觉有点像预制菜：成本低、做起来快、不好吃。即使发展得和大部分画师一样了，预制菜就是预制菜。我自己部署过SD绘画，确实能很短的时间做出还不错的效果，但这张图出来的时候我心里是没有成就感的，而我用数位板画图出来的虽然丑了点，但我心里是美滋滋的。这种感觉很像我点了外卖能吃饱但就是感觉差点意思，我自己做的虽然可能不那么好吃，但吃起来挺香的。&lt;/p&gt;
+&lt;p&gt;资本会淘汰掉美工，让美术从职业走向艺术，可问题是没有资本买单的艺术，能活多久呢。&lt;/p&gt;
+&lt;h2 id=&#34;旺卡&#34;&gt;旺卡&lt;/h2&gt;
+&lt;p&gt;看了旺卡，55%的地方还行，剩下的地方不太行。可以当半个迪士尼动画来看，歌舞部分过多，而且大部分歌舞套用的都是一个旋律（更重要的是没套用这个调调的都很难听），一秒回到悲惨世界（就悲惨世界里酒店主唱歌那个调调）。&lt;/p&gt;
+&lt;p&gt;剧情的话和德普那个应该不是同一个世界，德普是被爸抛弃甜茶是想妈了。总之合家欢电影，坏人飞天了，其他的人都成双成对了。可是就像巧克力吃多了胃有点腻，后半部分用来收尾的部分太过公式，总觉得腻味。&lt;/p&gt;
+&lt;p&gt;就是腻到看完想喝口水而不是看完想吃巧克力的那种感觉。&lt;/p&gt;
+&lt;h2 id=&#34;其它的小事&#34;&gt;其它的小事&lt;/h2&gt;
+&lt;p&gt;美女说下次来我这还要喝我这个金酒，可是我的都被你喝完了呀，这又得去买点了。她说她还给她大学室友倾力推荐了，我寻思有这么夸张的嘛。&lt;/p&gt;
+&lt;p&gt;这周脑子一热说要自己给博客写主题，真是不知天高地厚。&lt;/p&gt;
+&lt;p&gt;周末回老家吃烧烤了，好吃是好吃，就是吃多了难受，估计至少是一年内都不会再想吃这玩意了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>博客多平台同步方案</title>
+        <link>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/</link>
+        <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/</guid>
+        <description>&lt;p&gt;以前用wordpress建站的时候，任何地点登录后台就能开始写作。改为用静态博客后多端同步的问题一直困扰着我，因为可以选择的方案太多了，反而不想折腾。&lt;/p&gt;
+&lt;p&gt;首先明确我的需求，因为我给自己定了每周写周记，现在的情况是周末我反而会在外面，很可能没有办法用主电脑写作。但我大部分时候肯定还是要用主电脑的，所以同步到手机上编辑只是一个轻量需求。所以第一要成本低，第二要方便整个工作流打开的软件越少越好。obsidian昂贵的同步方案最开始就被否了。&lt;/p&gt;
+&lt;p&gt;虽然我知道最佳的备份方案一定是git，但我这种非开发人员真的不爱用这么麻烦的东西。而且假如我需要在手机上编辑，这时候我需要一个git把文件拉下来，再用一个支持markdown的软件来编辑，而我希望手机上手机软件越少越好，同理备受好评的坚果云的方案也被我否了。&lt;/p&gt;
+&lt;h3 id=&#34;obsidian-remotely-save-插件onedrive-实现多平台同步&#34;&gt;Obsidian Remotely Save 插件+OneDrive 实现多平台同步&lt;/h3&gt;
+&lt;p&gt;因为我用的是obsidian来处理PC上md文件的编写管理，加上obsidian是有多端同步的功能，能只用obsidian解决就用obsidian解决。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先在插件社区下载&lt;strong&gt;Remotely Save&lt;/strong&gt; 这个插件，然后启用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&#34;https://i.vgy.me/A662d9.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;一图流&#34;
+	
+	
+	alt=&#34;一图流&#34;
+&gt;
+&lt;center&gt;&lt;figcaption&gt;一图流&lt;/figcaption&gt;&lt;/center&gt;
+
+&lt;/figure&gt;
+
+
+
+	
+	&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;选择远程服务选&lt;code&gt;OneDrive&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;鉴权，这一步是为了获得你onedirve的授权。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;检查一下是否能用了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;左侧菜单栏就有了同步按钮，按下就能同步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;移动端安装obsidian，安装同款插件，同样上述步骤。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>2023#48 | 英伦风</title>
         <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC22%E6%9C%9F/</link>
         <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
         
@@ -85,7 +193,7 @@
 </description>
         </item>
         <item>
-        <title>2023#49 · 好久没写了</title>
+        <title>2023#47 · 好久没写了</title>
         <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC21%E6%9C%9F/</link>
         <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
         
@@ -5368,6 +5476,10 @@ Persona！(雾)&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
 &lt;p&gt;技术力有限，但抄袭别人代码的能力很强，你看到的所有改动灵感大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2023-12-7&#34;&gt;2023-12-7&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/&#34; &gt;博客基于obsidian多平台同步方案&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;2023-10-9&#34;&gt;2023-10-9&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;参照&lt;a class=&#34;link&#34; href=&#34;https://4o.cx/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -5446,8 +5558,7 @@ Persona！(雾)&lt;/p&gt;
 &lt;p&gt;实际测试下来，虽然不能直接使用[[]]实现链接，但是可以通过短代码实现。详见&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;同时我发现，使用obsidian写含有标签的内容，很容易报错。就像&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/&#34; &gt;短代码&lt;/a&gt;这篇文章如果用obsidian打开，全是红的，但是用vscode打开就还行。&lt;/p&gt;
 &lt;h2 id=&#34;3同步&#34;&gt;3.同步&lt;/h2&gt;
-&lt;h3 id=&#34;onedrive&#34;&gt;onedrive&lt;/h3&gt;
-&lt;p&gt;很想同时实现手机和电脑同步编辑的需求，实测了onedrive且不说不能快速同步，在网页打开编辑了一下直接报错给我复制了一个副本出来。虽然实际上来说也不是不行，但很明显不是最佳方案。&lt;/p&gt;
+&lt;p&gt;可以看这&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/&#34; &gt;博客基于obsidian多平台同步方案&lt;/a&gt;尝试了同步方案。目前实测每次同步大概15s左右。&lt;/p&gt;
 &lt;h2 id=&#34;4-图床解决方案&#34;&gt;4. 图床解决方案&lt;/h2&gt;
 &lt;p&gt;原本打算用七牛云的每月赠送10G流量的服务，但后来象友告知要备案的域名，这就很难受。&lt;/p&gt;
 &lt;p&gt;扒拉了一下其他博主的图床，有的是加入又拍云，有的是自建图床，这些都不太符合我白嫖怪的风格。&lt;/p&gt;
@@ -5517,7 +5628,7 @@ Persona！(雾)&lt;/p&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 记录本站的修改版本记录&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 实现手机能修改电脑上的Markdown文件，从而做到手机也能码字修改文章。&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 迁移以前的文章。&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 部署到GitHub&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 测试obsidian双链对博客的影响&lt;/li&gt;
