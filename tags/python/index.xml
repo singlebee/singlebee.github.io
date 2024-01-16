@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>python on 烤肉肉</title>
+        <link>https://singlebee.github.io/tags/python/</link>
+        <description>Recent content in python on 烤肉肉</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 07 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2024#01 ｜ 从豆瓣酱到三煨书屋</title>
+        <link>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-01/</link>
+        <pubDate>Sun, 07 Jan 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-01/</guid>
+        <description>&lt;p&gt;以前写博客，从来没坚持过一年，这次出乎意料的做到了新建了一个2024的文件夹了。希望之后还能继续。&lt;/p&gt;
+&lt;p&gt;新年第一篇，这周其实过得不怎么好，最近的运势似乎并不站在我这边。跨年那晚在油管看台湾的跨年，陈绮贞唱了半个多小时，台湾人民吃得还是好，大陆南方网友表示嫉妒。&lt;/p&gt;
+&lt;h2 id=&#34;从豆瓣到notion&#34;&gt;从豆瓣到Notion&lt;/h2&gt;
+&lt;p&gt;2020年在家隔离的时候，那时候也没上班，就看了蛮多书的。当时用notion搭了个读书的数据库，个人感觉成就感满满，之后开始上班就没怎么维护了。最近逛别人博客的时候发现好多人都有在用notion做自己的数据库，我就想起了我当时建的这个数据库，正好我一直想要一个「书影游」的数据库，正好来搭建一下。&lt;/p&gt;
+&lt;p&gt;当时都是纯手工一条条录的，要是想搭建一个比较完整的「书影游」，我这个数据量应该挺大的（其实不大）。网上搜了搜，虽然有不少「逃离豆瓣」的攻略，比如很多博主推荐的&lt;a class=&#34;link&#34; href=&#34;https://zhuzi.dev/2021/06/05/douban-backup-sync-notion/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;豆瓣读书+电影+音乐+游戏+舞台剧导出工具&lt;/a&gt;我这边打开是404的状态（估计被警告了），NeoDB推荐的&lt;a class=&#34;link&#34; href=&#34;https://doufen.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;豆伴(豆坟)&lt;/a&gt;倒是还算好用，不过我看到有博主说豆坟有可能导致封号，问题不大（人生就是一场豪赌）。&lt;/p&gt;
+&lt;p&gt;其实我中间踩了坑绕了几个弯路，最开始的思路是把从豆瓣导出的&lt;code&gt;.xlsx&lt;/code&gt;数据转成csv格式，如果想要&lt;code&gt;已读&lt;/code&gt;、&lt;code&gt;想读&lt;/code&gt;、&lt;code&gt;已看&lt;/code&gt;、&lt;code&gt;想看&lt;/code&gt;之类的功能，手动修改一下豆伴导出的文件就可以了。然后把导出的csv文件直接导入到notion里，其实要说这一步就能满足大部分的需求了。&lt;/p&gt;
+&lt;p&gt;但是我想要封面！因为导出的文件里有豆瓣链接，最开始是想用python直接去爬豆瓣的图，一开始倒是都好好的，爬了一百来张就触发了反爬机制，也懒得去研究反爬了。&lt;/p&gt;
+&lt;p&gt;重点来啦，这里要着重点赞豆瓣的平替&lt;a class=&#34;link&#34; href=&#34;https://neodb.social/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;neodb&lt;/a&gt;，前面导出的时候也说了嘛，导出后就可以导入到这里面来。与豆瓣不同的是，这是个开放的平台，它能调用api！&lt;/p&gt;
+&lt;p&gt;当你导入了豆瓣的数据后，我又导出了一份NeoDB的备份。参照他们的&lt;a class=&#34;link&#34; href=&#34;https://neodb.social/developer/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Developer Console&lt;/a&gt;把所有的书影都爬了一遍。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; pd
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; time
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;movie.csv&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;astype(str)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;header&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;{&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Authorization&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bearer xhUlIQDgfb11mokXBsZAmjvwO5r2Qm&amp;#39;&lt;/span&gt;,}&lt;span style=&#34;color:#75715e&#34;&gt;#这里的Token就直接在上面的链接拿一个Test Access Token就是了，不知道为什么我按它写的注册应用程序没用，拿不到。反正几千个数据一会就爬完了。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x,i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; enumerate(df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;]):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; url &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; content &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; url&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://neodb.social/&amp;#39;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; print(content)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://neodb.social/api/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;content,headers&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;header)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; data&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loads(response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;text)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;封面&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cover_image_url&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;type&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;type&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brief&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;brief&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; actors &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;actor&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;演员&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; actors
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; genre &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;genre&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;类型&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; genre
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;年份&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;year&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; area&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;area&amp;#39;&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;地区&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; area
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loc[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB链接&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; i, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB评分&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; data[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;rating&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;正在处理&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;,共&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;len(df)&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt; &lt;/span&gt; time&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NeoDB备份.csv&amp;#39;&lt;/span&gt;,index&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;不是程序员，所以代码也不知道写得好不好，反正能用，能用就行。把导出的csv导入到notion，改改属性就非常完美了。&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&#34;https://media.cmx.edu.kg/media_attachments/files/111/704/614/688/142/891/original/c3140f3a1e32fa58.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;最近全是想读&#34;
+	
+	
+	alt=&#34;最近全是想读&#34;
+&gt;
+&lt;center&gt;&lt;figcaption&gt;最近全是想读&lt;/figcaption&gt;&lt;/center&gt;
+
+&lt;/figure&gt;
+
+
+
+	
+	&lt;/p&gt;
+&lt;p&gt;据说notion是可以当数据库用的，想想它的可能性，很酷。&lt;/p&gt;
+&lt;h3 id=&#34;to-do&#34;&gt;TO DO&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 现在虽然搭建好了，接下来就是看看如何实现在一个网站标记，三个网站同时更新（毕竟我也不是说不用豆瓣了）。&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 「游」板块目前空缺。&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 写代码有点快乐，想继续写点别的有的没的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;感觉有趣的东西&#34;&gt;感觉有趣的东西&lt;/h2&gt;
+&lt;p&gt;&lt;figure&gt;
+&lt;img src=&#34;https://media.cmx.edu.kg/media_attachments/files/111/678/795/008/739/572/original/cf55a44e5e150b58.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+	alt=&#34;&#34;
+&gt;
+&lt;center&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/center&gt;
+
+&lt;/figure&gt;
+
+
+
+	
+	&lt;/p&gt;
+&lt;h2 id=&#34;怪物猎人世界&#34;&gt;怪物猎人·世界&lt;/h2&gt;
+&lt;p&gt;太刀虽然帅，但是太容易猫了，瓶颈了一个礼拜了。肝了好久的咩咩子，做出来的太刀感觉不咋好用&amp;hellip;..准备换一把，古龙不能捕获简直就是逼肝。网上都说好看的衣服都在冰原，可是钢龙我打了好几个小时才过，打完钢龙老师学会了见切（明明之前拜年剑法就很好用），现在已经是见切大回旋登龙接猫车一条龙，猫的明明白白。&lt;/p&gt;
+&lt;p&gt;以及在苍蓝星到处抓仙人掌，隔壁艾欧泽亚的仙人掌都是拉拉肥扮演的，四舍五入我抓了一房子拉拉肥。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这周没啥特别好记录的东西，空气也不好心情也不好。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
