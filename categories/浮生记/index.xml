@@ -1527,7 +1527,7 @@
 &lt;p&gt;每逢接近过年的时候、进入新月份的时候，就会有一群遗老出来多愁善感，以前可能跟着徒增焦虑，自从顿悟了『时间并不存在』后，倒也见怪不怪了。虽然看似写了一大堆，实际上看似有用的就几句话。也不知道自己写了些什么，图一乐。这种写作风格可能是借鉴了以前看过的scp文学的精神胡写乱写，写的时候倒也开心。年底没啥好总结的，没什么比还活着更了不起的了。&lt;/p&gt;
 &lt;h2 id=&#34;利用whisper做字幕&#34;&gt;利用Whisper做字幕&lt;/h2&gt;
 &lt;p&gt;原本是因为工作需要将语音转换为文字，后来更是直接将视频转为文字，也就是制作字幕。有人向我推荐了剪映的语音转文字功能，用于制作字幕效果确实还不错（准确度还可以），但我的音频中有很多语气词，例如“嗯”、“啊”等等，这些都需要我手动删除，处理起来就很烦躁了。&lt;/p&gt;
-&lt;p&gt;然后在互联网冲浪的时候看到了&amp;rsquo;Whisper&amp;rsquo; ，OpenAI公布的自动语音辨识模型，与chatGPT不同，这个开源了这么久反而没什么人提及它。然后再搜了搜，发现果然已经有人打包做好了GUI版。额外还需要下载ggml语音模型，据说写这个gui的人是用的&amp;rsquo;ggml-medium.bin&amp;rsquo;这个模型，下这个就好。&lt;/p&gt;
+&lt;p&gt;然后在互联网冲浪的时候看到了&lt;code&gt;Whisper&lt;/code&gt; ，OpenAI公布的自动语音辨识模型，与chatGPT不同，这个开源了这么久反而没什么人提及它。然后再搜了搜，发现果然已经有人打包做好了GUI版。额外还需要下载ggml语音模型，据说写这个gui的人是用的&lt;code&gt;ggml-medium.bin&lt;/code&gt;这个模型，下这个就好。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Const-me/Whisper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;WhisperDesktop github链接&lt;/a&gt;&lt;/li&gt;

@@ -2,23 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-06/</loc>
+    <lastmod>2024-02-07T03:51:18+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/categories/</loc>
+    <lastmod>2024-02-07T03:51:18+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/</loc>
+    <lastmod>2024-02-07T03:51:18+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/tags/</loc>
+    <lastmod>2024-02-07T03:51:18+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
+    <lastmod>2024-02-07T03:51:18+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/categories/%E9%80%8D%E9%81%A5%E6%B8%B8/</loc>
+    <lastmod>2024-02-07T03:51:18+08:00</lastmod>
+  </url><url>
     <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-05/</loc>
     <lastmod>2024-02-03T10:45:37+08:00</lastmod>
   </url><url>
-    <loc>https://singlebee.github.io/categories/</loc>
-    <lastmod>2024-02-03T10:46:08+08:00</lastmod>
-  </url><url>
-    <loc>https://singlebee.github.io/post/</loc>
-    <lastmod>2024-02-03T10:46:08+08:00</lastmod>
-  </url><url>
-    <loc>https://singlebee.github.io/tags/</loc>
-    <lastmod>2024-02-03T10:46:08+08:00</lastmod>
-  </url><url>
-    <loc>https://singlebee.github.io/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
-    <lastmod>2024-02-03T10:46:08+08:00</lastmod>
-  </url><url>
     <loc>https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
-    <lastmod>2024-02-03T10:46:08+08:00</lastmod>
+    <lastmod>2024-02-04T18:27:20+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/%E5%BD%B1%E8%AF%84/</loc>
     <lastmod>2024-02-03T10:45:37+08:00</lastmod>
@@ -33,9 +39,6 @@
     <lastmod>2024-01-19T17:18:26+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/%E5%8D%97%E4%BA%AC/</loc>
-    <lastmod>2024-01-19T17:18:26+08:00</lastmod>
-  </url><url>
-    <loc>https://singlebee.github.io/categories/%E9%80%8D%E9%81%A5%E6%B8%B8/</loc>
     <lastmod>2024-01-19T17:18:26+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/%E6%B8%B8%E8%AE%B0/</loc>
@@ -72,7 +75,7 @@
     <lastmod>2023-12-19T20:20:58+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2023/%E7%AC%AC23%E6%9C%9F/</loc>
-    <lastmod>2023-12-10T00:16:46+08:00</lastmod>
+    <lastmod>2024-02-04T18:27:20+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/obsidian/</loc>
     <lastmod>2023-12-08T16:28:47+08:00</lastmod>
@@ -201,10 +204,10 @@
     <lastmod>2023-12-07T16:08:06+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/page/</loc>
-    <lastmod>2024-01-29T23:17:21+08:00</lastmod>
+    <lastmod>2024-02-04T08:58:37+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/page/%E5%85%B3%E4%BA%8E/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</loc>
-    <lastmod>2024-01-29T23:17:21+08:00</lastmod>
+    <lastmod>2024-02-04T08:58:37+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
     <lastmod>2023-12-07T16:10:00+08:00</lastmod>
