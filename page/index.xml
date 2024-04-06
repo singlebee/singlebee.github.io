@@ -47,6 +47,11 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
 &lt;p&gt;技术力有限，但抄袭别人代码的能力很强，你看到的所有改动灵感大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2024-4-6&#34;&gt;2024-4-6&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;加入了Neodb短代码。&lt;/li&gt;
+&lt;li&gt;利用piclist和Image Auto Upload将图床变更为腾讯COS。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;2024-2-4&#34;&gt;2024-2-4&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;同步长毛象！主页嵌入 Mastodon 时间线，虽然不是很好看，以后看看能不能改样式。&lt;/li&gt;
