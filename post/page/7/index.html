@@ -176,26 +176,27 @@
             </a>
         </li>
         
+        
 
-        <div class="menu-bottom-section">
-            
-            
-        </div>
+
+    
+        
     </ol>
    
 </aside>
+
 
     <aside class="sidebar right-sidebar sticky">
     
     
     
     <form action="/page/search/" class="search-form widget" >
-        <p>
-            <label>想搜点什么</label>
-            <input name="keyword" required placeholder="输入关键词..." />
-        
-            <button title="想搜点什么">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <p>
+        <label>想搜点什么</label>
+        <input name="keyword" required placeholder="输入关键词..." />
+
+        <button title="想搜点什么">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="10" cy="10" r="7" />
   <line x1="21" y1="21" x2="15" y2="15" />
@@ -203,10 +204,10 @@
 
 
 
-            </button>
-        </p>
-    </form><iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="400" height="400" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fm.cmx.im%2Fusers%2Fsinglebee&theme=light&size=100&header=false&replies=false&boosts=false"></iframe>
-
+        </button>
+    </p>
+</form>
+    
     
     
     
@@ -281,7 +282,55 @@
     </section>
     
     
-
+    
+    <meta name="referrer" content="same-origin">
+    <style type="text/css">
+        #rili {
+            height: 100%;
+            overflow: hidden;
+        }
+    
+        #rili img {
+            height: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+            display: block;
+            max-height: 100% !important;
+            max-width: 100% !important;
+        }
+    
+        @media (max-width:691px) {
+            #rili img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/rgbaster@2.1.1/dist/rgbaster.umd.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () { getRili() }
+        function getRili() {
+            var d = new Date(), y = d.getFullYear(), m = d.getMonth() + 1, n = d.getDate();
+            m = m > 9 ? m : "0" + m; n = n > 9 ? n : "0" + n;
+            var imgSrc = "https://img.owspace.com/Public/uploads/Download/" + y + "/" + m + n + ".jpg"
+            var img = '<img  src="' + imgSrc + '" onclick="getRili()" />'
+            document.getElementById("rili").innerHTML = img
+            RGBaster.colors(imgSrc, {
+                paletteSize: 10, 
+                exclude: ['rgba(255,255,255,0.88)', 'rgba(0,0,0,0.88)'],  
+                success: function (payload) {
+                    
+                    
+                    
+                    console.log(payload.palette);
+                    var bgColor = payload.dominant
+                    document.getElementById('rili').style.backgroundColor = bgColor;
+                }
+            });
+        }
+    </script>
+    <div id="rili"></div>
 
     
 </aside>
@@ -556,21 +605,6 @@
 
         document.head.appendChild(customFont);
     }());
-</script>
-
-
-  
-<script>
-  (function(d, w, c) {
-      w.ChatraID = 'qvaMJAQeDxJmW4qce';
-      var s = d.createElement('script');
-      w[c] = w[c] || function() {
-          (w[c].q = w[c].q || []).push(arguments);
-      };
-      s.async = true;
-      s.src = 'https://call.chatra.io/chatra.js';
-      if (d.head) d.head.appendChild(s);
-  })(document, window, 'Chatra');
 </script>
 
     </body>

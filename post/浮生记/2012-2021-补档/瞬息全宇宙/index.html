@@ -182,14 +182,15 @@
             </a>
         </li>
         
+        
 
-        <div class="menu-bottom-section">
-            
-            
-        </div>
+
+    
+        
     </ol>
    
 </aside>
+
 
     <aside class="sidebar right-sidebar sticky">
     
@@ -224,7 +225,55 @@
 
     
     
-
+    
+    <meta name="referrer" content="same-origin">
+    <style type="text/css">
+        #rili {
+            height: 100%;
+            overflow: hidden;
+        }
+    
+        #rili img {
+            height: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+            display: block;
+            max-height: 100% !important;
+            max-width: 100% !important;
+        }
+    
+        @media (max-width:691px) {
+            #rili img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    </style>
+    
+    <script src="https://cdn.jsdelivr.net/npm/rgbaster@2.1.1/dist/rgbaster.umd.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () { getRili() }
+        function getRili() {
+            var d = new Date(), y = d.getFullYear(), m = d.getMonth() + 1, n = d.getDate();
+            m = m > 9 ? m : "0" + m; n = n > 9 ? n : "0" + n;
+            var imgSrc = "https://img.owspace.com/Public/uploads/Download/" + y + "/" + m + n + ".jpg"
+            var img = '<img  src="' + imgSrc + '" onclick="getRili()" />'
+            document.getElementById("rili").innerHTML = img
+            RGBaster.colors(imgSrc, {
+                paletteSize: 10, 
+                exclude: ['rgba(255,255,255,0.88)', 'rgba(0,0,0,0.88)'],  
+                success: function (payload) {
+                    
+                    
+                    
+                    console.log(payload.palette);
+                    var bgColor = payload.dominant
+                    document.getElementById('rili').style.backgroundColor = bgColor;
+                }
+            });
+        }
+    </script>
+    <div id="rili"></div>
 
     
 </aside>
@@ -386,8 +435,8 @@
 
 
     <footer class="article-footer">
-    
-    
+
+
     
     <section class="article-copyright">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -397,7 +446,7 @@
 </svg>
 
 
- 
+
         <span>不要转载 | 去热爱自己的生活</span>
     </section>
     
@@ -408,20 +457,13 @@
         
     </section>
 <section class="article-lastmod">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <span>
-            最后更新于:&lt;no value&gt; 2024/04/06
-        </span>
         <a href="https://notbyai.fyi"><img src="https://i.vgy.me/TYj9XK.png" alt="Written by Human, Not by AI"></a>
-    </section></footer>
+        
+        <p> 最后更新于 2024 年 4 月 6 日</p>
+        
 
+
+    </section></footer>
 
     
         <link 
@@ -581,21 +623,6 @@
 
         document.head.appendChild(customFont);
     }());
-</script>
-
-
-  
-<script>
-  (function(d, w, c) {
-      w.ChatraID = 'qvaMJAQeDxJmW4qce';
-      var s = d.createElement('script');
-      w[c] = w[c] || function() {
-          (w[c].q = w[c].q || []).push(arguments);
-      };
-      s.async = true;
-      s.src = 'https://call.chatra.io/chatra.js';
-      if (d.head) d.head.appendChild(s);
-  })(document, window, 'Chatra');
 </script>
 
     </body>
