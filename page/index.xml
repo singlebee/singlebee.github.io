@@ -47,6 +47,10 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
 &lt;p&gt;技术力有限，但抄袭别人代码的能力很强，你看到的所有改动灵感大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2024-4-14&#34;&gt;2024-4-14&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;新增了友链&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;2024-4-6&#34;&gt;2024-4-6&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;加入了Neodb短代码。&lt;/li&gt;
@@ -54,11 +58,11 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;2024-2-4&#34;&gt;2024-2-4&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;同步长毛象！主页嵌入 Mastodon 时间线，虽然不是很好看，以后看看能不能改样式。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;同步长毛象！主页嵌入 Mastodon 时间线，虽然不是很好看，以后看看能不能改样式。(太丑，废弃)&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2024-1-29&#34;&gt;2024-1-29&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;史诗级更新！加入了聊天对话系统！虽然应该用不上。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;史诗级更新！加入了聊天对话系统！虽然应该用不上。（已废弃）&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2024-1-19&#34;&gt;2024-1-19&lt;/h3&gt;
 &lt;ul&gt;
@@ -80,7 +84,7 @@
 &lt;h3 id=&#34;2023-9-19&#34;&gt;2023-9-19&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;购买了域名并解析成功，强制https等。&lt;/li&gt;
-&lt;li&gt;利用主题自带的&lt;code&gt;social&lt;/code&gt;能跳转外链的特性，给菜单栏新增了&lt;code&gt;实验室&lt;/code&gt;，这样可以跳转到一个不受主题样式影响的网页。虽然理论上可以自己写，但是我真的懒，不想去分析主题里的结构，能直接改就直接改。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;利用主题自带的&lt;code&gt;social&lt;/code&gt;能跳转外链的特性，给菜单栏新增了&lt;code&gt;实验室&lt;/code&gt;，这样可以跳转到一个不受主题样式影响的网页。虽然理论上可以自己写，但是我真的懒，不想去分析主题里的结构，能直接改就直接改。（废弃）&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-7-10&#34;&gt;2023-7-10&lt;/h3&gt;
 &lt;ul&gt;
@@ -88,7 +92,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-27&#34;&gt;2023-6-27&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;给tag加上了hover的颜色。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;给tag加上了hover的颜色。（直接不要tag了，写博客根本就是随便加tag）&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-23&#34;&gt;2023-6-23&lt;/h3&gt;
 &lt;ul&gt;
@@ -105,7 +109,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;2023-6-17&#34;&gt;2023-6-17&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;给网站添加了背景（一个base64的简单图片通过background-repeat属性不断重复平铺）。&lt;/li&gt;
+&lt;li&gt;~~给网站添加了背景（一个base64的简单图片通过background-repeat属性不断重复平铺）。~~现在是纯色&lt;/li&gt;
 &lt;li&gt;在footer上添加了夸大其词的建站时间。详细见&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/&#34; &gt;关于我用ChatGPT修改博客主题那些事&lt;/a&gt;。&lt;/li&gt;
 &lt;li&gt;全局圆角，还是圆角好看。&lt;/li&gt;
 &lt;li&gt;修改了左侧menu的字体大小，之前&lt;code&gt;1.4rem&lt;/code&gt;看起来太小了。&lt;/li&gt;
@@ -156,16 +160,6 @@
 &lt;p&gt;烤肉肉努力地想让小窝看起来更有意思一点，这样或许会有更多的人来看看，说做得还可以。&lt;/p&gt;
 &lt;p&gt;烤肉肉不擅长交朋友，也很不主动的那种，我知道很多博主其实不喜欢别人未经允许就添加他们的博客，所以我这里的友链更多的是烤肉肉跳转喜欢博主的快速通道，希望被收录的博主们不要介意，如果实在觉得膈应可以在长毛象&lt;code&gt;@singlebee@m.cmx.im&lt;/code&gt;或者&lt;a href=&#34;mailto:lowbee.icu@outlook.com&#34; style=&#34;color:#0b57d0&#34;&gt;(点击)发邮件&lt;/a&gt;联系烤肉肉删除。&lt;/p&gt;
 &lt;p&gt;希望你能喜欢这里。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>友链</title>
-        <link>https://singlebee.github.io/page/%E6%97%B6%E5%85%89%E6%9C%BA/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://singlebee.github.io/page/%E6%97%B6%E5%85%89%E6%9C%BA/</guid>
-        <description>&lt;p&gt;烤肉肉目前没有朋友哦，快来找他当朋友吧！&lt;/p&gt;
-&lt;p&gt;因为烤肉肉不知道怎么弄友链！！&lt;/p&gt;
 </description>
         </item>
         
