@@ -11,7 +11,7 @@
         <pubDate>Fri, 19 Apr 2024 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-16/</guid>
-        <description>&lt;img src="https://bbq-1251906770.cos.ap-guangzhou.myqcloud.com/_MG_7607.webp" alt="Featured image of post 2024#16 ｜ 赓续传统友谊 开创崭新征程" /&gt;&lt;p&gt;烤肉肉发表题为「推动网友关系更好更快发展」的社论，社论中指出互联网是个大家庭，和其他友好邻邦构建具有战略意义的「垃圾文学」命运共同体，是开启烤肉肉博客新阶段的重要组成。烤肉肉在社论中回顾了博客的历史，描绘了未来的蓝图，同时为随时弃站跑路做了两手准备。&lt;/p&gt;
+        <description>&lt;img src="https://media.cmx.edu.kg/media_attachments/files/112/296/192/987/322/725/original/f4c69212ed3932de.jpg" alt="Featured image of post 2024#16 ｜ 赓续传统友谊 开创崭新征程" /&gt;&lt;p&gt;烤肉肉发表题为「推动网友关系更好更快发展」的社论，社论中指出互联网是个大家庭，和其他友好邻邦构建具有战略意义的「垃圾文学」命运共同体，是开启烤肉肉博客新阶段的重要组成。烤肉肉在社论中回顾了博客的历史，描绘了未来的蓝图，同时为随时弃站跑路做了两手准备。&lt;/p&gt;
 &lt;h2 id=&#34;友链开启&#34;&gt;友链开启✅&lt;/h2&gt;
 &lt;p&gt;开服这么久，终于把友链弄上去了，本来看到很多人用的都是短代码，可是短代码太难维护了，翻了翻别人的博客，找到了一个更为现代的&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/hugo-stack-renovation-part-two/#%E5%8F%8C%E6%A0%8F%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5%E5%B9%B6%E5%A2%9E%E5%8A%A0%E5%8D%9A%E4%B8%BB%E5%A4%87%E6%B3%A8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;解决方案&lt;/a&gt;。原理大概是建立一个json文件用来充当数据库，用&lt;code&gt;layout&lt;/code&gt;来调用json。效果详见&lt;a class=&#34;link&#34; href=&#34;https://singlebee.github.io/page/%E5%8F%8B%E9%93%BE/&#34; &gt;友链&lt;/a&gt;页面。&lt;/p&gt;
