@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-38/</loc>
-    <lastmod>2024-09-20T00:44:23+08:00</lastmod>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-40/</loc>
+    <lastmod>2024-10-05T12:19:06+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/</loc>
-    <lastmod>2024-09-20T00:44:23+08:00</lastmod>
+    <lastmod>2024-10-05T12:19:06+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/</loc>
-    <lastmod>2024-09-20T00:44:23+08:00</lastmod>
+    <lastmod>2024-10-05T12:19:06+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
+    <lastmod>2024-10-05T12:19:06+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-39/</loc>
+    <lastmod>2024-10-04T15:02:54+08:00</lastmod>
+  </url><url>
+    <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-38/</loc>
     <lastmod>2024-09-20T00:44:23+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-37/</loc>
@@ -60,7 +66,7 @@
     <lastmod>2024-04-07T00:13:17+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/</loc>
-    <lastmod>2024-04-07T00:13:17+08:00</lastmod>
+    <lastmod>2024-10-04T15:14:00+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/%E6%B5%AE%E7%94%9F%E8%AE%B0/</loc>
     <lastmod>2024-04-07T00:13:17+08:00</lastmod>
@@ -120,7 +126,7 @@
     <lastmod>2024-04-06T14:48:30+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/categories/%E7%83%9F%E7%81%AB%E4%BA%BA%E9%97%B4/</loc>
-    <lastmod>2024-04-06T14:48:30+08:00</lastmod>
+    <lastmod>2024-10-04T15:14:00+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/%E6%B5%AE%E7%94%9F%E8%AE%B0/2024/2024-01/</loc>
     <lastmod>2024-04-06T14:49:03+08:00</lastmod>
@@ -228,10 +234,10 @@
     <lastmod>2024-04-06T15:15:36+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/post/%E7%83%9F%E7%81%AB%E4%BA%BA%E9%97%B4/%E5%8D%81%E5%A4%A7%E5%90%8D%E8%8F%9C/</loc>
-    <lastmod>2023-12-07T16:08:17+08:00</lastmod>
+    <lastmod>2024-10-04T15:14:00+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/%E6%9C%89%E7%94%9F%E4%B9%8B%E5%B9%B4/</loc>
-    <lastmod>2023-12-07T16:08:17+08:00</lastmod>
+    <lastmod>2024-10-04T15:14:00+08:00</lastmod>
   </url><url>
     <loc>https://singlebee.github.io/tags/hugo/</loc>
     <lastmod>2024-04-06T14:48:38+08:00</lastmod>
