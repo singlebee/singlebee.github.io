@@ -12,7 +12,8 @@
         <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8Eobsidian%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%90%8C%E6%AD%A5%E6%96%B9%E6%A1%88/</guid>
-        <description>&lt;p&gt;以前用wordpress建站的时候，任何地点登录后台就能开始写作。改为用静态博客后多端同步的问题一直困扰着我，因为可以选择的方案太多了，反而不想折腾。&lt;/p&gt;
+        <description>
+            feedId:72942888402772022+userId:50375316756754432&lt;p&gt;以前用wordpress建站的时候，任何地点登录后台就能开始写作。改为用静态博客后多端同步的问题一直困扰着我，因为可以选择的方案太多了，反而不想折腾。&lt;/p&gt;
 &lt;p&gt;首先明确我的需求，因为我给自己定了每周写周记，现在的情况是周末我反而会在外面，很可能没有办法用主电脑写作。但我大部分时候肯定还是要用主电脑的，所以同步到手机上编辑只是一个轻量需求。所以第一要成本低，第二要方便整个工作流打开的软件越少越好。obsidian昂贵的同步方案最开始就被否了。&lt;/p&gt;
 &lt;p&gt;虽然我知道最佳的备份方案一定是git，但我这种非开发人员真的不爱用这么麻烦的东西。而且假如我需要在手机上编辑，这时候我需要一个git把文件拉下来，再用一个支持markdown的软件来编辑，而我希望手机上手机软件越少越好，同理备受好评的坚果云的方案也被我否了。&lt;/p&gt;
 &lt;h3 id=&#34;obsidian-remotely-save-插件onedrive-实现多平台同步&#34;&gt;Obsidian Remotely Save 插件+OneDrive 实现多平台同步&lt;/h3&gt;
@@ -65,7 +66,8 @@
         <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%9C%A8%E5%9B%BE%E7%89%87%E4%B8%8B%E6%98%BE%E7%A4%BA%E8%AF%B4%E6%98%8E%E6%96%87%E5%AD%97/</guid>
-        <description>&lt;h2 id=&#34;在图片下显示说明文字&#34;&gt;在图片下显示说明文字&lt;/h2&gt;
+        <description>
+            feedId:72942888402772022+userId:50375316756754432&lt;h2 id=&#34;在图片下显示说明文字&#34;&gt;在图片下显示说明文字&lt;/h2&gt;
 &lt;p&gt;hugo建立博客之后，大部分体验都很好，但是目前还有几个想改进的东西。图片是解决了，但是我希望对图片进行一些描述，因为对一些图片的解说又不想出现在正文里。markdown里虽然有这个语法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;描述&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;链接&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;需求就是把这个&lt;code&gt;描述&lt;/code&gt;是出现在图片下方。这个图片描述是在图片不显示时显示的文字，img标签里会写入&lt;code&gt;alt&lt;/code&gt;属性里。&lt;/p&gt;
@@ -125,7 +127,8 @@
         <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/chatgpt/</guid>
-        <description>&lt;p&gt;前提：本人没有系统学过编程，基本的代码知识都是慢慢试错学会的。可以视为小学生代码水平。&lt;/p&gt;
+        <description>
+            feedId:72942888402772022+userId:50375316756754432&lt;p&gt;前提：本人没有系统学过编程，基本的代码知识都是慢慢试错学会的。可以视为小学生代码水平。&lt;/p&gt;
 &lt;h2 id=&#34;关于我用chatgpt修改博客主题那些事&#34;&gt;关于我用ChatGPT修改博客主题那些事&lt;/h2&gt;
 &lt;p&gt;你是否也在为装修博客困扰？你是否苦于不会写代码而一筹莫展？是否因为看到别人的博客艳羡不已？
 今天，为大家隆重介绍一下零代码开发！21世纪最伟大的计算机发明——ChatGPT！&lt;/p&gt;
@@ -208,7 +211,8 @@
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%85%B3%E4%BA%8E%E6%88%91%E5%86%99%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%97%AD%E7%8E%AF%E9%82%A3%E4%BA%9B%E4%BA%8B/</guid>
-        <description>&lt;p&gt;边摸索边记录。&lt;/p&gt;
+        <description>
+            feedId:72942888402772022+userId:50375316756754432&lt;p&gt;边摸索边记录。&lt;/p&gt;
 &lt;h2 id=&#34;1-部署&#34;&gt;1. 部署&lt;/h2&gt;
 &lt;p&gt;经历了WordPress的臃肿和hexo要装一堆东西的痛苦之后，终于开始接触hugo，这款基于go语言开发的博客引擎。体验下来就直呼“&lt;strong&gt;快！太快了！&lt;/strong&gt;”，go语言这么强的嘛，快到我第一直觉是报错😂。
 部署依然是考虑GitHub，毕竟有免费的干嘛不用。
@@ -282,7 +286,8 @@
         <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%88%9D%E5%A7%8B%E4%B9%8B%E5%9C%B0/</guid>
-        <description>&lt;p&gt;这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。&lt;/p&gt;
+        <description>
+            feedId:72942888402772022+userId:50375316756754432&lt;p&gt;这篇文章记录我网站建站的修改进度。之所以叫起始之地，是因为最近玩塞尔达传说，走到了起始之地，这是旷野之息游戏开始的地方，感慨颇多。&lt;/p&gt;
 &lt;p&gt;本站美化将基于Stack进行修改。目前在研究这个主题的功能。&lt;/p&gt;
 &lt;h1 id=&#34;需求&#34;&gt;需求&lt;/h1&gt;
 &lt;ul&gt;
