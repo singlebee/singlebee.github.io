@@ -3,7 +3,9 @@
     <channel>
         <title>hugo on 烤肉肉</title>
         <link>https://singlebee.github.io/tags/hugo/</link>
-        <description>Recent content in hugo on 烤肉肉</description>
+        <description>
+         feedId:72942888402772022+userId:50375316756754432
+        Recent content in hugo on 烤肉肉</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://singlebee.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -12,8 +14,7 @@
         <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/%E5%9C%A8%E5%9B%BE%E7%89%87%E4%B8%8B%E6%98%BE%E7%A4%BA%E8%AF%B4%E6%98%8E%E6%96%87%E5%AD%97/</guid>
-        <description>
-            feedId:72942888402772022+userId:50375316756754432&lt;h2 id=&#34;在图片下显示说明文字&#34;&gt;在图片下显示说明文字&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;在图片下显示说明文字&#34;&gt;在图片下显示说明文字&lt;/h2&gt;
 &lt;p&gt;hugo建立博客之后，大部分体验都很好，但是目前还有几个想改进的东西。图片是解决了，但是我希望对图片进行一些描述，因为对一些图片的解说又不想出现在正文里。markdown里虽然有这个语法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;描述&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;链接&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;需求就是把这个&lt;code&gt;描述&lt;/code&gt;是出现在图片下方。这个图片描述是在图片不显示时显示的文字，img标签里会写入&lt;code&gt;alt&lt;/code&gt;属性里。&lt;/p&gt;
@@ -73,8 +74,7 @@
         <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
         
         <guid>https://singlebee.github.io/post/%E5%A5%B3%E5%A8%B2%E8%A1%A5%E5%A4%A9/hugo%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
-        <description>
-            feedId:72942888402772022+userId:50375316756754432&lt;h2 id=&#34;hugo短代码&#34;&gt;hugo短代码&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;hugo短代码&#34;&gt;hugo短代码&lt;/h2&gt;
 &lt;p&gt;Hugo官方的&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;文档&lt;/a&gt;看着头疼，大概意思是Markdown的内容格式过于简单，有些创作者为了实现某些功能被迫将HTML的一些功能添加到Markdown里面去了（应该是利用Markdown内嵌HTML标签，但我直接插入HTML标签似乎是没用的），于是hugo创造了短代码。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;hugo短代码通过&lt;code&gt;{{&amp;lt;短代码名 参数&amp;gt;}}&lt;/code&gt;的形式调用.
