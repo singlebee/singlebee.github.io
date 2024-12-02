@@ -49,6 +49,13 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;装修进度&#34;&gt;装修进度&lt;/h2&gt;
 &lt;p&gt;技术力有限，但抄袭别人代码的能力很强，你看到的所有改动灵感大概率来自别人的网站。&lt;/p&gt;
+&lt;h3 id=&#34;2024-12-1&#34;&gt;2024-12-1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;新增了网站计数器，虽然没什么用。&lt;a class=&#34;link&#34; href=&#34;https://hellogithub.com/repository/ed741b376efe46789ce9bb140ac19a52&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;用的这个&lt;/a&gt; 。&lt;/li&gt;
+&lt;li&gt;去除了非 ai 创作的 logo，虽然文章确实没用 ai，但是那个图标好丑。&lt;/li&gt;
+&lt;li&gt;研究了好久才让&lt;code&gt;最后更新&lt;/code&gt;居中对齐。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;2024-10-30&#34;&gt;2024-10-30&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;LaTex 支持 √&lt;/li&gt;

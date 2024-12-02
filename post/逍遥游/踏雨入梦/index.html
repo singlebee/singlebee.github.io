@@ -483,11 +483,10 @@
 
 
     <footer class="article-footer">
+  
 
-
-    
-    <section class="article-copyright">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <section class="article-copyright">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="12" cy="12" r="9" />
   <path d="M14.5 9a3.5 4 0 1 0 0 6" />
@@ -495,23 +494,26 @@
 
 
 
-        <span>不要转载 | 去热爱自己的生活</span>
-    </section>
-    
-    
+    <span
+      >不要转载 | 去热爱自己的生活</span
+    >
+  </section>
+   
     <section class="article-tags">
         
             <a href="/tags/%E6%B8%B8%E8%AE%B0/">游记</a>
         
     </section>
-<section class="article-lastmod">
-        <a href="https://notbyai.fyi"><img src="https://i.vgy.me/TYj9XK.png" alt="Written by Human, Not by AI"></a>
-        
-        <p> 最后更新于 2024 年 4 月 6 日</p>
-        
+<section style="justify-content: space-around">
+    
 
+    <p>
+      最后更新于 2024 年 4 月 6 日
+    </p>
 
-    </section></footer>
+    
+  </section></footer>
+
 
     
         <link 
@@ -552,70 +554,111 @@
     
 
     <footer class="site-footer">
+  <section style="display: flex; align-items: center; justify-content: center">
+    <img
+      src="https://count.getloli.com/@烤肉肉?name=%E7%83%A4%E8%82%89%E8%82%89&theme=kasuterura-2&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto"
+    />
+  </section>
+
+  <section class="copyright">
+    <p>
+      本站始建于<span id="start_time">2015年6月1日</span
+      ><span style="color: red; margin: 0px 10px">❤</span
+      >已在暴风骤雨中不稳定运行<br /><span
+        id="running_time"
+        style="font-size: large"
+      ></span>
+    </p>
+    烤肉肉 &copy;  2015 -  2024
+  </section>
+
+  <section class="powerby">
+    Built with <a
+      href="https://gohugo.io/"
+      target="_blank"
+      rel="noopener"
+      >Hugo</a
+    >
+    <br />
+    主题 <b
+      ><a
+        href="https://github.com/CaiJimmy/hugo-theme-stack"
+        target="_blank"
+        rel="noopener"
+        data-version="3.16.0"
+        >Stack</a
+      ></b
+    > 由 <a
+      href="https://jimmycai.com"
+      target="_blank"
+      rel="noopener"
+      >Jimmy</a
+    > 设计<br />
+    烤肉肉稍作修改
+  </section>
+
+  <script type="text/javascript">
     
-    <section class="copyright">
-        烤肉肉
-        &copy; 
-        
-            2015 - 
-        
-        2024
-        <p>本站始建于<span id="start_time">2015年6月1日</span><span style="color: red;margin:0px 10px;">❤</span>已在暴风骤雨中不稳定运行<br><span id="running_time" style="font-size: large;"></span></p>
-    </section>
+    var startTime = new Date("2015/6/1");
     
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计<br /> 烤肉肉稍作修改
-        
-    </section>
+    var currentTime = new Date();
     
-    <script type="text/javascript">
-        
-        var startTime = new Date("2015/6/1");
-        
-        var currentTime = new Date();
-        
-        var timeDiff = currentTime.getTime() - startTime.getTime();
-        
-        var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
-        timeDiff = timeDiff % (24 * 3600 * 1000);
-        
-        var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
-        timeDiff = timeDiff % (3600 * 1000);
-        
-        var minutesDiff = Math.floor(timeDiff / (60 * 1000));
-        timeDiff = timeDiff % (60 * 1000);
-        
-        var secondsDiff = Math.floor(timeDiff / 1000);
-        
-        document.getElementById("running_time").innerText = daysDiff + "天" + hoursDiff + "小时" + minutesDiff + "分" + secondsDiff + "秒";
+    var timeDiff = currentTime.getTime() - startTime.getTime();
+    
+    var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
+    timeDiff = timeDiff % (24 * 3600 * 1000);
+    
+    var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
+    timeDiff = timeDiff % (3600 * 1000);
+    
+    var minutesDiff = Math.floor(timeDiff / (60 * 1000));
+    timeDiff = timeDiff % (60 * 1000);
+    
+    var secondsDiff = Math.floor(timeDiff / 1000);
+    
+    document.getElementById("running_time").innerText =
+      daysDiff +
+      "天" +
+      hoursDiff +
+      "小时" +
+      minutesDiff +
+      "分" +
+      secondsDiff +
+      "秒";
+
+    
+    setTimeout(updateTime, 1000);
+
+    function updateTime() {
       
-        
-        setTimeout(updateTime, 1000);
+      var currentTime = new Date();
       
-        function updateTime() {
-          
-          var currentTime = new Date();
-          
-          var timeDiff = currentTime.getTime() - startTime.getTime();
-          
-          var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
-          timeDiff = timeDiff % (24 * 3600 * 1000);
-          
-          var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
-          timeDiff = timeDiff % (3600 * 1000);
-          
-          var minutesDiff = Math.floor(timeDiff / (60 * 1000));
-          timeDiff = timeDiff % (60 * 1000);
-          
-          var secondsDiff = Math.floor(timeDiff / 1000);
-          
-          document.getElementById("running_time").innerText = daysDiff + "天" + hoursDiff + "小时" + minutesDiff + "分" + secondsDiff + "秒";
-          
-          setTimeout(updateTime, 1000);
-        }
-      </script>
-     
+      var timeDiff = currentTime.getTime() - startTime.getTime();
+      
+      var daysDiff = Math.floor(timeDiff / (24 * 3600 * 1000));
+      timeDiff = timeDiff % (24 * 3600 * 1000);
+      
+      var hoursDiff = Math.floor(timeDiff / (3600 * 1000));
+      timeDiff = timeDiff % (3600 * 1000);
+      
+      var minutesDiff = Math.floor(timeDiff / (60 * 1000));
+      timeDiff = timeDiff % (60 * 1000);
+      
+      var secondsDiff = Math.floor(timeDiff / 1000);
+      
+      document.getElementById("running_time").innerText =
+        daysDiff +
+        "天" +
+        hoursDiff +
+        "小时" +
+        minutesDiff +
+        "分" +
+        secondsDiff +
+        "秒";
+      
+      setTimeout(updateTime, 1000);
+    }
+  </script>
 </footer>
 
 
